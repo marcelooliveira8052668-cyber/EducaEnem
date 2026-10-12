@@ -413,7 +413,215 @@ const VESTIBULARES = [
           "A proposta de intervenção detalhada é EXCLUSIVA do ENEM. Na Fuvest ela não " +
           "existe — e cobra caro quem aplica a fórmula sem querer.",
       },
+{
+        area: "História",
+        enunciado:
+          "O período conhecido como Era Vargas (1930-1945) redefiniu o Estado " +
+          "brasileiro. Sobre esse período, é correto afirmar que:",
+        alternativas: [
+          "O Estado Novo (1937-1945) foi um regime democrático, com eleições livres e Congresso aberto.",
+          "A Revolução de 1930 derrubou a República Velha e iniciou a Era Vargas, que incluiu o Estado Novo, regime ditatorial.",
+          "Vargas chegou ao poder por eleições diretas em 1930, com o apoio das oligarquias paulistas.",
+          "A Era Vargas foi marcada pelo alinhamento integral do Brasil aos regimes totalitários europeus.",
+          "O governo Vargas manteve o federalismo e o poder das oligarquias estaduais intactos.",
+        ],
+        gabarito: 1,
+        comentario:
+          "1930 = fim da República Velha; 1937 = Estado Novo (ditadura, Congresso " +
+          "fechado, eleições suspensas). A banca cobra a periodização: Vargas (1930) " +
+          "não é o mesmo que Estado Novo (1937-1945).",
+      },
+      {
+        area: "Geografia",
+        enunciado:
+          "No Brasil contemporâneo, a concentração de terras é um problema histórico. " +
+          "Sobre esse quadro, é correto afirmar que:",
+        alternativas: [
+          "A Lei de Terras de 1850 facilitou o acesso à terra para pequenos produtores e imigrantes.",
+          "A concentração fundiária no Brasil tem origem no sistema de capitanias e na Lei de Terras de 1850, que restringiu o acesso à propriedade.",
+          "O Estatuto da Terra (1964) foi responsável pela democratização do acesso à terra no país.",
+          "O agronegócio brasileiro é majoritariamente formado por pequenas propriedades familiares.",
+          "A reforma agrária brasileira foi concluída na década de 1990, eliminando os latifúndios.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Lei de Terras de 1850: a terra só podia ser adquirida por compra, não por " +
+          "posse — consolidou a concentração. Pegadinha clássica: a alternativa A " +
+          "inverte a lógica da lei.",
+      },
+      {
+        area: "Física",
+        enunciado:
+          "Um fio condutor percorrido por uma corrente elétrica constante produz ao seu " +
+          "redor:",
+        alternativas: [
+          "Um campo elétrico uniforme e um campo magnético nulo.",
+          "Um campo magnético, mas não produz campo elétrico.",
+          "Nem campo elétrico nem campo magnético, pois a corrente é constante.",
+          "Um campo elétrico variável que cancela o campo magnético.",
+          "Um campo gravitacional proporcional à corrente.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Corrente elétrica constante gera campo magnético ao redor do fio (Lei de " +
+          "Ampère). O fio em si não produz campo elétrico. Conteúdo direto de " +
+          "eletromagnetismo, do tipo que a Fuvest cobra na 1ª fase.",
+      },
+      {
+        area: "Biologia",
+        enunciado: "Segundo a teoria evolutiva, a seleção natural atua:",
+        alternativas: [
+          "Sobre os indivíduos, favorecendo características que aumentam a sobrevivência e a reprodução no ambiente.",
+          "Sobre as espécies inteiras, modificando todos os indivíduos ao mesmo tempo.",
+          "Apenas sobre as características hereditárias que são vantajosas em qualquer ambiente.",
+          "De forma direcionada, guiando os organismos em direção à perfeição.",
+          "Somente sobre as mutações que ocorrem durante a reprodução sexuada.",
+        ],
+        gabarito: 0,
+        comentario:
+          "A seleção natural atua sobre indivíduos (variação + ambiente). Não é " +
+          "direcionada nem visa a perfeição — é o erro clássico de quem confunde " +
+          "seleção natural com Lamarck ou com ideia de progresso.",
+      },
+      {
+        area: "Química",
+        enunciado: "Qual das substâncias a seguir é um ácido carboxílico?",
+        alternativas: [
+          "Etanol.",
+          "Metano.",
+          "Ácido etanoico (acético).",
+          "Etanal.",
+          "Éter dietílico.",
+        ],
+        gabarito: 2,
+        comentario:
+          "Ácido carboxílico = grupo -COOH. O ácido etanoico (acético) é o vinagre. " +
+          "Etanol é álcool, metano é hidrocarboneto, etanal é aldeído e éter dietílico " +
+          "é éter. A Fuvest cobra função orgânica pelo nome, sem fórmula.",
+      },
+      {
+        area: "Matemática",
+        enunciado: "A função f(x) = 2x + 3 é:",
+        alternativas: [
+          "Linear, com coeficiente angular 3.",
+          "Afim, com coeficiente angular 2 e coeficiente linear 3.",
+          "Quadrática, pois tem dois termos.",
+          "Exponencial, pois a variável está no expoente.",
+          "Inversa de y = 2x.",
+        ],
+        gabarito: 1,
+        comentario:
+          "f(x) = ax + b é função afim (linear quando b = 0). Aqui a = 2 (angular) e " +
+          "b = 3 (linear). Pegadinha: confundir linear com afim.",
+      },
+      {
+        area: "Linguagens",
+        enunciado:
+          "Na frase «O Brasil é um país de contrastes», a expressão «país de contrastes» " +
+          "constitui:",
+        alternativas: [
+          "Uma metáfora, pois compara o Brasil a algo sem usar como.",
+          "Um pleonasmo, pois repete a ideia de diversidade.",
+          "Uma ironia, pois o sentido real é o contrário do que se diz.",
+          "Uma hipérbole, pois exagera a realidade do país.",
+          "Um eufemismo, pois suaviza uma crítica.",
+        ],
+        gabarito: 0,
+        comentario:
+          "«País de contrastes» é metáfora (comparação implícita). A banca adora " +
+          "distinguir metáfora de hipérbole e eufemismo — três figuras parecidas, " +
+          "sentidos diferentes.",
+      },
+      {
+        area: "Sociologia",
+        enunciado:
+          "Na teoria de Karl Marx, a sociedade capitalista divide-se em duas classes " +
+          "sociais principais, definidas pela:",
+        alternativas: [
+          "Posição no mercado de trabalho e nível de renda.",
+          "Relação com os meios de produção: burguesia (proprietária) e proletariado (vendedor da força de trabalho).",
+          "Escolaridade e prestígio profissional.",
+          "Posse de bens de consumo e acesso a serviços.",
+          "Participação política e filiação partidária.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Para Marx, a divisão fundamental é pela relação com os meios de produção " +
+          "(donos x não-donos). Escolaridade e renda são critérios weberianos, não " +
+          "marxistas — pegadinha clássica de Fuvest.",
+      },
     ],
+
+literatura: {
+      edicao: "Lista da Fuvest 2026 (última confirmada neste material)",
+      aviso:
+        "A lista de obras obrigatórias muda TODO ANO. Esta é a lista da Fuvest 2026. " +
+        "Antes de estudar, confira a lista vigente no edital da edição em que você " +
+        "vai prestar — a deste material é da edição 2026.",
+      obras: [
+        {
+          titulo: "A teus pés",
+          autor: "Ana Cristina Cesar",
+          movimento: "Poesia contemporânea brasileira",
+          porQueCai: "Poesia marginal dos anos 1970. A banca cobra a voz feminina e a quebra de padrão.",
+        },
+        {
+          titulo: "Água viva",
+          autor: "Clarice Lispector",
+          movimento: "Modernismo brasileiro (2ª fase)",
+          porQueCai: "Narrativa de fluxo de consciência, sem enredo tradicional.",
+        },
+        {
+          titulo: "Campo geral",
+          autor: "Guimarães Rosa",
+          movimento: "Modernismo / regionalismo renovado",
+          porQueCai: "Infância, memória e o sertão. Linguagem inventiva.",
+        },
+        {
+          titulo: "Estrela absurda",
+          autor: "Mário de Andrade",
+          movimento: "Modernismo brasileiro (1ª fase)",
+          porQueCai: "Romance de formação e identidade nacional.",
+        },
+        {
+          titulo: "Mensagem",
+          autor: "Fernando Pessoa",
+          movimento: "Modernismo português",
+          porQueCai: "Único livro de poesia publicado em vida; mito do sebastianismo.",
+        },
+        {
+          titulo: "Nove noites",
+          autor: "Bernardo Carvalho",
+          movimento: "Literatura brasileira contemporânea",
+          porQueCai: "Ficção histórica: a Amazônia no ciclo da borracha.",
+        },
+        {
+          titulo: "O cortiço",
+          autor: "Aluísio Azevedo",
+          movimento: "Naturalismo",
+          porQueCai: "Naturalismo: determinismo, meio e multidão.",
+        },
+        {
+          titulo: "Quarto de despejo",
+          autor: "Carolina Maria de Jesus",
+          movimento: "Literatura marginal / documento",
+          porQueCai: "Diário da favela; voz feminina negra; documento social.",
+        },
+        {
+          titulo: "Sagarana",
+          autor: "Guimarães Rosa",
+          movimento: "Modernismo / regionalismo renovado",
+          porQueCai: "Contos do sertão; linguagem inventiva.",
+        },
+        {
+          titulo: "Toda a poesia",
+          autor: "Pablo Neruda",
+          movimento: "Poesia latino-americana",
+          porQueCai: "Obra completa do chileno; amor, política e natureza.",
+        },
+      ],
+    },
+
   },
 
   /* ======================================================================
@@ -809,6 +1017,136 @@ const VESTIBULARES = [
           "na 2ª fase, onde 6 das 10 questões discursivas do 1º dia são de " +
           "Língua Portuguesa e Literatura. Sem ler a lista, o candidato perde mais " +
           "da metade daquela prova.",
+      },
+{
+        area: "Interdisciplinar",
+        enunciado:
+          "Leia: «A transferência da corte portuguesa para o Brasil, em 1808, mudou a " +
+          "dinâmica política e territorial da América Portuguesa.» Considerando esse " +
+          "processo, é correto afirmar que:",
+        alternativas: [
+          "A vinda da corte transferiu o centro do poder colonial para o Rio de Janeiro, e em 1815 o Brasil foi elevado a Reino Unido a Portugal e Algarves.",
+          "A transferência da corte enfraqueceu o Brasil, que perdeu autonomia política e econômica.",
+          "O Rio de Janeiro deixou de ser capital do Brasil com a vinda da corte.",
+          "A corte se transferiu para o Brasil por pressão da Inglaterra, sem impacto na organização territorial.",
+          "O evento não alterou o estatuto colonial do Brasil, que permaneceu como colônia até 1822 com a mesma estrutura.",
+        ],
+        gabarito: 0,
+        comentario:
+          "1808 = corte no Rio; 1815 = Brasil vira Reino Unido (Portugal, Brasil e " +
+          "Algarves). História + Geopolítica: a banca ama cobrar essa data com a " +
+          "mudança de status.",
+      },
+      {
+        area: "Interdisciplinar",
+        enunciado:
+          "A chuva ácida é um fenômeno ambiental causado principalmente pela emissão " +
+          "de:",
+        alternativas: [
+          "Gás carbônico e vapor d'água, que acidificam naturalmente as nuvens.",
+          "Óxidos de enxofre e de nitrogênio, que reagem com a água atmosférica formando ácidos.",
+          "Metano e amônia, que elevam o pH das águas superficiais.",
+          "Oxigênio molecular, que oxida os componentes do solo.",
+          "Clorofluorcarbonos, que destroem o ozônio e acidificam a atmosfera.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Chuva ácida = SOx + NOx → ácidos sulfúrico e nítrico. Biologia (impacto " +
+          "ambiental) + Química (reação) na MESMA questão. Metano é gás de efeito " +
+          "estufa; CFC destrói ozônio — não acidifica.",
+      },
+      {
+        area: "Natureza",
+        enunciado: "Um objeto em queda livre, desprezando a resistência do ar, apresenta:",
+        alternativas: [
+          "Aceleração crescente e velocidade constante.",
+          "Aceleração constante e velocidade crescente.",
+          "Aceleração nula e velocidade constante.",
+          "Aceleração crescente e velocidade decrescente.",
+          "Aceleração constante e velocidade constante.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Queda livre: a = g (constante) e v = g·t (crescente). Conteúdo básico, mas " +
+          "a Unicamp cobra a associação entre aceleração e velocidade.",
+      },
+      {
+        area: "Matemática",
+        enunciado:
+          "Em uma urna, há 5 bolas vermelhas e 3 azuis. Retirando-se uma bola ao " +
+          "acaso, a probabilidade de ser azul é:",
+        alternativas: ["3/5", "3/8", "5/8", "3/2", "8/3"],
+        gabarito: 1,
+        comentario:
+          "P = 3 azuis / 8 totais = 3/8. A pegadinha é inverter ou somar errado — a " +
+          "Unicamp cobra probabilidade simples com distratores próximos.",
+      },
+      {
+        area: "Linguagens",
+        enunciado:
+          "No verso «Minha terra tem palmeiras, onde canta o sabiá», de Gonçalves " +
+          "Dias, a referência à terra natal como espaço de memórias e afetos é um " +
+          "recurso:",
+        alternativas: [
+          "Narrativo, pois descreve uma sequência de eventos.",
+          "Lírico, pois expressa a subjetividade e o sentimento do eu poético.",
+          "Dramático, pois apresenta diálogo entre personagens.",
+          "Satírico, pois ironiza a realidade do poeta.",
+          "Épico, pois narra feitos heroicos.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Lírico = subjetividade, sentimento, eu poético. Contrasta com narrativo " +
+          "(sequência) e épico (feitos). A Unicamp cobra gêneros literários com frequência.",
+      },
+      {
+        area: "Humanas",
+        enunciado:
+          "Para Hegel, o Estado é a realização da ética objetiva, e a liberdade só se " +
+          "efetiva quando o indivíduo:",
+        alternativas: [
+          "Obedece às leis por medo da punição.",
+          "Reconhece as leis como expressão da razão e do bem comum, integrando-se a elas.",
+          "Rejeita qualquer forma de autoridade como opressão.",
+          "Segue apenas seus interesses individuais, sem considerar a coletividade.",
+          "Delega todas as decisões a um líder absoluto.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Hegel: liberdade racional = reconhecer a lei como expressão da razão (ética " +
+          "objetiva), não como imposição. A alternativa A descreve Hobbes; a C, o " +
+          "anarquismo; a D, o liberalismo individualista.",
+      },
+      {
+        area: "Interdisciplinar",
+        enunciado: "O desmatamento da Amazônia afeta diretamente o ciclo da água porque:",
+        alternativas: [
+          "A floresta não contribui para a evapotranspiração, então a derrubada não altera o regime de chuvas.",
+          "A vegetação promove a evapotranspiração e a manutenção dos rios voadores; sua redução diminui a umidade e altera o clima regional.",
+          "A floresta amazônica não influencia o clima, apenas a biodiversidade.",
+          "O desmatamento aumenta a evapotranspiração, intensificando as chuvas.",
+          "A Amazônia não possui relação com os cursos d'água do país.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Geografia (rio voador, regime de chuvas) + Biologia (evapotranspiração). A " +
+          "Amazônia bombeia água para o resto do Brasil — a alternativa B é a única correta.",
+      },
+      {
+        area: "Redação",
+        enunciado:
+          "Na 1ª fase da Unicamp, a prova de Conhecimentos Gerais é:",
+        alternativas: [
+          "Dividida em quatro provas por área, como no ENEM.",
+          "Uma prova única de 72 questões, comum a todos os candidatos.",
+          "Composta por 10 questões discursivas e redação.",
+          "Apenas eliminatória, sem pontuação.",
+          "Obrigatória apenas para alguns cursos.",
+        ],
+        gabarito: 1,
+        comentario:
+          "Unicamp 1ª fase = 72 questões em UMA prova só, para todos. A pegadinha é " +
+          "lembrar que o ENEM divide por áreas — a Unicamp não.",
       },
     ],
   },

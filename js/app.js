@@ -1442,7 +1442,26 @@
         "</span></div>" +
         '<p class="texto-pequeno" style="margin:.5rem 0 0">' + esc(t.mudanca) + "</p></div>";
     });
-    h += "</div></div>";
+h += "</div></div>";
+
+    /* --- literatura obrigatória (quando a banca tem lista) --- */
+    if (v.literatura) {
+      h +=
+        '<div class="cartao" style="margin-bottom:1.5rem">' +
+        '<div class="secao-titulo"><h2>📚 Literatura obrigatória</h2></div>' +
+        '<p class="texto-pequeno" style="margin:0 0 .4rem">' + esc(v.literatura.edicao) + "</p>" +
+        alerta("erro", v.literatura.aviso) +
+        '<div class="grade grade-3" style="margin-top:1rem">';
+      v.literatura.obras.forEach((o) => {
+        h +=
+          '<div class="cartao" style="background:var(--surface);border-left:2px solid var(--magenta)">' +
+          '<h3 style="margin:0 0 .2rem;font-size:.95rem">' + esc(o.titulo) + "</h3>" +
+          '<p class="texto-pequeno" style="margin:0 0 .2rem"><strong>' + esc(o.autor) + "</strong></p>" +
+          '<p class="texto-pequeno" style="margin:0 0 .5rem;color:var(--violeta-texto)">' + esc(o.movimento) + "</p>" +
+          '<p class="texto-pequeno" style="margin:0">' + esc(o.porQueCai) + "</p></div>";
+      });
+      h += "</div></div>";
+    }
 
     /* --- textos --- */
     if (v.textos && v.textos.length) {
