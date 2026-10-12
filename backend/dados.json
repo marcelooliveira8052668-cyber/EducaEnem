@@ -1,0 +1,65 @@
+{
+  "usuarios": [
+    {
+      "id": "u-prof",
+      "nome": "Prof. Marcelo Oliveira",
+      "login": "marcelo",
+      "senha": "s03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "papel": "professor",
+      "email": "marcelo.oliveira@educaenem.com",
+      "turma": null,
+      "criadoEm": "2026-10-11T11:50:09.386Z"
+    },
+    {
+      "id": "u-aluno-1",
+      "nome": "Ana Beatriz Souza",
+      "login": "ana",
+      "senha": "s03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "papel": "aluno",
+      "email": "ana.souza@aluno.educaenem.com",
+      "turma": "EM3-A",
+      "criadoEm": "2026-10-11T11:50:09.386Z"
+    }
+  ],
+  "notas": [
+    {
+      "id": "nota-mv3rhlk7wnn0s",
+      "dataISO": "2026-10-11T11:50:31.783Z",
+      "lancadoPor": "u-prof",
+      "alunoId": "u-aluno-1",
+      "disciplina": "fisica",
+      "trimestre": 1,
+      "tipo": "prova",
+      "valor": 9.5,
+      "descricao": "Prova da ponte"
+    },
+    {
+      "id": "nota-mv3rnj1aprudi",
+      "dataISO": "2026-10-11T11:55:08.446Z",
+      "lancadoPor": "u-prof",
+      "alunoId": "u-aluno-1",
+      "disciplina": "quimica",
+      "trimestre": 2,
+      "tipo": "prova",
+      "valor": 9,
+      "descricao": "Teste api"
+    }
+  ],
+  "submissoes": [
+    {
+      "id": "sub-mv3rnniknuz7h",
+      "dataISO": "2026-10-11T11:55:14.252Z",
+      "alunoId": "u-aluno-1",
+      "tipo": "atividade",
+      "titulo": "Api X",
+      "respostas": [],
+      "acertos": 2,
+      "total": 2,
+      "nota": 6
+    }
+  ],
+  "pedidos": [],
+  "textos": [],
+  "aulas": [],
+  "provas": []
+}
