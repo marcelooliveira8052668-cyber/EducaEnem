@@ -34,6 +34,9 @@
   /** Rótulo da cota do plano grátis — vem de js/config.js → plano.gratis.cotas. */
   function rotuloCotasGratis() {
     const c = (CFG.plano && CFG.plano.gratis && CFG.plano.gratis.cotas) || {};
+    const q = Number(c.questoes) || 0;
+    const a = Number(c.aulas) || 0;
+    if (q >= 99999 && a >= 99999) return "Ilimitado (plano grátis)";
     return (Number(c.aulas) || 0) + " aulas e " + (Number(c.questoes) || 0) + " questões por mês";
   }
 
@@ -44,11 +47,10 @@
 
     document.querySelectorAll("[data-cfg-preco]").forEach((el) => {
       const qual = el.getAttribute("data-cfg-preco");
-      if (qual === "curso") el.textContent = dinheiro(PRECOS.curso);
+      if (qual === "curso") el.textContent = dinheiro(PRECOS.curso === 0 ? 0 : PRECOS.curso);
       else if (qual === "disciplina") el.textContent = dinheiro(PRECOS.disciplina);
-      else if (qual === "area-minima")
-        el.textContent =
-          "a partir de " + dinheiro(valoresArea.length ? Math.min.apply(null, valoresArea) : 0);
+      else if (qual === "area-minina") el.textContent =
+        "a partir de " + dinheiro(valoresArea.length ? Math.min.apply(null, valoresArea) : 0);
     });
 
     document.querySelectorAll("[data-cfg-texto]").forEach((el) => {

@@ -37,19 +37,20 @@ window.EDUCA_CONFIG = {
 
   /* ---------------------------------------------------------------------------
      3. PREÇOS DO CURSO (em reais)
-     Pensados para caber no bolso de quem estuda em escola pública.
-     Troque os valores aqui e o site inteiro (landing + loja) se atualiza.
+     -- VALORES DEIXADOS EM ZERO PARA PLANO GRÁTIS --
+     O site funciona 100% no modo gratuito. Quem quiser contribuir ou
+     apoiar o projeto pode entrar em contato pelo e-mail institucional.
      --------------------------------------------------------------------------- */
   precos: {
-    curso: 97, // pacote completo (todas as disciplinas, o ano inteiro)
+    curso: 0, // pacote completo (todas as disciplinas, o ano inteiro)
     porArea: {
-      natureza: 39,
-      matematica: 39,
-      linguagens: 39,
-      humanas: 39,
+      natureza: 0,
+      matematica: 0,
+      linguagens: 0,
+      humanas: 0,
     },
-    disciplina: 9.9, // valor de cada disciplina avulsa
-    aula: 1.9, // valor de UMA aula/conteúdo avulso (compre só o que precisa)
+    disciplina: 0, // valor de cada disciplina avulsa
+    aula: 0, // valor de UMA aula/conteúdo avulso (compre só o que precisa)
   },
 
   /* Cupons de desconto: código -> fração (0.1 = 10%) */

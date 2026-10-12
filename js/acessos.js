@@ -16,14 +16,15 @@ window.Acessos = (function () {
   "use strict";
 
   const CFG = (window.EDUCA_CONFIG && window.EDUCA_CONFIG.plano) || {};
-  const GRATIS = Object.assign({ ativo: true, cotas: { questoes: 60, aulas: 20 } }, CFG.gratis || {});
+  // Planos ilimitados -- tudo gratuito, sem cotas
+  const GRATIS = Object.assign({ ativo: true, cotas: { questoes: 999999, aulas: 999999 } }, CFG.gratis || {});
   const MSG = Object.assign(
     {
-      titulo: "Você chegou ao limite do plano grátis",
+      titulo: "Plano grátis ativo",
       corpo:
-        "Seu plano grátis deste mês foi usado. Com o curso completo você estuda sem limite, o ano inteiro.",
-      cta: "Ver planos e preços",
-      semConta: "Crie sua conta grátis e comece a estudar agora.",
+        "Você está no plano gratuito com acesso ilimitado a todos os conteúdos. Sem limite de questões ou aulas por mês.",
+      cta: "Continuar estudando",
+      semConta: "Acesse o curso grátis",
     },
     CFG.mensagens || {}
   );
