@@ -3286,6 +3286,89 @@
     window.scrollTo(0, 0);
   }
 
+  /* ------------------------------------------------------------------
+     PAINEL DA CAPA (index.html) — lê os MESMOS dados do painel real.
+     Nenhum número aqui é de demonstração: quem chega sem conta começa
+     zerado (0%, sem nota, sem sequência) e só sobe quando o próprio
+     aluno estuda. Dentro do app o cálculo usado é este mesmo.
+     ------------------------------------------------------------------ */
+  function diasSeguidos(alunoId) {
+    if (!Store.progressoDe) return 0;
+    const dias = new Set();
+    Store.progressoDe(alunoId).forEach((p) => {
+      if (p && p.em) dias.add(String(p.em).slice(0, 10));
+    });
+    if (!dias.size) return 0;
+    let n = 0;
+    const d = new Date();
+    if (!dias.has(d.toISOString().slice(0, 10))) d.setUTCDate(d.getUTCDate() - 1);
+    while (dias.has(d.toISOString().slice(0, 10)) && n < 3650) {
+      n++;
+      d.setUTCDate(d.getUTCDate() - 1);
+    }
+    return n;
+  }
+
+  function atualizarPainelCapa() {
+    const set = (id, txt) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = txt;
+    };
+    const pctDe = (feitos, total) =>
+      total > 0 ? Math.min(100, Math.round((feitos / total) * 100)) : 0;
+
+    const user = Store.usuarioAtual();
+    const id = user ? user.id : null;
+    const prg = id ? progressoDoAluno(id) : null;
+    const media = id ? Store.mediaGeral(id) : null;
+
+    const pct = prg ? prg.pct : 0;
+    set("hv-pct", String(pct));
+    const anel = document.querySelector(".hv-anel");
+    if (anel) anel.style.setProperty("--pct", pct + "%");
+
+    set("hv-media", fmtNota(media));
+    set("hv-meta-txt", media === null || media === undefined ? "sem nota ainda" : "geral");
+
+    const barras = prg
+      ? [
+          ["textos", prg.textos, prg.totalTextos],
+          ["atividades", prg.atividades, prg.totalAtividades],
+          ["vestibulares", prg.vestibulares, prg.totalVestibulares],
+        ]
+      : [
+          ["textos", 0, 0],
+          ["atividades", 0, 0],
+          ["vestibulares", 0, 0],
+        ];
+    barras.forEach((l) => {
+      const p = pctDe(l[1], l[2]);
+      const b = document.getElementById("hv-b-" + l[0]);
+      if (b) b.style.setProperty("--p", p + "%");
+      set("hv-v-" + l[0], p + "%");
+    });
+
+    const dias = id ? diasSeguidos(id) : 0;
+    set(
+      "hv-seq",
+      dias > 0
+        ? "\uD83D\uDD25 " + dias + (dias === 1 ? " dia seguido" : " dias seguidos")
+        : "\uD83D\uDD25 Comece hoje"
+    );
+
+    const elSit = document.getElementById("hv-sit");
+    if (elSit) {
+      if (!user) {
+        elSit.textContent = "\u2713 Crie sua conta gr\u00e1tis";
+        elSit.className = "hv-ok";
+      } else {
+        const sit = Store.situacao(media);
+        elSit.textContent = "\u2713 " + sit.rotulo;
+        elSit.className = sit.rotulo === "Aprovado" ? "hv-ok" : "";
+      }
+    }
+  }
+
   /* ======================= LANDING ======================= */
   function renderLanding() {
     const disc = unir(window.DISCIPLINAS);
@@ -3302,6 +3385,7 @@
     stat("stat-questoes", (window.SIMULADO_QUESTOES || []).length);
     stat("stat-textos", todosTextos().length);
     stat("stat-vestibulares", (window.VESTIBULARES || []).length);
+    atualizarPainelCapa(); // painel da capa com dados reais (zerado p/ visitante)
 
     const boxAreas = document.getElementById("landing-areas");
     boxAreas.innerHTML = areas
@@ -3389,6 +3473,14 @@
       '<div class="campo"><label for="cd-login">Usuário</label><input id="cd-login" type="text" placeholder="escolha um usuário de acesso" autocomplete="username" required></div>' +
       '<div class="campo"><label for="cd-email">E-mail (opcional)</label><input id="cd-email" type="email" placeholder="seu@email.com" autocomplete="email"></div>' +
       '<div class="campo"><label for="cd-senha">Senha</label><input id="cd-senha" type="password" placeholder="mínimo de 3 caracteres" autocomplete="new-password" required></div>' +
+      '<div class="campo"><label id="cd-papel-rotulo">Eu sou</label>' +
+      '<div class="papel-escolha" role="group" aria-labelledby="cd-papel-rotulo">' +
+      '<button type="button" class="papel-btn ativo" data-papel="aluno">\uD83C\uDF93 Aluno</button>' +
+      '<button type="button" class="papel-btn" data-papel="professor">\uD83D\uDC68\u200D\uD83C\uDFEB Professor</button>' +
+      "</div>" +
+      '<input type="hidden" id="cd-papel" value="aluno">' +
+      '<p class="texto-pequeno" id="cd-papel-ajuda" style="margin:.4rem 0 0">' +
+      "Estude no seu ritmo com as trilhas, simulados e atividades do ENEM.</p></div>" +
       '<button class="btn btn-accent btn-grande btn-bloco" type="submit">Criar minha conta grátis</button>' +
       "</form>" +
       '<button class="btn btn-fantasma btn-bloco" type="button" id="btn-ja-tenho" style="margin-top:.5rem">← Já tenho conta</button>' +
@@ -3396,11 +3488,6 @@
       brlCurso +
       "</strong> à vista no Pix.</p>" +
       "</div>" +
-      '<div class="demo-contas"><div class="demo-linha"><span>👨‍🏫 <strong>Professor</strong><br><code>marcelo</code> / <code>1234</code></span>' +
-      '<button type="button" data-demo="marcelo">Usar</button></div>' +
-      '<div class="demo-linha"><span>🎓 <strong>Aluno</strong><br><code>ana</code> / <code>1234</code></span>' +
-      '<button type="button" data-demo="ana">Usar</button></div></div>' +
-      '<p class="texto-pequeno" style="margin-top:.5rem">Contas de demonstração. O professor cadastra alunos em <em>Alunos</em>.</p>' +
       '<a class="texto-pequeno" href="#/">← Voltar ao site</a>' +
       "</div></div></div>";
 
@@ -3434,14 +3521,6 @@
       });
     });
 
-    $login.querySelectorAll("[data-demo]").forEach((b) =>
-      b.addEventListener("click", () => {
-        document.getElementById("lg-user").value = b.getAttribute("data-demo");
-        document.getElementById("lg-pass").value = "1234";
-        document.getElementById("form-login").dispatchEvent(new Event("submit", { cancelable: true }));
-      })
-    );
-
     /* ---------- PLANO GRÁTIS: alternar entre "Entrar" e "Criar conta" ---------- */
     const $cad = document.getElementById("cadastro-area");
     const alternarCadastro = (sim) => {
@@ -3449,8 +3528,6 @@
       $cad.style.display = sim ? "block" : "none";
       const formL = document.getElementById("form-login");
       if (formL) formL.style.display = sim ? "none" : "block";
-      const demo = $login.querySelector(".demo-contas");
-      if (demo) demo.style.display = sim ? "none" : "";
       const btnCriar = document.getElementById("btn-criar-conta");
       if (btnCriar) {
         btnCriar.style.display = sim ? "none" : "";
@@ -3465,6 +3542,23 @@
         if (nome) nome.focus();
       }
     };
+
+    /* ---------- cadastro: a pessoa escolhe ser ALUNO ou PROFESSOR ---------- */
+    const ajudaPapel = {
+      aluno: "Estude no seu ritmo com as trilhas, simulados e atividades do ENEM.",
+      professor: "Crie turmas, cadastre alunos e acompanhe notas e médias.",
+    };
+    $login.querySelectorAll(".papel-btn").forEach((b) => {
+      b.addEventListener("click", () => {
+        $login.querySelectorAll(".papel-btn").forEach((x) => x.classList.remove("ativo"));
+        b.classList.add("ativo");
+        const papel = b.getAttribute("data-papel");
+        const campo = document.getElementById("cd-papel");
+        if (campo) campo.value = papel;
+        const ajuda = document.getElementById("cd-papel-ajuda");
+        if (ajuda) ajuda.textContent = ajudaPapel[papel] || ajudaPapel.aluno;
+      });
+    });
 
     const btnCriarConta = document.getElementById("btn-criar-conta");
     if (btnCriarConta) btnCriarConta.addEventListener("click", () => alternarCadastro(true));
@@ -3481,7 +3575,10 @@
           login: document.getElementById("cd-login").value.trim(),
           email: document.getElementById("cd-email").value.trim(),
           senha: document.getElementById("cd-senha").value,
-          papel: "aluno",
+          papel:
+            (document.getElementById("cd-papel") || { value: "aluno" }).value === "professor"
+              ? "professor"
+              : "aluno",
         };
         const btn = formCad.querySelector('button[type="submit"]');
         const textoBtn = btn ? btn.textContent : "";

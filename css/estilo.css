@@ -1088,6 +1088,37 @@ h1.arte-titulo {
   text-shadow: 0 0 12px rgba(184, 255, 77, 0.5);
 }
 
+/* ---------- Cadastro: escolha de papel (aluno x professor) ---------- */
+.papel-escolha {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.papel-btn {
+  border: 2px solid var(--borda);
+  background: var(--bg-0);
+  color: var(--texto-2);
+  border-radius: var(--r-md);
+  padding: 0.7rem 0.45rem;
+  font-family: var(--fonte-mono);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: var(--transicao);
+}
+.papel-btn:hover {
+  border-color: var(--violeta-forte);
+  color: var(--texto);
+}
+/* Ativo: branco sobre L<=0.10 = 7:1 (WCAG AAA) */
+.papel-btn.ativo {
+  border-color: var(--violeta-forte);
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
+  color: #fff;
+}
+
 .demo-contas {
   background: rgba(15, 23, 42, 0.04);
   border: 1px dashed var(--borda-forte);
@@ -2008,9 +2039,10 @@ h1.arte-titulo {
   border-radius: 50%;
   display: grid;
   place-items: center;
+  /* --pct (0..100%) vem do JS com o progresso REAL do aluno. */
   background: conic-gradient(
-    var(--neon) 0deg 280deg,
-    rgba(15, 23, 42, 0.08) 280deg 360deg
+    var(--neon) 0deg var(--pct, 0%),
+    rgba(15, 23, 42, 0.08) var(--pct, 0%) 360deg
   );
   box-shadow: 0 0 36px rgba(184, 255, 77, 0.28);
 }
@@ -2073,7 +2105,7 @@ h1.arte-titulo {
 }
 .hv-linha {
   display: grid;
-  grid-template-columns: 74px 1fr 32px;
+  grid-template-columns: 90px 1fr 34px;
   align-items: center;
   gap: 0.6rem;
 }
