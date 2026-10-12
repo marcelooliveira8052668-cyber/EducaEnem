@@ -53,8 +53,9 @@ const ATIVIDADES_MAT = [
         enunciado:
           "Uma corrida de táxi custa R$ 5,00 (bandeirada) mais R$ 2,20 por km. Qual o valor de uma corrida de 8 km?",
         alternativas: ["R$ 17,60", "R$ 21,60", "R$ 23,60", "R$ 16,60", "R$ 22,60"],
-        correta: 2,
-        comentario: "f(km) = 5 + 2,2·km → 5 + 2,2×8 = 5 + 17,6 = R$ 22,60.",
+        correta: 4,
+        comentario:
+          "f(km) = 5 + 2,2·km → 5 + 2,2×8 = 5 + 17,6 = R$ 22,60. A bandeirada é contada uma única vez; o distrator R$ 17,60 é só a parte variável (2,2 × 8), sem a taxa fixa.",
       },
     ],
   },
@@ -136,14 +137,14 @@ const ATIVIDADES_LING = [
           "Na redação do ENEM, a proposta de intervenção deve apresentar, obrigatoriamente:",
         alternativas: [
           "Apenas o agente que resolverá o problema.",
-          "Agente, ação, modo/meio, efeito e finalidade.",
+          "Agente, ação, modo/meio, efeito e detalhamento.",
           "Somente dados estatísticos do IBGE.",
           "Uma opinião pessoal sem detalhamento.",
           "Apenas o efeito esperado da ação.",
         ],
         correta: 1,
         comentario:
-          "A proposta completa detalha quem age (agente), o que faz (ação), como (modo), para que (efeito/finalidade), respeitando os direitos humanos.",
+          "A proposta completa detalha quem age (agente), o que faz (ação), como (modo/meio), o que se pretende obter (efeito/finalidade) e detalhes que especificam a ação (detalhamento), respeitando os direitos humanos.",
       },
       {
         enunciado: "O 'repertório sociocultural' na redação serve para:",
@@ -236,7 +237,7 @@ const ATIVIDADES_HUM = [
         ],
         correta: 0,
         comentario:
-          "A democracia ateniense era direta: os cidadãos (homens livres atenienses) deliberavam pessoalmente na Ágora.",
+          "A democracia ateniense era direta: os cidadãos (homens atenienses, maiores de idade, de pai e mãe atenienses) deliberavam pessoalmente na Eclésia, assembleia que se reunia no Pnyx; a Ágora era o espaço de comércio e circulação da cidade.",
       },
       {
         enunciado: "As lutas dos plebeus em Roma resultaram na criação da/o:",

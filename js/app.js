@@ -1406,7 +1406,7 @@
       '<span class="badge badge-violeta">' + esc(v.redacao.vale) + "</span></div>" +
       '<p style="margin:0 0 1rem">' + esc(v.redacao.formato) + "</p>" +
       '<div class="cartao" style="background:var(--surface);margin-bottom:1rem">' +
-      '<strong style="color:var(--magenta)">⚠️ O que NÃO vale aqui (e o aluno do ENEM acha que vale):</strong>' +
+      '<strong style="color:var(--magenta-texto)">⚠️ O que NÃO vale aqui (e o aluno do ENEM acha que vale):</strong>' +
       '<ul class="lista-check">';
     v.redacao.diferencas.forEach((d) => {
       h += "<li>" + esc(d) + "</li>";

@@ -52,18 +52,18 @@
       }
       .plano-desc {
         font-size: 0.85rem;
-        color: var(--texto-suave, rgba(242, 245, 255, 0.72));
+        color: var(--texto-2);
         min-height: 2.6em;
       }
       .plano-preco {
         font-family: var(--fonte-display);
         font-size: 2rem;
         line-height: 1;
-        color: var(--neon);
+        color: var(--neon-texto);
       }
       .plano-preco small {
         font-size: 0.8rem;
-        color: var(--texto-suave, rgba(242, 245, 255, 0.6));
+        color: var(--texto-2);
         font-family: var(--fonte);
       }
       .selo-destaque {
@@ -97,7 +97,7 @@
       }
       .faq p {
         margin: 0.6rem 0 0;
-        color: var(--texto-suave, rgba(242, 245, 255, 0.8));
+        color: var(--texto-2);
       }
       /* barra flutuante do carrinho */
       .barra-carrinho {
@@ -242,10 +242,10 @@
       }
       .conta-box code {
         font-family: var(--fonte-mono);
-        color: var(--neon);
+        color: var(--neon-texto);
       }
       .link-voltar {
-        color: var(--texto-suave, rgba(242, 245, 255, 0.7));
+        color: var(--texto-2);
         text-decoration: none;
         font-size: 0.9rem;
       }
@@ -1026,6 +1026,20 @@
         /* ---------- ajustes de formulário ---------- */
         mascaraCpf($("#ck-cpf"));
         mascaraZap($("#ck-zap"));
+
+        /* O aviso de erro não espera o próximo clique: ele se atualiza sozinho
+           assim que o aluno corrige o campo (e some quando tudo fica válido). */
+        ["#ck-nome", "#ck-email", "#ck-cpf", "#ck-zap", "#ck-termos"].forEach((sel) => {
+          const campo = $(sel);
+          if (!campo) return;
+          const reavaliar = () => {
+            const erro = $("#checkout-erro");
+            if (!erro || erro.style.display !== "block") return; // só se já houver aviso
+            validarCheckout();
+          };
+          campo.addEventListener("input", reavaliar);
+          campo.addEventListener("change", reavaliar);
+        });
 
         /* ---------- compra rápida (chegou de uma aula bloqueada) ----------
            curso.html?item=aula:<id>&nome=<título>&disc=<disciplina>

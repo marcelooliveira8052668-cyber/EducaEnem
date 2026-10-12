@@ -28,7 +28,7 @@ const QUESTOES_EXTRA_1 = [
   },
   {
     "disciplina": "Matemática - Função do 1º grau",
-    "enunciado": "Uma empresa de telefonha cobra R$ 0,60 por minuto de ligação mais uma taxa fixa de R$ 12,00 mensais. Qual expressão representa o valor total pago, em reais, por um cliente que fala x minutos no mês?",
+    "enunciado": "Uma empresa de telefonia cobra R$ 0,60 por minuto de ligação mais uma taxa fixa de R$ 12,00 mensais. Qual expressão representa o valor total pago, em reais, por um cliente que fala x minutos no mês?",
     "alternativas": [
       "12x + 0,60",
       "0,60x + 12",
@@ -258,7 +258,7 @@ const QUESTOES_EXTRA_1 = [
       "Na descrição heroica das batalhas do Império."
     ],
     "correta": 1,
-    "comentario": "Machado inova com o narrador defunto, a ironia e a metalinguagem. Em 'Dom Casmurro', a ambiguidade sobre Capitu mostra como o narrador manipula o relato — o livro é sobre o ciúme e a dúvida."
+    "comentario": "Machado inova com o narrador defunto — que escreve «de além-túmulo» —, com a ironia e com a metalinguagem: o próprio ato de escrever e as dúvidas sobre a veracidade do relato tornam-se parte da obra, rompendo com a linearidade realista."
   },
   {
     "disciplina": "História - Grécia Antiga",
@@ -661,7 +661,7 @@ const QUESTOES_EXTRA_1 = [
       "Financiará os custos sozinho e em segredo."
     ],
     "correta": 1,
-    "comentario": "'Actually' significa 'na verdade', não 'atualmente'. 'Pushed for' significa 'pressionou a favor de', não 'empurrou'. Ambos são falsos cognatos clássicos do ENEM."
+    "comentario": "'Actually' significa 'na verdade', não 'atualmente'. 'Pushed for' é um phrasal verb que significa 'pressionou a favor de' (e não 'empurrou'). 'Actually', sim, é um falso cognato clássico do ENEM, muito cobrado na prova."
   },
   {
     "disciplina": "Inglês - Conectores",
@@ -733,7 +733,7 @@ const QUESTOES_EXTRA_1 = [
     "enunciado": "A palavra espanhola 'largo' significa:",
     "alternativas": [
       "Largo (largura).",
-      "Comprido (extensno).",
+      "Comprido (extenso).",
       "Demorado.",
       "Apertado.",
       "Pesado."

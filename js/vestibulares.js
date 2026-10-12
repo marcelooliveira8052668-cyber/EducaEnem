@@ -298,7 +298,7 @@ const VESTIBULARES = [
           "Questão clássica de Fuvest: cobra o CONCEITO, não a interpretação.",
       },
       {
-        area: "Filosofia",
+        area: "Sociologia",
         enunciado:
           "Para Durkheim, a solidariedade social que predomina nas sociedades " +
           "industriais complexas, baseada na diferenciação dos indivíduos e na " +
@@ -332,8 +332,9 @@ const VESTIBULARES = [
       {
         area: "História",
         enunciado:
-          "A Política do Leite Condensado, adotada pelo governo brasileiro durante " +
-          "a Primeira Guerra Mundial, tinha como objetivo principal:",
+          "Durante a Primeira Guerra Mundial, com o corte dos fornecedores europeus, " +
+          "gêneros importados faltaram no mercado interno brasileiro. A reação " +
+          "econômica a esse quadro teve como objetivo principal:",
         alternativas: [
           "Substituir o café brasileiro pelo leite condensado na pauta de exportação.",
           "Incentivar a produção de café no Vale do Paraíba.",
@@ -343,9 +344,10 @@ const VESTIBULARES = [
         ],
         gabarito: 2,
         comentario:
-          "Com o corte dos fornecedores europeus, o Brasil faltou de gêneros de " +
-          "consumo. O governo produzia e vendia leite condensado para substituir o " +
-          "que não chegava e segurar os preços. História com DATA e CONTEXTO — estilo Fuvest.",
+          "Com o corte dos fornecedores europeus, ao Brasil faltaram gêneros importados. " +
+          "A produção interna cresceu para substituir o que não chegava e conter " +
+          "a alta dos preços; o país, em meio à carestia, declarou guerra à " +
+          "Alemanha em outubro de 1917. História com DATA e CONTEXTO — estilo Fuvest.",
       },
       {
         area: "Matemática",
@@ -723,8 +725,9 @@ const VESTIBULARES = [
         ],
         gabarito: 1,
         comentario:
-          "Ação racional = meios e fins calculados conscientemente. As alternativas " +
-          "A, C e D descrevem as ações tradicionais, afetivas e valorativas de Weber.",
+          "Ação racional = meios e fins calculados conscientemente. A alternativa C descreve a ação tradicional, " +
+          "a D, a ação afetiva, e a E, a ação valorativa; a A combina emoção " +
+          "e tradição sem cálculo de meios e fins.",
       },
       {
         area: "Linguagens",
@@ -765,10 +768,13 @@ const VESTIBULARES = [
           "Um gráfico mostra que, ao dobrar o valor de x, o valor de y também dobra. " +
           "Esse comportamento corresponde a uma função:",
         alternativas: ["Linear.", "Quadrática.", "Exponencial.", "Senoidal.", "Inversa."],
-        gabarito: 2,
+        gabarito: 0,
         comentario:
-          "Dobrar a entrada dobra a saída → propriedade característica da exponencial " +
-          "de base 2. Questão de interpretação de gráfico, típica da 1ª fase.",
+          "Se, ao dobrar o valor de x, o valor de y também dobra, a relação é de " +
+          "proporcionalidade direta: y = k · x, isto é, função linear que passa " +
+          "pela origem. Na exponencial y = bˣ, o que multiplica a saída é um acréscimo " +
+          "constante de x (em y = 2ˣ, de x = 2 para x = 4, y vai de 4 para 16). " +
+          "Questão de interpretação de gráfico, típica da 1ª fase.",
       },
       {
         area: "Redação",
@@ -791,7 +797,7 @@ const VESTIBULARES = [
         enunciado:
           "Na lista de literatura da Unicamp, as obras são exigidas principalmente em:",
         alternativas: [
-          "Na 1ª fase, em questões de múltipla escolha.",
+          "Exclusivamente na 1ª fase, em questões de múltipla escolha.",
           "Nas 6 questões discursivas de Língua Portuguesa e Literatura do 1º dia da 2ª fase.",
           "Na redação do 1º dia, como repertório obrigatório.",
           "No 2º dia da 2ª fase, nas questões específicas do curso.",
@@ -799,8 +805,10 @@ const VESTIBULARES = [
         ],
         gabarito: 1,
         comentario:
-          "São 6 das 10 questões discursivas do 1º dia. Sem ler a lista, o candidato " +
-          "perde mais da metade daquela prova.",
+          "As obras da lista caem nas duas fases: na 1ª fase, em questões objetivas, e " +
+          "na 2ª fase, onde 6 das 10 questões discursivas do 1º dia são de " +
+          "Língua Portuguesa e Literatura. Sem ler a lista, o candidato perde mais " +
+          "da metade daquela prova.",
       },
     ],
   },

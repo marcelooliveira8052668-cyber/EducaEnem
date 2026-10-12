@@ -28,7 +28,7 @@ window.Loja = (() => {
     {
       chave: "pix@educaenem.com",
       beneficiario: "MARCELO OLIVEIRA",
-      cidade: "SAO PAULO",
+      cidade: "SÃO PAULO",
       whatsapp: "5511999999999",
       expiracaoMin: 30,
     },

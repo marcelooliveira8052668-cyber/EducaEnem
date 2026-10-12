@@ -31,7 +31,7 @@ window.EDUCA_CONFIG = {
   pix: {
     chave: "pix@educaenem.com", // e-mail, telefone (+55...), CPF/CNPJ ou chave aleatória
     beneficiario: "MARCELO OLIVEIRA", // nome do recebedor (máx. 25 caracteres)
-    cidade: "SAO PAULO", // cidade do recebedor (máx. 25 caracteres)
+    cidade: "SÃO PAULO", // cidade do recebedor (máx. 25 caracteres)
     expiracaoMin: 30, // validade exibida do QR Code (minutos)
   },
 

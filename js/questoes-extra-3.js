@@ -470,7 +470,7 @@ const QUESTOES_EXTRA_3 = [
 },
 {
   disciplina: "Literatura - Modernismo (Unicamp)",
-  enunciado: "O poema Os Sapos, de Manuel Bandeira, lido na chave da poesia modernista de 1922, representa uma crítica:",
+  enunciado: "O poema Os Sapos, de Olavo Bilac, lido em tom de sátira durante a Semana de Arte Moderna de 1922, representa uma crítica:",
   alternativas: [
     "ao parnasianismo brasileiro, exclusivamente por seu rigor métrico, e ao uso obrigatório do soneto na lírica moderna.",
     "ao academicismo e ao euforismo oficial que produziam uma poesia vazia de sentido, repetidora de modelos importados e de fácil reconhecimento público.",
@@ -479,7 +479,7 @@ const QUESTOES_EXTRA_3 = [
     "à linguagem coloquial, que o poeta considera incompatível com a seriedade da grande poesia."
   ],
   correta: 1,
-  comentario: "Os sapos evocam os poetas acadêmicos, a vaidade das tertúlias e a poesia que se satisfaz na própria pose, sem contato com a vida. A crítica modernista dirige-se, portanto, ao anquilosamento das academias e ao falso lirismo, e não à métrica em si. A segunda alternativa é a correta. A primeira reduz a crítica à forma, quando ela é, sobretudo, de conteúdo e de atitude. A terceira é absurda, pois Bandeira não nega a métrica, apenas recusa a obrigatoriedade. A quarta desloca o alvo da sátira. A quinta é o contrário do que o poema defende."
+  comentario: "Os sapos evocam os poetas acadêmicos, a vaidade das tertúlias e a poesia que se satisfaz na própria pose, sem contato com a vida. A crítica modernista dirige-se, portanto, ao anquilosamento das academias e ao falso lirismo, e não à métrica em si. A segunda alternativa é a correta. A primeira reduz a crítica à forma, quando ela é, sobretudo, de conteúdo e de atitude. A terceira é absurda: o poema não defende a ausência de métrica — ele é metricamente regular —, apenas satiriza o uso vazio que os poetas acadêmicos faziam dela. A quarta desloca o alvo da sátira. A quinta é o contrário do que o poema defende."
 },
 {
   disciplina: "Literatura - Romantismo (Fuvest)",
@@ -505,7 +505,7 @@ const QUESTOES_EXTRA_3 = [
     "na adoção de uma linguagem exclusivamente popular, isenta de influências clássicas e religiosas."
   ],
   correta: 3,
-  comentario: "O Barroco vive do dilema entre o ser e o parecer, entre o pecado e a graça. O cultismo explora a sonoridade e a imagem, enquanto o conceptismo explora a construção lógica e o conceito engenhoso. A quarta alternativa é a correta. A primeira descreve o ideal clássico do Arcadismo. A segunda confunde forma com estilo, pois o soneto existe no Barroco, mas não esgota a estética. A terceira é falsa, já que a tensão religiosa é central, como nos Sermões de Vieira. A quinta é absurda, porque o Barroco é fortemente erudito e rebuscado."
+  comentario: "O Barroco vive do dilema entre o ser e o parecer, entre o pecado e a graça. O cultismo explora a sonoridade e a imagem, enquanto o conceptismo explora a construção lógica e o conceito engenhoso. A quarta alternativa é a correta: o Barroco vive justamente do jogo entre a exuberância formal e o raciocínio em conceitos engenhosos. A primeira é falsa, porque o Barroco é erudito e rebuscado, e não isento de influências clássicas e religiosas. A segunda é incompatível com a estética barroca, que cultiva o exagero, o pormenor e o jogo de palavras, e não a simplicidade sintática. A terceira é falsa, pois o Barroco não se resume ao soneto regular e faz amplo uso de figuras de linguagem. A quinta é absurda, porque a tensão religiosa é central no Barroco, como nos Sermões de Vieira."
 },
 {
   disciplina: "Literatura - Realismo (ENEM)",
@@ -531,7 +531,7 @@ const QUESTOES_EXTRA_3 = [
     "conativa ou apelativa, dirigida diretamente ao destinatário."
   ],
   correta: 0,
-  comentario: "A função fática privilegia o canal: expressões de contato, como as saudações e as perguntas sobre se a mensagem está sendo ouvida, servem para verificar se a comunicação é possível. A primeira alternativa é a correta. A segunda centra-se no remetente. A terceira centra-se no contexto e na informação. A quarta centra-se no código, como em definições de dicionário. A quinta centra-se no destinatário, típica da publicidade e da persuasão."
+  comentario: "A função fática privilegia o canal: expressões de contato, como as saudações e as perguntas sobre se a mensagem está sendo ouvida, servem para verificar se a comunicação é possível. A primeira alternativa é a correta. A segunda (conativa ou apelativa) centra-se no destinatário, como na publicidade e na persuasão. A terceira (metalinguística) centra-se no código, como em definições de dicionário. A quarta (emotiva) centra-se no remetente e em suas atitudes subjetivas. A quinta (referencial) centra-se no contexto e na informação."
 },
 {
   disciplina: "Linguagens - Voz Passiva (Unicamp)",
@@ -550,14 +550,14 @@ const QUESTOES_EXTRA_3 = [
   disciplina: "Linguagens - Crase (Fuvest)",
   enunciado: "Assinale a alternativa em que o emprego do acento indicador de crase está correto:",
   alternativas: [
-    "O ônibus seguiu a Rua da Consolação e depois a Praça da Sé.",
+    "Eles foram à teatro na véspera de Ano Novo.",
     "Entregou o relatório à ela no final da tarde.",
     "O professor prefere trabalhar de manhã, porém voltará à noite para a reunião.",
     "Referiu-se à duas normas já revogadas pelo decreto.",
     "A caminho da escola, parou à pé para descansar."
   ],
   correta: 2,
-  comentario: "A crase ocorre quando a preposição a se funde com o artigo definido a ou com o a de locuções femininas. Na locução adverbial à noite, que exige a preposição e contém substantivo feminino, o acento é obrigatório. Por isso a terceira alternativa é a correta. Na primeira, há erro por omissão, pois antes de topônimos femininos com artigo definido a preposição exige a fusão, escrevendo-se à Rua da Consolação. Na segunda, pronome pessoal não admite artigo antes, logo não ocorre crase: entregou o relatório a ela. Na quarta, o artigo não aparece antes de numeral feminino: referiu-se a duas normas. Na quinta, locuções masculinas e adverbiais sem artigo não levam crase: parou a pé."
+  comentario: "A crase ocorre quando a preposição a se funde com o artigo definido a ou com o a de locuções femininas. Na locução adverbial à noite, que exige a preposição e contém substantivo feminino, o acento é obrigatório; por isso a terceira alternativa é a correta. Na primeira, «parou à pé» é indevido, porque a locução adverbial parou a pé não leva preposição nem artigo. Na segunda, o artigo não aparece antes de numeral feminino: escreve-se referiu-se a duas normas. Na quarta, pronome pessoal não admite artigo antes, logo não ocorre crase: entregou o relatório a ela. Na quinta, «teatro» é substantivo masculino, de modo que se escreve ao teatro, sem crase."
 },
 {
   disciplina: "Linguagens - Interpretação (ENEM)",
@@ -635,7 +635,7 @@ const QUESTOES_EXTRA_3 = [
     "18."
   ],
   correta: 3,
-  comentario: "Aplicando as propriedades dos logaritmos, 3 log 3 = log 27. Assim, log x = log 2 + log 27 - log 6 = log(2 x 27) - log 6 = log 54 - log 6 = log(54/6) = log 9. Logo, x = 9 e a quarta alternativa é a correta. O valor 6 resulta de converter incorretamente 3 log 3 em log 6 e manter o denominador; o 18 vem de dividir 54 por 3 em vez de por 6; os valores 3 e 4 nasceriam de erros de aritmética elementar na manipulação das frações."
+  comentario: "Aplicando as propriedades dos logaritmos, 3 log 3 = log 27. Assim, log x = log 2 + log 27 - log 6 = log(2 x 27) - log 6 = log 54 - log 6 = log(54/6) = log 9. Logo, x = 9 e a quarta alternativa é a correta. O valor 18 vem de dividir 54 por 3 em vez de por 6; os valores 3 e 4 nasceriam de erros de aritmética elementar na manipulação das frações; e o 6 não decorre do erro descrito, pois trocar 3 log 3 por log 6 daria log 2, isto é, x = 2, valor que nem consta das alternativas."
 },
 {
   disciplina: "Matemática - Análise Combinatória (Unicamp)",
@@ -674,7 +674,7 @@ const QUESTOES_EXTRA_3 = [
     "90."
   ],
   correta: 1,
-  comentario: "Se cada quadrado tem lado s, o retângulo resultante tem dimensões s e 2s, e seu perímetro é 2(s + 2s) = 6s = 36, donde s = 6. A área é s multiplicado por 2s, isto é, 6 x 12 = 72 cm², e a segunda alternativa é a correta. O valor 60 decorre de supor s = 5; os valores 80 e 90 resultam de confundir perímetro com área; e o valor 81 viria de supor que o retângulo é, na verdade, um quadrado."
+  comentario: "Se cada quadrado tem lado s, o retângulo resultante tem dimensões s e 2s, e seu perímetro é 2(s + 2s) = 6s = 36, donde s = 6. A área é s multiplicado por 2s, isto é, 6 x 12 = 72 cm², e a segunda alternativa é a correta. O valor 60 não vem de supor s = 5 (daria 5 × 10 = 50); o 80 corresponderia a um retângulo de lados 10 e 8, que tem perímetro 36, mas não se divide em dois quadrados iguais; o 90 não é possível, pois a área máxima de um retângulo de perímetro 36 é 81; e o valor 81 viria de supor que o retângulo é, na verdade, um quadrado."
 },
 {
   disciplina: "Física - Cinemática (Unicamp)",
@@ -687,7 +687,7 @@ const QUESTOES_EXTRA_3 = [
     "200."
   ],
   correta: 2,
-  comentario: "Pela equação de Torricelli, v ao quadrado = v0 ao quadrado + 2a deslocamento. No fim da frenagem a velocidade é zero, logo deslocamento = v0 ao quadrado dividido por 2a. Convertendo 72 km/h para 20 m/s, obtém-se 400 dividido por 8, igual a 50 m, e a terceira alternativa é a correta. O valor 20 surge de usar apenas deslocamento = v0/a. O valor 40 viria de esquecer o fator 2 do denominador; o 100, de confundir tempo com distância; e o 200, de dobrar indevidamente o resultado."
+  comentario: "Pela equação de Torricelli, v² = v₀² + 2 · a · Δs. No fim da frenagem a velocidade é zero, logo Δs = v₀² / (2 · a). Convertendo 72 km/h para 20 m/s, obtém-se 400 dividido por 8, igual a 50 m, e a terceira alternativa é a correta. O tempo de frenagem seria t = v0/a = 20/4 = 5 s. O valor 100 surge de esquecer o fator 2 do denominador (v0²/a = 400/4 = 100); o 200, de esquecer de dividir pela aceleração (400/2 = 200); o 40, de dividir v0² por 10 em vez de por 2a = 8 (400/10 = 40); e o 20, de usar g = 10 m/s² no lugar da aceleração de frenagem (400/20 = 20)."
 },
 {
   disciplina: "Física - Dinâmica (Fuvest)",
@@ -713,11 +713,11 @@ const QUESTOES_EXTRA_3 = [
     "real, invertida e do mesmo tamanho do objeto."
   ],
   correta: 4,
-  comentario: "Pela equação dos pontos conjugados, 1/f = 1/p + 1/p'. Com f = 15 cm e p = 30 cm, tem-se 1/15 = 1/30 + 1/p', donde 1/p' = 1/30 e p' = 30 cm. Como p' é positivo, a imagem é real; sendo real, é invertida; e a ampliação A = -p'/p = -1 indica mesmo tamanho. A quinta alternativa é a correta. A primeira erra ao indicar imagem direita; a segunda indica imagem virtual; a terceira erra o tamanho; e a quarta combina virtualidade e inversão, combinação impossível para lente convergente com objeto real."
+  comentario: "Pela equação dos pontos conjugados, 1/f = 1/p + 1/p'. Com f = 15 cm e p = 30 cm, tem-se 1/15 = 1/30 + 1/p', donde 1/p' = 1/30 e p' = 30 cm. Como p' é positivo, a imagem é real; sendo real, é invertida; e a ampliação A = -p'/p = -1 indica mesmo tamanho. A quinta alternativa é a correta. A primeira erra ao indicar a imagem menor que o objeto, pois, com p = 2f, a ampliação é unitária; a segunda erra ao indicar a imagem direita e maior, pois, para objeto real além do foco, a imagem é real, invertida e, aqui, do mesmo tamanho; a terceira erra ao indicar imagem virtual (e maior), pois, com p > f, a imagem é real; e a quarta indica imagem virtual, o que só ocorreria com o objeto entre o foco e a lente (p < f)."
 },
 {
   disciplina: "Química - Termoquímica (ENEM)",
-  enunciado: "Considere as entalpias de ligação, em kJ/mol: C-H = 413, O=O = 498, C=O = 745 e O-H = 463. A variação de entalpia da combustão completa de 1 mol de metano, na reação CH4 + 2 O2 originando CO2 + 2 H2O, é aproximadamente, em kJ/mol:",
+  enunciado: "Considere as entalpias de ligação, em kJ/mol: C-H = 413, O=O = 498, C=O = 745 e O-H = 463. A variação de entalpia da combustão completa de 1 mol de metano, na reação CH₄ + 2 O₂ originando CO₂ + 2 H₂O, é aproximadamente, em kJ/mol:",
   alternativas: [
     "-694.",
     "-200.",
@@ -726,11 +726,11 @@ const QUESTOES_EXTRA_3 = [
     "-1390."
   ],
   correta: 0,
-  comentario: "A variação de entalpia é estimada pela soma das ligações rompidas menos a soma das ligações formadas. Rompidas: 4 x 413 + 2 x 498 = 1652 + 996 = 2648 kJ. Formadas: 2 x 745 + 4 x 463 = 1490 + 1852 = 3342 kJ. Logo, 2648 - 3342 = -694 kJ/mol, e a primeira alternativa é a correta. O sinal negativo indica reação exotérmica, o que descarta as opções positivas. O valor -1390 corresponderia a dobrar indevidamente as ligações formadas, e o -200 a uma contagem incompleta das ligações de O-H na água."
+  comentario: "A variação de entalpia é estimada pela soma das ligações rompidas menos a soma das ligações formadas. Rompidas: 4 x 413 + 2 x 498 = 1652 + 996 = 2648 kJ. Formadas: 2 x 745 + 4 x 463 = 1490 + 1852 = 3342 kJ. Logo, 2648 - 3342 = -694 kJ/mol, e a primeira alternativa é a correta. O sinal negativo indica reação exotérmica, o que descarta as opções positivas. O valor -1390 corresponderia a efetuar o cálculo para 2 mols de metano, dobrando todos os coeficientes (2 × −694 = −1.388); o -200 a uma contagem incompleta das ligações de O-H na água permanece válida (contando 3 das 4 ligações O-H: 2.648 − 1.490 − 1.389 = −231, cerca de −200)."
 },
 {
   disciplina: "Química - Equilíbrio Químico (Unicamp)",
-  enunciado: "Para a reação exotérmica 2 SO2(g) + O2(g) em equilíbrio com 2 SO3(g), analise as afirmações: I. O aumento da pressão desloca o equilíbrio no sentido dos produtos. II. O aumento da temperatura desloca o equilíbrio no sentido dos produtos. III. A adição de um catalisador desloca o equilíbrio, aumentando o rendimento em SO3. Está correto o que se afirma em:",
+  enunciado: "Para a reação exotérmica 2 SO₂(g) + O₂(g) em equilíbrio com 2 SO₃(g), analise as afirmações: I. O aumento da pressão desloca o equilíbrio no sentido dos produtos. II. O aumento da temperatura desloca o equilíbrio no sentido dos produtos. III. A adição de um catalisador desloca o equilíbrio, aumentando o rendimento em SO3. Está correto o que se afirma em:",
   alternativas: [
     "Somente II.",
     "Somente I.",
@@ -765,7 +765,7 @@ const QUESTOES_EXTRA_3 = [
     "220."
   ],
   correta: 3,
-  comentario: "De a9 - a3 = 6r decorre que 34 - 10 = 6r, logo r = 4. Substituindo em a3 = a1 + 2r, obtém-se a1 = 10 - 8 = 2. A soma dos n primeiros termos é S_n = n(a1 + a_n)/2, e a10 = a1 + 9r = 2 + 36 = 38. Assim, S10 = 10 x (2 + 38)/2 = 200, e a quarta alternativa é a correta. O valor 150 viria de usar razão 3; o 180, de calcular S10 com a1 = 4; o 190, de erro no cálculo do último termo; e o 220, de aplicação incorreta da fórmula da soma."
+  comentario: "De a9 - a3 = 6r decorre que 34 - 10 = 6r, logo r = 4. Substituindo em a3 = a1 + 2r, obtém-se a1 = 10 - 8 = 2. A soma dos n primeiros termos é S_n = n(a1 + a_n)/2, e a10 = a1 + 9r = 2 + 36 = 38. Assim, S10 = 10 x (2 + 38)/2 = 200, e a quarta alternativa é a correta. O valor 150 não vem de usar razão 3 (daria 175), mas de supor r = 2 mantendo a3 = 10: S10 = 5 × (12 + 18) = 150; o 180 aparece quando se usa a9 = 34 no lugar de a10 na fórmula da soma: 10 × (2 + 34)/2 = 180; o 190, de tomar a10 = 36, esquecendo de somar a1: 10 × (2 + 36)/2 = 190; e o 220, de usar a10 = a1 + 10r = 42: 10 × (2 + 42)/2 = 220."
 },
 {
   disciplina: "Química - Eletroquímica (Unicamp)",
@@ -778,7 +778,7 @@ const QUESTOES_EXTRA_3 = [
     "o zinco é o ânodo e oxida-se, o cobre recebe os elétrons no cátodo e a diferença de potencial nas condições padrão é 1,10 V."
   ],
   correta: 4,
-  comentario: "A quinta alternativa é a correta. O par de menor potencial de redução, Zn²⁺/Zn com -0,76 V, tende a sofrer oxidação, funcionando como ânodo; o cobre, de maior potencial, é o cátodo, onde ocorre a redução de Cu²⁺ a Cu. A diferença de potencial é 0,34 - (-0,76) = 1,10 V. A primeira e a segunda invertem os papéis dos eletrodos e atribuem ddp incorreta. A terceira acerta o valor da ddp, mas inverte o sentido do fluxo de elétrons, que vai do ânodo para o cátodo. A quarta é absurda, pois em uma pilha um eletrodo oxida e o outro reduz."
+  comentario: "A quinta alternativa é a correta. O par de menor potencial de redução, Zn²⁺/Zn com -0,76 V, tende a sofrer oxidação, funcionando como ânodo; o cobre, de maior potencial, é o cátodo, onde ocorre a redução de Cu²⁺ a Cu. A diferença de potencial é 0,34 - (-0,76) = 1,10 V. A primeira inverte os papéis dos eletrodos e apresenta ddp incorreta (o valor correto é 0,34 − (−0,76) = 1,10 V, não 0,42 V). A segunda mantém a ddp correta (1,10 V), mas inverte o sentido do fluxo de elétrons, que vai do ânodo (zinco) para o cátodo (cobre). A terceira inverte os papéis dos eletrodos: o cobre é o cátodo, onde Cu²⁺ sofre redução, e o zinco é o ânodo, onde Zn se oxida. A quarta é absurda, pois em uma pilha um eletrodo oxida e o outro reduz. A quarta é absurda, pois em uma pilha um eletrodo oxida e o outro reduz."
 },
 ];
 if (typeof window !== "undefined") { window.QUESTOES_EXTRA_3 = QUESTOES_EXTRA_3; }

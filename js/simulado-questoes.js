@@ -20,7 +20,7 @@ const SIMULADO_QUESTOES = [
       "420 m"
     ],
     "correta": 0,
-    "comentario": "A escala 1:5 000 significa que 1 cm no mapa representa 5 000 cm no terreno. Multiplicando a medida do trajeto: 16,8 × 5 000 = 84 000 cm. Como 1 m equivale a 100 cm, 84 000 cm = 840 m. A alternativa correta é a (C). O distrator de 42 000 m nasce do erro de não converter centímetros em metros, e o de 420 m do erro de dividir por 5 000 em vez de multiplicar."
+    "comentario": "A escala 1:5 000 significa que 1 cm no mapa representa 5 000 cm no terreno. Multiplicando a medida do trajeto: 16,8 × 5 000 = 84 000 cm. Como 1 m equivale a 100 cm, 84 000 cm = 840 m. A alternativa correta é a (A). O distrator de 42 000 m nasce de usar metade da medida do trajeto (8,4 × 5 000 = 42 000, valor ainda em centímetros) e o de 420 m de converter esse mesmo resultado errado: 42 000 cm = 420 m."
   },
   {
     "disciplina": "Matemática",
@@ -37,7 +37,7 @@ const SIMULADO_QUESTOES = [
       "6,0 km/h"
     ],
     "correta": 1,
-    "comentario": "Velocidade média = distância / tempo. A rota tem 750 m e foi percorrida em 6 min, logo a velocidade é 750 / 6 = 125 metros por minuto. Para converter em km/h, multiplique por 60: 125 × 60 = 7 500 m/h = 7,5 km/h. O gabarito é (D). Esse valor é coerente com o ritmo de uma bicicleta ou motocicleta em trânsito urbano."
+    "comentario": "Velocidade média = distância / tempo. A rota tem 750 m e foi percorrida em 6 min, logo a velocidade é 750 / 6 = 125 metros por minuto. Para converter em km/h, multiplique por 60: 125 × 60 = 7 500 m/h = 7,5 km/h. O gabarito é (B). Esse valor é coerente com o ritmo de uma bicicleta ou motocicleta em trânsito urbano."
   },
   {
     "disciplina": "Matemática",
@@ -55,7 +55,7 @@ const SIMULADO_QUESTOES = [
       "4,4%"
     ],
     "correta": 2,
-    "comentario": "A parcela é R$ 1.087,00 e o preço de tabela é R$ 20.000,00. A razão entre eles é 1.087 / 20.000 = 0,05435. Multiplicando por 100, obtém-se 5,435%, aproximadamente 5,4%. O gabarito é (B). Perceba que o valor 8% é um distrator: ele é o desconto oferecido no pagamento à vista, não a relação entre prestação e preço."
+    "comentario": "A parcela é R$ 1.087,00 e o preço de tabela é R$ 20.000,00. A razão entre eles é 1.087 / 20.000 = 0,05435. Multiplicando por 100, obtém-se 5,435%, aproximadamente 5,4%. O gabarito é (C). Perceba que o valor 8% é um distrator: ele é o desconto oferecido no pagamento à vista, não a relação entre prestação e preço."
   },
   {
     "disciplina": "Matemática",
@@ -73,7 +73,7 @@ const SIMULADO_QUESTOES = [
       "R$ 9.400,00"
     ],
     "correta": 3,
-    "comentario": "Total pago no financiamento: 24 × R$ 1.087,00 = R$ 26.088,00. Valor à vista com 8% de desconto: R$ 20.000,00 × 0,92 = R$ 18.400,00. A economia é a diferença: 26.088 − 18.400 = R$ 7.688,00. O gabarito é (A). O distrator de R$ 6.088,00 corresponde apenas ao acréscimo do financiamento sobre o preço de tabela, e o de R$ 18.400,00 é o próprio valor à vista, não a economia."
+    "comentario": "Total pago no financiamento: 24 × R$ 1.087,00 = R$ 26.088,00. Valor à vista com 8% de desconto: R$ 20.000,00 × 0,92 = R$ 18.400,00. A economia é a diferença: 26.088 − 18.400 = R$ 7.688,00. O gabarito é (D). O distrator de R$ 6.088,00 corresponde apenas ao acréscimo do financiamento sobre o preço de tabela, e o de R$ 18.400,00 é o próprio valor à vista, não a economia."
   },
   {
     "disciplina": "Matemática",
@@ -109,7 +109,7 @@ const SIMULADO_QUESTOES = [
       "A moda é R$ 120,00, valor gasto pela maioria dos estudantes."
     ],
     "correta": 0,
-    "comentario": "A moda é o valor de maior frequência: R$ 80,00 aparece para 10 estudantes, mais do que qualquer outro valor, portanto (D) é a correta. Com 40 dados, a mediana fica entre o 20º e o 21º valores, ambos na faixa de R$ 80,00 — a mediana vale R$ 80,00, não R$ 60,00. A média, R$ 70,50, é menor que a mediana. As demais alternativas contradizem os dados do infográfico."
+    "comentario": "A moda é o valor de maior frequência: R$ 80,00 aparece para 10 estudantes, mais do que qualquer outro valor, portanto (A) é a correta. Com 40 dados, a mediana fica entre o 20º e o 21º valores, ambos na faixa de R$ 80,00 — a mediana vale R$ 80,00, não R$ 60,00. A média, R$ 70,50, é menor que a mediana. As demais alternativas contradizem os dados do infográfico."
   },
   {
     "disciplina": "Matemática",
@@ -127,7 +127,7 @@ const SIMULADO_QUESTOES = [
       "R$ 20,80"
     ],
     "correta": 1,
-    "comentario": "A cobrança da Alfa é C(d) = 4,80 + 2,60 d. Para d = 8: C(8) = 4,80 + 2,60 × 8 = 4,80 + 20,80 = R$ 25,60. O gabarito é (C). O distrator de R$ 20,80 corresponde a considerar apenas a parte variável, esquecendo de somar a taxa fixa; o de R$ 22,80 é o valor da Beta para a mesma distância (6,00 + 2,00 × 8), calculado corretamente, mas referindo-se à outra empresa."
+    "comentario": "A cobrança da Alfa é C(d) = 4,80 + 2,60 d. Para d = 8: C(8) = 4,80 + 2,60 × 8 = 4,80 + 20,80 = R$ 25,60. O gabarito é (B). O distrator de R$ 20,80 corresponde a considerar apenas a parte variável, esquecendo de somar a taxa fixa; o de R$ 22,80 não é o valor da Beta: 6,00 + 2,00 × 8 = R$ 22,00, valor que nem consta das alternativas — trata-se apenas de um distrator aritmético."
   },
   {
     "disciplina": "Matemática",
@@ -145,7 +145,7 @@ const SIMULADO_QUESTOES = [
       "Qualquer distância."
     ],
     "correta": 2,
-    "comentario": "Igualando as cobranças: 4,80 + 2,60 d = 6,00 + 2,00 d, o que dá 0,60 d = 1,20 e, portanto, d = 2 km. Em 2 km, ambas cobram R$ 10,00. Para distâncias menores que 2 km, a Alfa é mais barata; acima de 2 km, a menor taxa por quilômetro da Beta se impõe. O gabarito é (E). Graficamente, 2 km é a abscissa do ponto de encontro das duas retas."
+    "comentario": "Igualando as cobranças: 4,80 + 2,60 d = 6,00 + 2,00 d, o que dá 0,60 d = 1,20 e, portanto, d = 2 km. Em 2 km, ambas cobram R$ 10,00. Para distâncias menores que 2 km, a Alfa é mais barata; acima de 2 km, a menor taxa por quilômetro da Beta se impõe. O gabarito é (C). Graficamente, 2 km é a abscissa do ponto de encontro das duas retas."
   },
   {
     "disciplina": "Matemática",
@@ -163,7 +163,7 @@ const SIMULADO_QUESTOES = [
       "7 200"
     ],
     "correta": 3,
-    "comentario": "O volume do cilindro é V = π r² h. Com π = 3, r = 1,2 m e h = 2,0 m: r² = 1,44 m²; área da base = 3 × 1,44 = 4,32 m²; volume = 4,32 × 2,0 = 8,64 m³. Como 1 m³ = 1 000 L, a capacidade é aproximadamente 8 640 litros. O gabarito é (A). O distrator de 4 320 litros resulta de esquecer de multiplicar pela altura, usando apenas a área da base."
+    "comentario": "O volume do cilindro é V = π r² h. Com π = 3, r = 1,2 m e h = 2,0 m: r² = 1,44 m²; área da base = 3 × 1,44 = 4,32 m²; volume = 4,32 × 2,0 = 8,64 m³. Como 1 m³ = 1 000 L, a capacidade é aproximadamente 8 640 litros. O gabarito é (D). O distrator de 4 320 litros resulta de esquecer de multiplicar pela altura, usando apenas a área da base."
   },
   {
     "disciplina": "Matemática",
@@ -181,7 +181,7 @@ const SIMULADO_QUESTOES = [
       "126 m"
     ],
     "correta": 4,
-    "comentario": "O perímetro do retângulo é P = 2 × (12 + 9) = 2 × 21 = 42 m. Com três voltas de arame, o total é 3 × 42 = 126 m. O gabarito é (C). Cuidado com os distratores: 84 m corresponde a duas voltas, 168 m a quatro voltas e 108 m² à área do terreno (12 × 9), grandeza que não resolve o problema da cerca."
+    "comentario": "O perímetro do retângulo é P = 2 × (12 + 9) = 2 × 21 = 42 m. Com três voltas de arame, o total é 3 × 42 = 126 m. O gabarito é (E). Cuidado com os distratores: 84 m corresponde a duas voltas, 168 m a quatro voltas e 108 m² à área do terreno (12 × 9), grandeza que não resolve o problema da cerca."
   },
   {
     "disciplina": "Matemática",
@@ -190,7 +190,7 @@ const SIMULADO_QUESTOES = [
       "EM13MAT205",
       "EM13MAT505"
     ],
-    "enunciado": "Na rifa com 400 bilhetes sorteados e um único prêmio, qual é a probabilidade de ganhar de quem adquiriu 2 bilhetes?",
+    "enunciado": "Na rifa com 400 bilhetes e um único prêmio, qual é a probabilidade de que ganhe quem adquiriu 2 bilhetes?",
     "alternativas": [
       "0,5%",
       "2,0%",
@@ -199,7 +199,7 @@ const SIMULADO_QUESTOES = [
       "0,2%"
     ],
     "correta": 0,
-    "comentario": "Em sorteio equiprovável, probabilidade = casos favoráveis / casos possíveis = 2 / 400 = 0,005. Convertendo em porcentagem: 0,005 × 100 = 0,5%. O gabarito é (B). O distrator de 2% nasce de multiplicar por 100 duas vezes ou de confundir a fração com a porcentagem, e o de 5% corresponde a usar apenas 20 bilhetes como total."
+    "comentario": "Em sorteio equiprovável, probabilidade = casos favoráveis / casos possíveis = 2 / 400 = 0,005. Convertendo em porcentagem: 0,005 × 100 = 0,5%. O gabarito é (A). O distrator de 2% nasce de multiplicar por 100 duas vezes ou de confundir a fração com a porcentagem, e o de 5% corresponde a errar o total, dividindo os 2 bilhetes por 40 (2/40 = 5%)."
   },
   {
     "disciplina": "Matemática",
@@ -217,7 +217,7 @@ const SIMULADO_QUESTOES = [
       "14"
     ],
     "correta": 1,
-    "comentario": "A chance inicial é 6 / 20 = 0,30 (30%). Dobrá-la significa atingir 60%. Acrescentando x papéis premiados, tanto os favorecidos quanto os possíveis aumentam: (6 + x) / (20 + x) = 0,60. Resolvendo: 6 + x = 12 + 0,6 x, logo 0,4 x = 6 e x = 15. Verificação: 21 / 35 = 0,60, ou seja, exatamente 60%. O gabarito é (E). O distrator 6 corresponde a dobrar apenas o número de premiados, esquecendo que o total de papéis também cresce."
+    "comentario": "A chance inicial é 6 / 20 = 0,30 (30%). Dobrá-la significa atingir 60%. Acrescentando x papéis premiados, tanto os favorecidos quanto os possíveis aumentam: (6 + x) / (20 + x) = 0,60. Resolvendo: 6 + x = 12 + 0,6 x, logo 0,4 x = 6 e x = 15. Verificação: 21 / 35 = 0,60, ou seja, exatamente 60%. O gabarito é (B). O distrator 6 corresponde a dobrar apenas o número de premiados, esquecendo que o total de papéis também cresce."
   },
   {
     "disciplina": "Língua Portuguesa",
@@ -280,7 +280,7 @@ const SIMULADO_QUESTOES = [
       "EM13LP202",
       "EM13LP203"
     ],
-    "enunciado": "O comenário do texto afirma que a escolha do conectivo «não é um ornamento». Com base nessa afirmação, assinale a alternativa que descreve corretamente o efeito da substituição proposta.",
+    "enunciado": "O comentário do texto afirma que a escolha do conectivo «não é um ornamento». Com base nessa afirmação, assinale a alternativa que descreve corretamente o efeito da substituição proposta.",
     "alternativas": [
       "O efeito seria diferente, porque a relação de concessão daria lugar a uma relação de conclusão: o leitor passaria a entender que o alerta dos especialistas decorre do apoio à medida, e não que ele impõe um limite a ela.",
       "O efeito seria mais enfático, uma vez que «Portanto» é um conectivo de maior formalidade do que «Embora» e, por isso, mais adequado ao gênero reportagem.",
@@ -424,7 +424,7 @@ const SIMULADO_QUESTOES = [
       "EM13LP101",
       "EM13LP104"
     ],
-    "enunciado": "Comparando o rascunho da Semana 1 com a versão final da Semana 3, o texto defende que a qualidade do texto aumentou principalmente porque:",
+    "enunciado": "Comparando o rascunho da Semana 1 com a versão final da Semana 3, o texto defende que a qualidade da redação aumentou principalmente porque:",
     "alternativas": [
       "o aluno passou a escrever mais, pois a extensão é o principal indicador de profundidade na redação.",
       "a professora corrigiu a ortografia já na primeira etapa, evitando a fixação de vícios de escrita.",
@@ -559,7 +559,7 @@ const SIMULADO_QUESTOES = [
       "certeza absoluta (sem dúvida)"
     ],
     "correta": 0,
-    "comentario": "O anúncio abre com a pergunta “Do people still read?” e, em seguida, responde “Actually, most of our members say they read more now...”, corrigindo a dúvida inicial. Nesse contexto, actually equivale a “na verdade/de fato”, e não a “atualmente”: a evidência do contraste é a própria pergunta que introduce a resposta."
+    "comentario": "O anúncio abre com a pergunta “Do people still read?” e, em seguida, responde “Actually, most of our members say they read more now...”, corrigindo a dúvida inicial. Nesse contexto, actually equivale a “na verdade/de fato”, e não a “atualmente”: a evidência do contraste é a própria pergunta que introduz a resposta."
   },
   {
     "disciplina": "Inglês",
@@ -811,7 +811,7 @@ const SIMULADO_QUESTOES = [
       "A maioria referida no texto dizia respeito apenas aos cidadãos com direitos políticos, grupo minoritário na população total."
     ],
     "correta": 4,
-    "comentario": "A expressão maioria, no documento, não deve ser lida com o sentido atual de maioria da população. Como o próprio texto explica, a cidadania era restrita a homens atenienses adultos e proprietários; mulheres, metecos e escravos estavam excluídos da participação política. Portanto, a maioria de que fala Péricles é a maioria dos cidadãos, grupo numericamente minoritário na cidade. A alternativa correta é a que explicita essa diferença. As demais opções contrariam o texto: não havia inclusão universal (A), escravos e metecos não deliberavam (B, D) e as mulheres estavam fora das decisões políticas (E)."
+    "comentario": "A expressão maioria, no documento, não deve ser lida com o sentido atual de maioria da população. Como o próprio texto explica, a cidadania era restrita a homens atenienses adultos, filhos de pai e mãe atenienses; mulheres, metecos e escravos estavam excluídos da participação política. Portanto, a maioria de que fala Péricles é a maioria dos cidadãos, grupo numericamente minoritário na cidade. A alternativa correta é a que explicita essa diferença. As demais opções contrariam o texto: não havia inclusão universal (A), escravos e metecos não deliberavam (B, D) e as mulheres estavam fora das decisões políticas (E)."
   },
   {
     "disciplina": "História Geral",
@@ -865,7 +865,7 @@ const SIMULADO_QUESTOES = [
       "A destruição dos mosteiros, considerados centros de oposição ao poder dos reis."
     ],
     "correta": 2,
-    "comentario": "O texto afirma que a Igreja unificava a Europa pelo latim e preservava textos nos mosteiros, citando a Regra de São Bento. Essa dupla função — cultural e religiosa — explica sua centralidade no período. A alternativa correta é a que menciona a cópia de textos e o latim como elemento de unificação. As demais opções contrariem o texto: os mosteiros preservavam, e não destruíam, o saber (A); o latim foi mantido, e não proibido (B); as corporações surgiram nas cidades ligadas ao comércio, não foram criadas pelos papas (C); e o Cisma separou, em vez de unificar, as igrejas (D)."
+    "comentario": "O texto afirma que a Igreja unificava a Europa pelo latim e preservava textos nos mosteiros, citando a Regra de São Bento. Essa dupla função — cultural e religiosa — explica sua centralidade no período. A alternativa correta é a que menciona a cópia de textos e o latim como elemento de unificação. As demais opções contrariam o texto: os mosteiros preservavam, e não destruíam, o saber (A); o latim foi mantido, e não proibido (B); as corporações surgiram nas cidades ligadas ao comércio, não foram criadas pelos papas (C); e o Cisma separou, em vez de unificar, as igrejas (D)."
   },
   {
     "disciplina": "História Geral",
@@ -991,7 +991,7 @@ const SIMULADO_QUESTOES = [
       "Lei do Ventre Livre (1871), Lei dos Sexagenários (1885) e Lei Áurea (1888)."
     ],
     "correta": 4,
-    "comentario": "A ordem histórica é: Lei do Ventre Livre, de 1871, que declarou livres os filhos de mulheres escravizadas nascidos a partir daquela data; Lei dos Sexagenários, de 1885, que libertou os escravizados com mais de sessenta e cinco anos; e Lei Áurea, de 1888, que extinguiu a escravidão. A alternativa correta é a única que apresenta as três leis na seqüência cronológica exata, com as datas corretas. As demais opções invertem a ordem (C, D) ou apresentam datas incorretas (A, E), sendo incompatíveis com a periodização do texto."
+    "comentario": "A ordem histórica é: Lei do Ventre Livre, de 1871, que declarou livres os filhos de mulheres escravizadas nascidos a partir daquela data; Lei dos Sexagenários, de 1885, que libertou os escravizados com mais de sessenta e cinco anos; e Lei Áurea, de 1888, que extinguiu a escravidão. A alternativa correta é a única que apresenta as três leis na sequência cronológica exata, com as datas corretas. As demais opções invertem a ordem (C, D) ou apresentam datas incorretas (A, E), sendo incompatíveis com a periodização do texto."
   },
   {
     "disciplina": "História do Brasil",
@@ -1530,7 +1530,7 @@ const SIMULADO_QUESTOES = [
       "EM13CNT201",
       "EM13CNT203"
     ],
-    "enunciado": "Um homem daltônico (X^dY) casa-se com uma mulher de visão normal cujo pai era daltônico. Qual a probabilidade de o casal ter um filho do sexo masculino daltônico?",
+    "enunciado": "Um homem daltônico (XᵈY) casa-se com uma mulher de visão normal cujo pai era daltônico. Qual a probabilidade de o casal ter um filho do sexo masculino daltônico?",
     "alternativas": [
       "100%, pois o pai transmite seu cromossomo X afetado a todos os filhos homens.",
       "75%, pois três dos quatro genótipos femininos possíveis carregam o alelo mutante.",
@@ -1539,7 +1539,7 @@ const SIMULADO_QUESTOES = [
       "25%, pois metade dos filhos será do sexo masculino e, dentre esses, metade herda o X recessivo materno."
     ],
     "correta": 4,
-    "comentario": "Como o pai era daltônico, a mulher herdou dele um X^d: seu genótipo é X^D X^d (portadora de visão normal). O cruzamento X^dY × X^D X^d gera quatro genótipos com 1/4 de chance cada: X^D X^d, X^d X^d, X^D Y e X^d Y. O menino daltônico (X^d Y) só surge se herdar o X^d da mãe (1/2) e o Y do pai (1/2): 1/2 × 1/2 = 25%. Observe que o alelo se distribui segundo os princípios de segregação da primeira lei de Mendel."
+    "comentario": "Como o pai era daltônico, a mulher herdou dele um Xᵈ: seu genótipo é Xᴰ Xᵈ (portadora de visão normal). O cruzamento XᵈY × Xᴰ Xᵈ gera quatro genótipos com 1/4 de chance cada: Xᴰ Xᵈ, Xᵈ Xᵈ, Xᴰ Y e Xᵈ Y. O menino daltônico (Xᵈ Y) só surge se herdar o Xᵈ da mãe (1/2) e o Y do pai (1/2): 1/2 × 1/2 = 25%. Observe que o alelo se distribui segundo os princípios de segregação da primeira lei de Mendel."
   },
   {
     "disciplina": "Biologia",
@@ -1550,7 +1550,7 @@ const SIMULADO_QUESTOES = [
     ],
     "enunciado": "A rápida disseminação da resistência de bactérias a antibióticos em hospitais é explicada, do ponto de vista evolutivo, porque:",
     "alternativas": [
-      "Mutações aleatórias que conferem resistência dão vantagem seletiva na presença do antibiótico; os indivíduos resistentes sobrevivem e se reproduzem, aumentando a frequência do aleto de resistência na população.",
+      "Mutações aleatórias que conferem resistência dão vantagem seletiva na presença do antibiótico; os indivíduos resistentes sobrevivem e se reproduzem, aumentando a frequência do alelo de resistência na população.",
       "As bactérias resistentes são menos aptas e morrem quando expostas ao antibiótico, o que seleciona a sensibilidade.",
       "As bactérias tornam-se resistentes como resposta fisiológica individual ao antibiótico, pela lei do uso e desuso.",
       "O antibiótico provoca mutações direcionadas exclusivamente nos genes que conferem resistência, tornando toda a colônia resistente.",
@@ -1566,7 +1566,7 @@ const SIMULADO_QUESTOES = [
       "EM13CNT202",
       "EM13CNT301"
     ],
-    "enunciado": "Um reservatório apresenta produtividade primária bruta de 20.000 kcal/m²/ano, da qual cerca de 10% passa para o nível seguinte, com a mesma eficiência entre os demais níveis. A energia anual disponível para o nível dos peixes carnívoros, que são consumidores terciários, é de aproximadamente:",
+    "enunciado": "Um reservatório apresenta produtividade primária líquida de 20.000 kcal/m²/ano, da qual cerca de 10% passa para o nível seguinte, com a mesma eficiência entre os demais níveis. A energia anual disponível para o nível dos peixes carnívoros, que são consumidores terciários, é de aproximadamente:",
     "alternativas": [
       "2.000 kcal/m²/ano, valor correspondente ao segundo nível de consumidores.",
       "20 kcal/m²/ano, resultado de três transferências tróficas com aproveitamento de cerca de 10% em cada etapa.",
@@ -1611,7 +1611,7 @@ const SIMULADO_QUESTOES = [
       "50%."
     ],
     "correta": 3,
-    "comentario": "Vc = (1 − 1/12) × 100% = (1 − 0,083) × 100% = 91,7%. Quanto maior o R0, maior a fração de imunes necessária; por isso doenças muito transmissíveis exigem coberturas altas — acima de 92%, no caso do sarampo. O valor 8,3% corresponde apenas a 1/R0, ou seja, à fração suscetível tolerada."
+    "comentario": "Vc = (1 − 1/12) × 100% = (1 − 0,083) × 100% = 91,7%. Quanto maior o R0, maior a fração de imunes necessária; por isso doenças muito transmissíveis exigem coberturas altas — próximas de 92%, no caso do sarampo. O valor 8,3% corresponde apenas a 1/R0, ou seja, à fração suscetível tolerada."
   },
   {
     "disciplina": "Biologia",
@@ -1719,7 +1719,7 @@ const SIMULADO_QUESTOES = [
       "7,56 Ω"
     ],
     "correta": 4,
-    "comentario": "De P = U²/R vem R = U²/P = (220 V)²/6.400 W = 48.400/6.400 = 7,56 Ω. A partir de R, obtém-se a corrente i = P/U = 6.400/220 ≈ 29,1 A, coerente com a tabela. O valor 29,1 corresponde à corrente em ampères, não à resistência; e 1.312 Ω resultaria de dividir a potência pela tensão ao quadrado, invertendo a relação."
+    "comentario": "De P = U²/R vem R = U²/P = (220 V)²/6.400 W = 48.400/6.400 = 7,56 Ω. A partir de R, obtém-se a corrente i = P/U = 6.400/220 ≈ 29,1 A, valor que aparece na alternativa B, apresentado erroneamente como uma resistência de 29,1 Ω. O valor 29,1 corresponde à corrente em ampères, não à resistência; e a resistência só se obtém por R = U²/P, nunca por P/U², que daria 6.400/48.400 = 0,13 Ω."
   },
   {
     "disciplina": "Física",
@@ -1746,7 +1746,7 @@ const SIMULADO_QUESTOES = [
       "EM13FIS201",
       "EM13FIS303"
     ],
-    "enunciado": "No experimento descrito no texto, 400 g de água a 25 °C recebem um bloco metálico de 500 g a 150 °C, de calor específico 0,11 cal/(g · °C), num calorímetro ideal. A temperatura final de equilíbrio térmico é de aproximadamente:",
+    "enunciado": "Em um calorímetro, 400 g de água a 25 °C recebem um bloco metálico de 500 g a 150 °C, de calor específico 0,11 cal/(g · °C), num calorímetro ideal. A temperatura final de equilíbrio térmico é de aproximadamente:",
     "alternativas": [
       "30,2 °C",
       "40,1 °C",
@@ -1755,7 +1755,7 @@ const SIMULADO_QUESTOES = [
       "58,3 °C"
     ],
     "correta": 1,
-    "comentario": "Q_metal + Q_água = 0: 500 × 0,11 × (150 − T) + 400 × 1,00 × (T − 25) = 0, ou seja, 8.250 − 55 T + 400 T − 10.000 = 0, logo 455 T = 18.250 e T ≈ 40,1 °C. O resultado é sempre intermediário entre as temperaturas iniciais e, como a capacidade térmica da água (400 cal/°C) é muito maior que a do bloco (55 cal/°C), a temperatura final fica mais próxima da da água."
+    "comentario": "Q<sub>metal</sub> + Q<sub>água</sub> = 0: 500 × 0,11 × (150 − T) + 400 × 1,00 × (T − 25) = 0, ou seja, 8.250 − 55 T + 400 T − 10.000 = 0, logo 455 T = 18.250 e T ≈ 40,1 °C. O resultado é sempre intermediário entre as temperaturas iniciais e, como a capacidade térmica da água (400 cal/°C) é muito maior que a do bloco (55 cal/°C), a temperatura final fica mais próxima da da água."
   },
   {
     "disciplina": "Física",
@@ -1773,7 +1773,7 @@ const SIMULADO_QUESTOES = [
       "O empuxo é de 2,00 N, e o cubo sobe até a superfície, onde passa a flutuar."
     ],
     "correta": 2,
-    "comentario": "E = ρ_fluido · V · g = 1,0 g/cm³ × 20 cm³ = 20 g de água deslocada, cujo peso é 0,02 kg × 10 m/s² = 0,20 N. O peso do cubo é 0,156 kg × 10 m/s² = 1,56 N. Como o peso supera o empuxo, o corpo afunda; a densidade do cubo (7,8 g/cm³) é muito maior que a da água. O empuxo depende tanto do volume deslocado quanto da densidade do fluido."
+    "comentario": "E = ρ<sub>fluido</sub> · V · g = 1,0 g/cm³ × 20 cm³ = 20 g de água deslocada, cujo peso é 0,02 kg × 10 m/s² = 0,20 N. O peso do cubo é 0,156 kg × 10 m/s² = 1,56 N. Como o peso supera o empuxo, o corpo afunda; a densidade do cubo (7,8 g/cm³) é muito maior que a da água. O empuxo depende tanto do volume deslocado quanto da densidade do fluido."
   },
   {
     "disciplina": "Química",
@@ -1968,7 +1968,7 @@ const SIMULADO_QUESTOES = [
       "12"
     ],
     "correta": 3,
-    "comentario": "3x - 12 = 0 → 3x = 12 → x = 4. Portanto, a raiz da funcao f(x) = 3x - 12 vale 4, ou seja, o ponto onde o grafico cruza o eixo x e (4, 0)."
+    "comentario": "3x - 12 = 0 → 3x = 12 → x = 4. Portanto, a raiz da função f(x) = 3x - 12 vale 4, ou seja, o ponto onde o gráfico cruza o eixo x é (4, 0)."
   },
   {
     "disciplina": "Matemática",
@@ -1984,8 +1984,8 @@ const SIMULADO_QUESTOES = [
       "R$ 17,60",
       "R$ 23,60"
     ],
-    "correta": 4,
-    "comentario": "f(km) = 5 + 2,2·km → 5 + 2,2×8 = 5 + 17,6 = R$ 22,60."
+    "correta": 1,
+    "comentario": "f(km) = 5 + 2,2·km → 5 + 2,2×8 = 5 + 17,6 = R$ 22,60. A bandeirada entra uma única vez; o distrator R$ 17,60 é apenas o trecho variável (2,2 × 8), sem a taxa fixa, e o R$ 23,60 nasce de somar R$ 5,00 de forma indevida a um valor já completo."
   },
   {
     "disciplina": "Língua Portuguesa",
@@ -2067,10 +2067,10 @@ const SIMULADO_QUESTOES = [
       "Apenas o agente que resolverá o problema.",
       "Uma opinião pessoal sem detalhamento.",
       "Apenas o efeito esperado da ação.",
-      "Agente, ação, modo/meio, efeito e finalidade."
+      "Agente, ação, modo/meio, efeito e detalhamento."
     ],
     "correta": 4,
-    "comentario": "A proposta completa detalha quem age (agente), o que faz (ação), como (modo), para que (efeito/finalidade), respeitando os direitos humanos."
+    "comentario": "A proposta completa detalha quem age (agente), o que faz (ação), como (modo/meio), o que se pretende obter (efeito/finalidade) e detalhes que especificam a ação (detalhamento), respeitando os direitos humanos."
   },
   {
     "disciplina": "Redação",
@@ -2172,7 +2172,7 @@ const SIMULADO_QUESTOES = [
       "Universal, incluindo mulheres e estrangeiros."
     ],
     "correta": 0,
-    "comentario": "A democracia ateniense era direta: os cidadãos (homens livres atenienses) deliberavam pessoalmente na Ágora."
+    "comentario": "A democracia ateniense era direta: os cidadãos (homens atenienses, maiores de idade, de pai e mãe atenienses) deliberavam pessoalmente na Eclésia, assembleia que se reunia no Pnyx; a Ágora era o espaço de comércio e circulação da cidade."
   },
   {
     "disciplina": "História Geral",
@@ -2368,7 +2368,7 @@ const SIMULADO_QUESTOES = [
       "6 mols"
     ],
     "correta": 2,
-    "comentario": "A fosforilação em nível de substrato ocorre na glicólise, com saldo de 2 ATP (4 produzidos e 2 consumidos na fase de investimento), e no ciclo de Krebs, com 1 ATP por acetil-CoA, totalizando 2 ATP. Logo, 2 + 2 = 4 mols de ATP. O restante, cerca de 28 mols, provém da cadeia de transporte de elétrons nas cristas mitocondriais, por fosforilação oxidativa."
+    "comentario": "A fosforilação em nível de substrato ocorre na glicólise, com saldo de 2 ATP (4 produzidos e 2 consumidos na fase de investimento), e no ciclo de Krebs, com 1 ATP por acetil-CoA, totalizando 2 ATP. Logo, 2 + 2 = 4 mols de ATP. O restante, cerca de 26 a 28 mols, provém da cadeia de transporte de elétrons nas cristas mitocondriais, por fosforilação oxidativa."
   },
   {
     "disciplina": "Biologia - Genética",
@@ -2427,7 +2427,7 @@ const SIMULADO_QUESTOES = [
     "enunciado": "As vacinas são uma das principais formas de prevenção de doenças infecciosas. Qual afirmação descreve corretamente seu mecanismo de ação?",
     "alternativas": [
       "Atuam como antibióticos, destruindo bactérias e vírus já presentes no organismo do doente.",
-      "Substituem os glóbulos vermelhos, aumentando o oxigênio disponível transporte pelas células.",
+      "Substituem os glóbulos vermelhos, aumentando o oxigênio disponível para o transporte pelas células.",
       "Apresentam antígenos (micro-organismos atenuados, inativados ou fragmentos) que estimulam a produção de anticorpos e células de memória pelo próprio organismo.",
       "Agem apenas sobre os leucócitos, elevando a temperatura corporal de forma permanente.",
       "Introduzem anticorpos prontos, produzidos em laboratório, conferindo imunidade passiva permanente."
@@ -2511,7 +2511,7 @@ const SIMULADO_QUESTOES = [
       "o tripsinogênio, produzido pelo fígado, é ativado no intestino e digere os lipídios"
     ],
     "correta": 3,
-    "comentario": "A pepsina é secretada pelas células principais do estômago na forma inativa (pepsinogênio) e é ativada pelo HCl, que também reduz o pH a cerca de 2, condição ideal para sua ação. Ela inicia a digestão das proteínas, transformando-as em peptídeos; a complementação ocorre no intestino delgado, pela tripsina, quimiotripsina e peptidases. A ptialina age sobre o amido, e o tripsinogênio é produzido pelo pâncreas, não pelo fígado."
+    "comentario": "A pepsina é secretada pelas células principais do estômago na forma inativa (pepsinogênio) e é ativada pelo HCl, que também reduz o pH a cerca de 2, condição ideal para sua ação. Ela inicia a digestão das proteínas, transformando-as em peptídeos; a digestão é complementada no intestino delgado, pela tripsina, quimiotripsina e peptidases. A ptialina age sobre o amido, e o tripsinogênio é produzido pelo pâncreas, não pelo fígado."
   },
   {
     "disciplina": "Biologia - Evolução (equilíbrio de Hardy-Weinberg)",
@@ -2576,7 +2576,7 @@ const SIMULADO_QUESTOES = [
       "22 °C"
     ],
     "correta": 3,
-    "comentario": "Usando Q = m · c · Δθ: 8 400 = 200 × 1 × Δθ, logo Δθ = 8 400 / 200 = 42 °C. Como a água parte de 20 °C, a temperatura final é 20 + 42 = 62 °C. O valor 42 °C é a variação de temperatura, não a temperatura final."
+    "comentario": "Usando Q = m · c · ΔT: 8 400 = 200 × 1 × ΔT, logo ΔT = 8 400 / 200 = 42 °C. Como a água parte de 20 °C, a temperatura final é 20 + 42 = 62 °C. O valor 42 °C é a variação de temperatura, não a temperatura final."
   },
   {
     "disciplina": "Física - Ondulatória",
@@ -2615,7 +2615,7 @@ const SIMULADO_QUESTOES = [
       "0,05 A"
     ],
     "correta": 1,
-    "comentario": "Pela 1ª lei de Ohm, U = R · i, logo i = U / R = 110 / 220 = 0,5 A. A opção 2 A decorre da divisão invertida (R/U); 5 A resultaria de dividir por 22 Ω; 24,2 A seria obtido multiplicando U por R, o que não tem sentido dimensional."
+    "comentario": "Pela 1ª lei de Ohm, U = R · i, logo i = U / R = 110 / 220 = 0,5 A. A opção 2 A decorre da divisão invertida (R/U); 5 A resultaria de dividir por 22 Ω; o valor 24,2 só se obtém multiplicando U por R e dividindo por mil (110 × 220 / 1 000 = 24,2), operação que não tem sentido dimensional."
   },
   {
     "disciplina": "Física - Hidrostática",
@@ -2706,7 +2706,7 @@ const SIMULADO_QUESTOES = [
       "300 W"
     ],
     "correta": 3,
-    "comentario": "Como o movimento é uniforme, a força aplicada equilibra o peso: F = m · g = 100 × 10 = 1 000 N. O trabalho é τ = F · d = 1 000 × 3 = 3 000 J. A potência média é P = τ / Δt = 3 000 / 6 = 500 W. A opção 3 000 W confunde trabalho com potência; 300 W esqueceria a altura."
+    "comentario": "Como o movimento é uniforme, a força aplicada equilibra o peso: F = m · g = 100 × 10 = 1 000 N. O trabalho é W = F · d = 1 000 × 3 = 3 000 J. A potência média é P = W / Δt = 3 000 / 6 = 500 W. A opção 3 000 W confunde trabalho com potência; 300 W esqueceria a altura."
   },
   {
     "disciplina": "Física - Eletricidade (potência elétrica)",
@@ -2758,7 +2758,7 @@ const SIMULADO_QUESTOES = [
       "4 g/L"
     ],
     "correta": 2,
-    "comentario": "Concentração comum: C = m₁ / V. O volume é 500 mL = 0,5 L, logo C = 20 g / 0,5 L = 40 g/L. A opção 4 g/L resultaria de usar 5 L no denominador; 20 g/L decorre de não converter mililitros para litros antes de dividir."
+    "comentario": "Concentração comum: C = m₁ / V. O volume é 500 mL = 0,5 L, logo C = 20 g / 0,5 L = 40 g/L. A opção 4 g/L resultaria de usar 5 L no denominador (20 g / 5 L); a opção 20 g/L não decorre de deixar de converter o volume, pois 20 g / 500 mL daria 0,04 g/mL, equivalente a 40 g/L."
   },
   {
     "disciplina": "Química - Estequiometria",
@@ -2771,7 +2771,7 @@ const SIMULADO_QUESTOES = [
       "68 g"
     ],
     "correta": 3,
-    "comentario": "Pela equação balanceada, 1 mol de N₂ produz 2 mols de NH₃. Como 28 g correspondem a 1 mol de N₂, obtêm-se 2 mols de NH₃, o que dá 2 × 17 = 34 g. A opção 17 g corresponderia a apenas 1 mol de NH₃, e 68 g ignoraria a proporção 1:2 da equação."
+    "comentario": "Pela equação balanceada, 1 mol de N₂ produz 2 mols de NH₃. Como 28 g correspondem a 1 mol de N₂, obtêm-se 2 mols de NH₃, o que dá 2 × 17 = 34 g. A opção 17 g corresponderia a apenas 1 mol de NH₃, como se a relação fosse 1:1, e a opção 68 g resultaria de considerar 2 mols de N₂ nos 28 g (usando 14 g/mol como massa molar do N₂), em vez de 1 mol."
   },
   {
     "disciplina": "Química - Balanceamento de equações",
@@ -2901,11 +2901,11 @@ const SIMULADO_QUESTOES = [
       "280 g"
     ],
     "correta": 3,
-    "comentario": "Massa de CaCO₃ puro: 250 × 0,80 = 200 g, o que corresponde a 2 mols. Pela equação, 1 mol de CaCO₃ gera 1 mol de CaO, logo obtêm-se 2 mols de CaO = 2 × 56 = 112 g. A opção 280 g ignoraria a pureza, tratando os 250 g como se fossem 100% de CaCO₃."
+    "comentario": "Massa de CaCO₃ puro: 250 × 0,80 = 200 g, o que corresponde a 2 mols. Pela equação, 1 mol de CaCO₃ gera 1 mol de CaO, logo obtêm-se 2 mols de CaO = 2 × 56 = 112 g. A opção 140 g ignoraria a pureza, tratando os 250 g como se fossem 100% de CaCO₃ (2,5 mols → 2,5 × 56 = 140 g de CaO); a opção 280 g não resulta de nenhum cálculo coerente com os dados."
   },
   {
     "disciplina": "Química - Termoquímica (processos endotérmicos)",
-    "enunciado": "Analisando o gráfico da energia ao longo do caminho de uma reação endotérmica, verifica-se que:",
+    "enunciado": "Em uma reação endotérmica, verifica-se que:",
     "alternativas": [
       "reagentes e produtos estão no mesmo patamar energético, com ΔH = 0",
       "o sistema absorve calor do ambiente, o que reduz a entropia a zero",
@@ -2927,7 +2927,7 @@ const SIMULADO_QUESTOES = [
       "2 dB"
     ],
     "correta": 0,
-    "comentario": "Se I = 100 · I₀, então I / I₀ = 100 = 10², e log(100) = 2. Logo β = 10 × 2 = 20 dB. A opção 100 dB confunde a razão I/I₀ com o valor de β; 10 dB resultaria de usar I/I₀ = 10, cujo logaritmo é 1; e 40 dB, de usar log(100) = 4."
+    "comentario": "Se I = 100 · I₀, então I / I₀ = 100 = 10², e log(100) = 2. Logo β = 10 × 2 = 20 dB. A opção 100 dB confunde a razão I/I₀ com o valor de β; 10 dB resultaria de usar I/I₀ = 10, cujo logaritmo é 1; e 40 dB, de aplicar a fórmula da pressão, β = 20 · log(I/I₀), em vez da fórmula da intensidade."
   },
   {
     "disciplina": "Matemática - Análise combinatória",
@@ -2966,7 +2966,7 @@ const SIMULADO_QUESTOES = [
       "21"
     ],
     "correta": 3,
-    "comentario": "Na PG, aₙ = a₁ · q^(n-1), logo a₇ = 3 × 2⁶ = 3 × 64 = 192. A opção 96 resulta de usar o expoente 5, confundindo o índice; 384 vem do expoente 7, típico de quem usa n em vez de n - 1 na fórmula."
+    "comentario": "Na PG, aₙ = a₁ · q elevado a (n − 1), logo a₇ = 3 × 2⁶ = 3 × 64 = 192. A opção 96 resulta de usar o expoente 5, confundindo o índice; 384 vem do expoente 7, típico de quem usa n em vez de n - 1 na fórmula."
   },
   {
     "disciplina": "Matemática - Matrizes",
@@ -2979,7 +2979,7 @@ const SIMULADO_QUESTOES = [
       "primeira linha (3, 5) e segunda linha (2, 3)"
     ],
     "correta": 4,
-    "comentario": "Na soma de matrizes, somam-se os elementos de mesma posição: 2 + 1 = 3 e 1 + 4 = 5 na primeira linha; 0 + 2 = 2 e 3 + 0 = 3 na segunda linha. A matriz (3, 4; 2, 0) erra o segundo elemento da primeira linha, e (2, 4; 0, 0) corresponde à diferença A - B, não à soma."
+    "comentario": "Na soma de matrizes, somam-se os elementos de mesma posição: 2 + 1 = 3 e 1 + 4 = 5 na primeira linha; 0 + 2 = 2 e 3 + 0 = 3 na segunda linha. A matriz (3, 4; 2, 0) erra o segundo elemento da primeira linha; (2, 4; 0, 0) corresponde ao produto elemento a elemento de A por B; e a diferença A - B daria (1, −3; −2, 3)."
   },
   {
     "disciplina": "Matemática - Trigonometria",
@@ -3005,7 +3005,7 @@ const SIMULADO_QUESTOES = [
       "12 m³"
     ],
     "correta": 1,
-    "comentario": "O volume do cilindro é V = π · r² · h = 3 × (2)² × 1,5 = 3 × 4 × 1,5 = 18 m³. A opção 6 m³ resultaria de usar r em vez de r² no cálculo, e 9 m³ decorreria de usar 2r no lugar da altura."
+    "comentario": "O volume do cilindro é V = π · r² · h = 3 × (2)² × 1,5 = 3 × 4 × 1,5 = 18 m³. A opção 6 m³ resultaria de esquecer o π, usando apenas r² · h = 4 × 1,5, e 9 m³ de usar r em vez de r²: 3 × 2 × 1,5 = 9."
   },
   {
     "disciplina": "Matemática - Função do 2º grau",
@@ -3022,7 +3022,7 @@ const SIMULADO_QUESTOES = [
   },
   {
     "disciplina": "Matemática - Juros simples",
-    "enunciado": "Um capital de R$ 2 000,00 é aplicado a juros simples, à taxa de 3% ao mês, durante 5 meses. Qual o montante ao final do período?",
+    "enunciado": "Um capital de R$ 2.000,00 é aplicado a juros simples, à taxa de 3% ao mês, durante 5 meses. Qual o montante ao final do período?",
     "alternativas": [
       "R$ 2 150,00",
       "R$ 2 600,00",
@@ -3057,7 +3057,7 @@ const SIMULADO_QUESTOES = [
       "8,0"
     ],
     "correta": 0,
-    "comentario": "A média é a soma dos valores dividida pela quantidade de valores: (4 + 6 + 7 + 8 + 10) / 5 = 35 / 5 = 7,0. O valor 35,0 é a soma das notas, e não a média. Como são 5 valores ímpares, a mediana (valor central, 7,0) coincide com a média nesse conjunto."
+    "comentario": "A média é a soma dos valores dividida pela quantidade de valores: (4 + 6 + 7 + 8 + 10) / 5 = 35 / 5 = 7,0. O valor 35,0 é a soma das notas, e não a média. Como a quantidade de dados (5) é ímpar, a mediana (valor central, 7,0) coincide com a média nesse conjunto."
   },
   {
     "disciplina": "Matemática - Análise combinatória (combinação)",
@@ -3122,7 +3122,7 @@ const SIMULADO_QUESTOES = [
       "organização de um império territorial centralizado sob o comando de um monarca hereditário."
     ],
     "correta": 0,
-    "comentario": "A democracia ateniense era direta: os cidadãos reuniam-se na Eclésia para decidir pessoalmente sobre leis, guerra e finanças. Ocorre que a cidadania abrangia apenas homens adultos nascidos em Atenas e livres, pois mulheres, estrangeiros (metecos) e escravizados estavam excluídos. A alternativa correta captura exatamente essa dupla face, isto é, participação direta e restrição social. A alternativa B é anacrônica, porque Montesquieu só formularia a tripartição de poderes no século XVIII. A alternativa C generaliza o sorteio, que valia para a maioria das magistraturas, mas não para todas, e nega o próprio conceito de cidadania restrito. A alternativa D descreve uma monarquia territorial, modelo ausente no mundo grego clássico. A alternativa E confunde democracia direta com representação eletiva de massa, ideal moderno inexistente na Antiguidade."
+    "comentario": "A democracia ateniense era direta: os cidadãos reuniam-se na Eclésia para decidir pessoalmente sobre leis, guerra e finanças. Ocorre que a cidadania abrangia apenas homens adultos nascidos em Atenas e livres, pois mulheres, estrangeiros (metecos) e escravizados estavam excluídos. A alternativa correta captura exatamente essa dupla face, isto é, participação direta e restrição social. A alternativa B é anacrônica, porque Montesquieu só formularia a tripartição de poderes no século XVIII. A alternativa C generaliza o sorteio, que valia para a maioria das magistraturas, mas não para todas, e nega o próprio conceito de cidadania restrito. A alternativa D confunde democracia direta com representação eletiva de massa, ideal moderno inexistente na Antiguidade, pois em Atenas os cidadãos decidiam pessoalmente na Eclésia. A alternativa E descreve uma monarquia territorial centralizada, modelo ausente no mundo grego clássico do período clássico."
   },
   {
     "disciplina": "História - Roma Antiga (Unicamp)",
@@ -3135,7 +3135,7 @@ const SIMULADO_QUESTOES = [
       "o restabelecimento pleno das instituições republicanas, com o Senado retomando o controle sobre as províncias."
     ],
     "correta": 1,
-    "comentario": "Diocleciano instituiu a tetrarquia, com dois augusti e dois césares, dividiu o Império em dioceses e províncias, tentou conter a inflação pelo Edito Máximo dos Preços e burocratizou o Estado; Constantino prosseguiu nessa linha e transferiu a capital definitivamente para Constantinopla em 330. A alternativa correta sintetiza esse processo de Estado autoritário e intervencionista. A alternativa A incorre porque a divisão não implicou autonomia dos generais, uma vez que o poder foi rigorosamente hierarquizado. A alternativa C é anacrônica, pois o escravismo persistiu e a cidadania plena havia sido concedida antes, com o Édito de Caracala, em 212, por motivos fiscais. A alternativa D contraria a história, já que a crise acelerou o fim do principado e o triunfo do dominato. A alternativa E reduz a mudança de capital a uma solução única e imediata, ignorando as reformas administrativas e fiscais que a acompanharam."
+    "comentario": "Diocleciano instituiu a tetrarquia, com dois augusti e dois césares, dividiu o Império em dioceses e províncias, tentou conter a inflação pelo Edito Máximo dos Preços e burocratizou o Estado; Constantino prosseguiu nessa linha e transferiu a capital definitivamente para Constantinopla em 330. A alternativa correta sintetiza esse processo de Estado autoritário e intervencionista. A alternativa A é falsa porque não houve 'escravismo colonial' no Império Romano, a escravização persistiu e a cidadania plena já havia sido estendida a todos os habitantes livres do Império com o Édito de Caracala, em 212, por motivos fiscais. A alternativa C é falsa porque a reforma fez o oposto da descentralização: o poder foi rigorosamente hierarquizado, sem que províncias fossem entregues a generais com autonomia militar e fiscal. A alternativa D contraria a história, já que a crise do século III acelerou o fim do principado e o triunfo do dominato, e a transferência da capital, em 330, foi apenas uma parte das reformas. A alternativa E reduz a mudança de capital para Constantinopla a uma solução única e imediata, ignorando as reformas administrativas e fiscais que a acompanharam."
   },
   {
     "disciplina": "História - Idade Média (UFMG)",
@@ -3148,7 +3148,7 @@ const SIMULADO_QUESTOES = [
       "Somente I."
     ],
     "correta": 2,
-    "comentario": "A afirmativa I é correta porque o feudo entregava a terra em senhorio e o vassalo assumia obrigações militares, consultivas e pecuniárias, resumidas na fórmula auxilium et consilium. A afirmativa II também é correta porque o mesmo homem podia ser vassalo de vários senhores e suserano de vários vassalos, formando pirâmides de lealdades que disputavam o mesmo espaço e fragmentavam a soberania. A afirmativa III é falsa, pois a cerimônia de homenagem e investidura envolvia juramento solene, símbolos materiais e bênção religiosa, e o feudo não transferia propriedade plena, apenas senhorio de exploração. Por isso o gabarito é I e II. A alternativa A é incompleta por desprezar a II, verdadeira, e as alternativas B, D e E aceitam a III, que é falsa."
+    "comentario": "A afirmativa I é correta porque o feudo entregava a terra em senhorio e o vassalo assumia obrigações militares, consultivas e pecuniárias, resumidas na fórmula auxilium et consilium. A afirmativa II também é correta porque o mesmo homem podia ser vassalo de vários senhores e suserano de vários vassalos, formando pirâmides de lealdades que disputavam o mesmo espaço e fragmentavam a soberania. A afirmativa III é falsa, pois a cerimônia de homenagem e investidura envolvia juramento solene, símbolos materiais e bênção religiosa, e o feudo não transferia propriedade plena, apenas senhorio de exploração. Por isso o gabarito é I e II. A alternativa A é incorreta porque aceita a III, que é falsa, ainda que contenha a II, verdadeira; as alternativas B e D também aceitam a III; e a alternativa E omite a II, que é verdadeira."
   },
   {
     "disciplina": "História - Idade Média (Unicamp)",
@@ -3161,7 +3161,7 @@ const SIMULADO_QUESTOES = [
       "a burguesia comercial aderiu imediatamente à política dos reis, garantindo o fim do particularismo feudal já no século XII."
     ],
     "correta": 3,
-    "comentario": "O renascimento urbano produziu as corporações, que regulavam produção, preços e formação profissional, e as cidades obtinham cartas de franquia que limitavam o poder senhorial, muitas vezes por conflito e não por doação espontânea. A alternativa correta é a única que descreve esse quadro com fidelidade. A alternativa A inverte a lógica do processo, pois quem teve seu poder cerceado foi justamente o senhor rural. A alternativa B é anacrônica, uma vez que o trabalho assalariado pleno e o fim do escravismo não caracterizam a economia urbano-medieval. A alternativa C antecipa em séculos a aliança entre burguesia e monarquia, que amadurece apenas na Baixa Idade Média e na Idade Moderna. A alternativa E contradiz as inúmeras revoltas urbanas e guerras contra senhorios documentadas no período."
+    "comentario": "O renascimento urbano produziu as corporações, que regulavam produção, preços e formação profissional, e as cidades obtinham cartas de franquia que limitavam o poder senhorial, muitas vezes por conflito e não por doação espontânea. A alternativa correta é a única que descreve esse quadro com fidelidade. A alternativa A inverte a lógica do processo, pois quem teve seu poder cerceado foi justamente o senhor rural. A alternativa B é anacrônica, uma vez que o trabalho assalariado pleno e o fim do escravismo não caracterizam a economia urbano-medieval. A alternativa C é falsa, pois as cidades não surgiram por doação espontânea dos senhores: elas muitas vezes se formaram em oposição aos senhorios feudais e obtiveram cartas de franquia por conflito, e não por concessão voluntária. A alternativa E é falsa, pois a aliança entre burguesia e monarquia amadurece apenas na Baixa Idade Média e na Idade Moderna, e não já no século XII, quando as cidades ainda lutavam contra os particularismos feudais."
   },
   {
     "disciplina": "História - Revoluções Burguesas (Fuvest)",
@@ -3174,7 +3174,7 @@ const SIMULADO_QUESTOES = [
       "a criação do Tribunal Revolucionário, da Lei dos Suspeitos e do Maximum, que tabelava preços e salários, no quadro de um governo de emergência centralizado."
     ],
     "correta": 4,
-    "comentario": "A Convenção jacobina instituiu o Comitê de Salvação Pública e o Tribunal Revolucionário, decretou a Lei dos Suspeitos e o Maximum, promoveu a descristianização e o recrutamento em massa. A alternativa correta reúne exatamente essas medidas. A alternativa B é o oposto do que ocorreu, já que o período foi de forte centralização e intervenção econômica. A alternativa C é falsa em duas frentes: a escravidão só foi abolida em 1794, depois restaurada por Napoleão em 1802, e as mulheres ficaram fora da cidadania política. A alternativa D contraria o curso dos acontecimentos, pois a guerra se intensificou até as vitórias de Fleurus, em 1794. A alternativa A é anacrônica e contraditória, uma vez que o Golpe de 18 de Brumário encerrou a Revolução poucos meses depois e foi dado por Napoleão Bonaparte, e não por girondinos."
+    "comentario": "A Convenção jacobina instituiu o Comitê de Salvação Pública e o Tribunal Revolucionário, decretou a Lei dos Suspeitos e o Maximum, promoveu a descristianização e o recrutamento em massa. A alternativa correta reúne exatamente essas medidas. A alternativa B é o oposto do que ocorreu, já que o período foi de forte centralização e intervenção econômica. A alternativa C é falsa, pois a guerra não foi encerrada por acordo de paz com Áustria e Inglaterra: ela se intensificou até as vitórias de Fleurus, em 1794, e as execuções em massa do Terror ocorreram justamente durante o período de guerra. A alternativa D é falsa, pois a Assembleia Constituinte já havia nacionalizado os bens do clero em 1789 e nenhum privilégio feudal foi restaurado para conter a revolta camponesa. A alternativa A é falsa porque a Convenção nunca estendeu o sufrágio às mulheres, que ficaram fora da cidadania política, e porque a abolição da escravidão, decretada em 1794, foi revertida por Napoleão em 1802."
   },
   {
     "disciplina": "História - Revolução Industrial (ENEM)",
@@ -3187,7 +3187,7 @@ const SIMULADO_QUESTOES = [
       "resultou de uma aliança entre operários e industriais contra a política de tarifas alfandegárias do Estado britânico."
     ],
     "correta": 0,
-    "comentario": "O ludismo, nome atribuído ao lendário Ned Ludd, foi espontâneo, localizado e basicamente reativo: quebrava máquinas, mas não formulava um projeto político coerente de transformação social. Por isso a alternativa correta é a primeira. A alternativa C é falsa, pois a repressão foi severa, com pena de morte para a destruição de máquinas em 1812, e a mecanização avançou. A alternativa B inventa uma aliança inexistente, já que os industriais sustentavam o novo maquinismo. A alternativa D confunde cronologias, porque o cartismo data dos anos 1830 e 1840 e excluía as mulheres. A alternativa E atribui aos ludistas uma consciência política que só surgiria com o socialismo e o sindicalismo posteriores."
+    "comentario": "O ludismo, nome atribuído ao lendário Ned Ludd, foi espontâneo, localizado e basicamente reativo: quebrava máquinas, mas não formulava um projeto político coerente de transformação social. Por isso a alternativa correta é a primeira. A alternativa C é falsa, pois a repressão foi severa, com pena de morte para a destruição de máquinas em 1812, e a mecanização avançou. A alternativa E inventa uma aliança inexistente, já que os industriais sustentavam o novo maquinismo. A alternativa B confunde cronologias, porque o cartismo data dos anos 1830 e 1840, e não da década de 1810, além de excluía as mulheres. A alternativa D atribui aos ludistas uma consciência política que só surgiria com o socialismo e o sindicalismo posteriores."
   },
   {
     "disciplina": "História - Século XX (Unesp)",
@@ -3200,7 +3200,7 @@ const SIMULADO_QUESTOES = [
       "a rápida anexação da renânia e da Áustria pela Alemanha, validada pelas potências vencedoras em 1920."
     ],
     "correta": 1,
-    "comentario": "A expressão diktat e o mito da punhalada pelas costas alimentaram a radicalização da direita alemã e corroeram a legitimidade de Weimar, sobretudo após a hiperinflação de 1923. Por isso a segunda alternativa é o gabarito. A primeira é falsa porque as reparações foram vultosas e sua renegociação pelo Plano Dawes, em 1924, mostra que a questão permaneceu aberta. A terceira é oposta ao que ocorreu, dado que a instabilidade política foi crônica. A quarta descreve o expansionismo nazista dos anos 1930, e não o resultado do próprio tratado. A quinta é duplamente falsa, pois a Liga das Nações foi criada sem a participação dos Estados Unidos, e nem a Alemanha, admitida apenas em 1926, nem a Rússia bolchevique tiveram assento permanente desde o início."
+    "comentario": "A expressão diktat e o mito da punhalada pelas costas alimentaram a radicalização da direita alemã e corroeram a legitimidade de Weimar, sobretudo após a hiperinflação de 1923. Por isso a segunda alternativa é o gabarito. A primeira é falsa porque a República de Weimar foi marcada por instabilidade política crônica, e não por um pluripartidário estável sustentado pelo campo e pela indústria. A terceira é oposta ao que ocorreu, pois as reparações foram vultosas e sua renegociação pelo Plano Dawes, em 1924, mostra que a questão permaneceu aberta. A quarta é duplamente falsa, pois a Liga das Nações foi criada sem a participação dos Estados Unidos, e nem a Alemanha, admitida apenas em 1926, nem a Rússia soviética, que só ingressou em 1934, tiveram assento permanente desde o início. A quinta é falsa, pois a Renânia foi remilitarizada pelos nazistas em 1936 e a Áustria foi anexada em 1938, sem validação das potências vencedoras."
   },
   {
     "disciplina": "História - Guerra Fria e Descolonização (ENEM)",
@@ -3213,7 +3213,7 @@ const SIMULADO_QUESTOES = [
       "a descolonização foi concluída sem conflitos armados, graças a negociações pacíficas promovidas pelos Estados Unidos."
     ],
     "correta": 2,
-    "comentario": "A descolonização explica-se pela conjugação de fatores: o enfraquecimento da Europa após a Segunda Guerra, a ascensão de movimentos nacionalistas, como os da Índia, de Gana, da Argélia e do Vietnã, e o interesse das superpotências em influenciar as novas nações. A terceira alternativa é a correta. A primeira é falsa porque vários países adotaram o não alinhamento, como na Conferência de Bandung, em 1955, e no Movimento dos Não Alinhados, em 1961. A segunda inventa uma proibição inexistente, já que a Carta da ONU consagra o direito à autodeterminação. A quarta ignora guerras como a da Argélia, a da Indochina e a de Angola. A quinta é justamente o contrário, pois as fronteiras traçadas a régua geraram conflitos internos que perduram até hoje."
+    "comentario": "A descolonização explica-se pela conjugação de fatores: o enfraquecimento da Europa após a Segunda Guerra, a ascensão de movimentos nacionalistas, como os da Índia, de Gana, da Argélia e do Vietnã, e o interesse das superpotências em influenciar as novas nações. A terceira alternativa é a correta. A primeira inventa uma proibição inexistente, já que a Carta da ONU consagra o direito dos povos à autodeterminação, e não proíbe o nacionalismo nos territórios coloniais. A segunda é falsa porque as fronteiras herdadas das metrópoles raramente coincidiam com as divisões étnicas locais, e geraram conflitos internos que perduram até hoje. A quarta é falsa porque muitos novos Estados aderiram ao não alinhamento, como na Conferência de Bandung, em 1955, e no Movimento dos Não Alinhados, em 1961. A quinta é falsa porque a descolonização foi marcada por guerras, como as da Argélia, da Indochina e de Angola."
   },
   {
     "disciplina": "História - Totalitarismos (Unicamp)",
@@ -3226,7 +3226,7 @@ const SIMULADO_QUESTOES = [
       "ambos rejeitavam o culto ao líder, atribuindo o poder a colegiados burocráticos de partido único."
     ],
     "correta": 3,
-    "comentario": "O ponto central é a natureza da ideologia: o nazismo tem no povo e no antissemitismo biologizado seu núcleo, com desdobramento genocida no Holocausto, enquanto o fascismo de Mussolini nasce de um nacionalismo autoritário, do culto ao Estado e do corporativismo, tendo aprovado as leis raciais apenas em 1938. A quarta alternativa é a correta. A primeira inverte os termos. A segunda é falsa porque o nazismo conviveu com a grande propriedade privada alemã, coordenando-a pelo Estado em economia de guerra, sem estatização geral. A terceira é absurda, já que o culto ao líder, seja como Duce, seja como Führer, é definidor de ambos. A quinta inverte a cronologia, pois Mussolini tomou o poder em 1922 e Hitler apenas em 1933."
+    "comentario": "O ponto central é a natureza da ideologia: o nazismo tem no povo e no antissemitismo biologizado seu núcleo, com desdobramento genocida no Holocausto, enquanto o fascismo de Mussolini nasce de um nacionalismo autoritário, do culto ao Estado e do corporativismo, tendo aprovado as leis raciais apenas em 1938. A quarta alternativa é a correta. A primeira inverte os termos. A segunda inverte a cronologia, pois o fascismo italiano antecede o nazismo: Mussolini tomou o poder em 1922 e Hitler apenas em 1933. A terceira é falsa porque o nazismo conviveu com a grande propriedade privada alemã, coordenando-a pelo Estado em economia de guerra, sem estatização geral da indústria. A quinta é absurda, já que o culto ao líder, seja como Duce, seja como Führer, é definidor de ambos."
   },
   {
     "disciplina": "História - Brasil Colônia (Unesp)",
@@ -3239,7 +3239,7 @@ const SIMULADO_QUESTOES = [
       "I e II."
     ],
     "correta": 4,
-    "comentario": "A afirmativa I é verdadeira, pois a escravidão moderna foi uma empresa de negócios integrada ao mercado atlântico, e não um resto de estruturas medievais. A afirmativa II também é verdadeira, já que a corrida do ouro em Minas Gerais deslocou população do litoral nordestino em direção ao Sudeste e levou à mudança da capital de Salvador para o Rio de Janeiro, em 1763. A afirmativa III é falsa e inverte o conteúdo da lei: a Lei de Terras de 1850 restringiu a aquisição de terras à compra, acabando com a posse e o regime sesmarial, e foi a Lei Eusébio de Queiroz, do mesmo ano, que proibiu o tráfico de escravizados. O gabarito é, portanto, I e II. A alternativa inicial é incompleta, as alternativas que incluem a III aceitam uma afirmação falsa, e a opção que cita apenas II omite uma afirmação verdadeira."
+    "comentario": "A afirmativa I é verdadeira, pois a escravidão moderna foi uma empresa de negócios integrada ao mercado atlântico, e não um resto de estruturas medievais. A afirmativa II também é verdadeira, já que a corrida do ouro em Minas Gerais deslocou população do litoral nordestino em direção ao Sudeste e levou à mudança da capital de Salvador para o Rio de Janeiro, em 1763. A afirmativa III é falsa e inverte o conteúdo da lei: a Lei de Terras de 1850 restringiu a aquisição de terras à compra, acabando com a posse e o regime sesmarial, e foi a Lei Eusébio de Queiroz, do mesmo ano, que proibiu o tráfico de escravizados. O gabarito é, portanto, I e II. As alternativas A (I e III) e C (II e III) aceitam a III, que é falsa; a alternativa B (somente II) omite a I, que é verdadeira; e a alternativa D (somente I) omite a II, que é verdadeira."
   },
   {
     "disciplina": "História - Brasil Império (Fuvest)",
@@ -3252,7 +3252,7 @@ const SIMULADO_QUESTOES = [
       "tiveram caráter estritamente religioso, sendo lideradas por clérigos ligados à Igreja Católica."
     ],
     "correta": 0,
-    "comentario": "As revoltas regenciais combinaram tensões diversas: disputa pelo poder provincial, descontentamento com uma Regência considerada distante, participação de populações pobres, escravizados e indígenas, e reivindicações muitas vezes radicais, como a proclamação de repúblicas locais na Cabanagem. A primeira alternativa é a correta. A segunda descarta a dimensão político-social e a inserção dos conflitos no contexto nacional. A terceira é absurda, pois os revoltosos não defendiam a restauração colonial. A quarta é anacrônica, já que a industrialização brasileira não se dá nesse período e a Tarifa Alves Brancas é de 1844, posterior às revoltas. A quinta elimina a natureza política e social documentada desses levantes."
+    "comentario": "As revoltas regenciais combinaram tensões diversas: disputa pelo poder provincial, descontentamento com uma Regência considerada distante, participação de populações pobres, escravizados e indígenas, e reivindicações muitas vezes radicais, como a proclamação de repúblicas locais na Cabanagem. A primeira alternativa é a correta. A segunda é absurda, pois os revoltosos não defendiam a restauração do regime colonial português. A terceira é anacrônica, já que a industrialização brasileira não se dá nesse período e a Tarifa Alves Brancas é de 1844, posterior às revoltas. A quarta é falsa, pois os movimentos não foram exclusivamente separatistas e guardaram relação com as disputas políticas do centro do Império. A quinta elimina a natureza política e social documentada desses levantes."
   },
   {
     "disciplina": "História - Brasil República (Unicamp)",
@@ -3265,7 +3265,7 @@ const SIMULADO_QUESTOES = [
       "restaurou o pluripartidarismo e convocou eleições livres para a Câmara e para o Senado nos anos de 1940 e 1942."
     ],
     "correta": 1,
-    "comentario": "O Estado Novo implodiu a ordem constitucional de 1934: houve fechamento do Congresso, extinção dos partidos, outorga da Carta de 1937, censura exercida pelo Departamento de Imprensa e Propaganda e pelo Departamento de Ordem Política e Social, além da nomeação de interventores nos Estados. Por isso a segunda alternativa é a correta. A primeira é o oposto, pois não houve eleições legislativas em 1940 e 1942. A terceira é falsa, uma vez que Vargas criou e ampliou a legislação trabalhista e a estrutura sindical corporativa, em vez de suprimi-la. A quarta confunde o período com o governo Juscelino Kubitschek, responsável pela construção de Brasília. A quinta contraria a tendência centralizadora típica do período."
+    "comentario": "O Estado Novo implodiu a ordem constitucional de 1934: houve fechamento do Congresso, extinção dos partidos, outorga da Carta de 1937, censura exercida pelo Departamento de Imprensa e Propaganda e pelo Departamento de Ordem Política e Social, além da nomeação de interventores nos Estados. Por isso a segunda alternativa é a correta. A primeira é falsa, pois o Estado Novo não extinguiu a Justiça do Trabalho nem proibiu a organização sindical: os sindicatos foram mantidos, mas sob controle corporativo do Estado. A terceira é falsa, pois o Estado Novo concentrou o poder, nomeando interventores nos Estados e encerrando o federalismo oligárquico da República Velha. A quarta confunde o período com o governo Juscelino Kubitschek, responsável pela construção de Brasília. A quinta contraria a história, pois não houve eleições legislativas livres em 1940 e 1942 e os partidos políticos foram extintos."
   },
   {
     "disciplina": "Geografia - Geopolítica (ENEM)",
@@ -3278,7 +3278,7 @@ const SIMULADO_QUESTOES = [
       "a única potência global restante deixou de participar de conflitos armados e de organismos internacionais."
     ],
     "correta": 2,
-    "comentario": "A multipolaridade convive com hierarquias: países desenvolvidos dominam tecnologia, fluxos de capital e instituições financeiras, enquanto as periferias seguem vulneráveis à volatilidade externa. A terceira alternativa expressa exatamente essa ressalva e é a correta. A primeira ignora a desigualdade de poder. A segunda é desmentida pelos conflitos armados posteriores a 1990. A quarta é falsa, pois a superpotência remanescente seguiu intervindo militarmente em diversas regiões. A quinta exagera, já que organismos internacionais não detêm soberania sobre os Estados e atuam por acordo, com poderes limitados."
+    "comentario": "A multipolaridade convive com hierarquias: países desenvolvidos dominam tecnologia, fluxos de capital e instituições financeiras, enquanto as periferias seguem vulneráveis à volatilidade externa. A terceira alternativa expressa exatamente essa ressalva e é a correta. A primeira é falsa porque os conflitos militares não desapareceram após o fim da Guerra Fria, nem foram resolvidos de forma pacífica por organismos multilaterais. A segunda é falsa porque o poder mundial não se distribuiu igualmente entre dezenas de países: a globalização financeira convive com hierarquias e assimetrias entre economias centrais e periféricas. A quarta é falsa, já que organismos internacionais não detêm soberania sobre os Estados e atuam por acordo, com poderes limitados. A quinta é falsa, pois a superpotência remanescente seguiu intervindo militarmente em diversas regiões e participando dos organismos internacionais."
   },
   {
     "disciplina": "Geografia - Geopolítica (Fuvest)",
@@ -3291,7 +3291,7 @@ const SIMULADO_QUESTOES = [
       "o conflito por recursos hídricos é sempre resolvido pela guerra, pois inexistem tratados sobre bacias compartilhadas."
     ],
     "correta": 3,
-    "comentario": "A barragem etíope Renascença Etíope mostra como o controle da vazão afeta os países a jusante, em especial o Egito, altamente dependente das águas do Nilo. A geopolítica dos recursos envolve posição na bacia, capacidade de engenharia e negociação internacional, e não uma regra única e simples. A quarta alternativa é a correta. A primeira e a segunda criam princípios inexistentes no direito internacional das águas. A terceira desconsidera a existência de inúmeros tratados e das vias diplomáticas para bacias compartilhadas. A quinta é absurda, pois a escassez hídrica tende a aumentar, e não a diminuir, a importância estratégica desses rios."
+    "comentario": "A barragem etíope Renascença Etíope mostra como o controle da vazão afeta os países a jusante, em especial o Egito, altamente dependente das águas do Nilo. A geopolítica dos recursos envolve posição na bacia, capacidade de engenharia e negociação internacional, e não uma regra única e simples. A quarta alternativa é a correta. A primeira é falsa porque o direito internacional das águas não reconhece prioridade absoluta do país onde o rio desagua, prevalecendo o uso razoável e não prejudicial entre os Estados ribeirinhos. A segunda é absurda, pois a escassez hídrica tende a aumentar, e não a diminuir, a importância estratégica desses rios. A terceira é falsa, pois grandes obras em rios internacionais produzem impactos transfronteiriços, existindo inúmeros tratados e vias diplomáticas para bacias compartilhadas. A quinta é falsa, pois inexistem acordos e tratados sobre bacias compartilhadas, e nem todo conflito por recursos hídricos se resolve pela guerra."
   },
   {
     "disciplina": "Geografia - Urbanização (ENEM)",
@@ -3304,7 +3304,7 @@ const SIMULADO_QUESTOES = [
       "a conurbação intensificou a dependência da população a longos deslocamentos diários e multiplicou os desafios de gestão do transporte, do saneamento e do uso do solo."
     ],
     "correta": 4,
-    "comentario": "A conurbação cria um tecido urbano único, mas conserva divisões administrativas e profundas desigualdades: a população de baixa renda ocupou periferias distantes e depende de deslocamentos longos. Por isso a quinta alternativa é a correta. A primeira é falsa, pois a maior parte da expansão ocorreu fora dos planos diretores, com loteamentos irregulares e autoconstrução. A segunda é o oposto do que ocorreu, já que os deslocamentos pendulares aumentaram. A terceira contraria a evidência, visto que a segregação se aprofundou, com condomínios fechados e ocupações informais nas mesmas regiões. A quarta é incorreta porque a conurbação não implica fusão administrativa, e cada município preserva sua autonomia."
+    "comentario": "A conurbação cria um tecido urbano único, mas conserva divisões administrativas e profundas desigualdades: a população de baixa renda ocupou periferias distantes e depende de deslocamentos longos. Por isso a quinta alternativa é a correta. A primeira é falsa, pois a maior parte da expansão ocorreu fora dos planos diretores, com loteamentos irregulares e autoconstrução. A segunda é o oposto do que ocorreu, já que os deslocamentos pendulares aumentaram. A terceira é incorreta porque a conurbação não implica fusão administrativa: cada município preserva sua autonomia e seu próprio governo. A quarta contraria a evidência, visto que a segregação socioespacial se aprofundou, com condomínios fechados e ocupações informais nas mesmas regiões."
   },
   {
     "disciplina": "Geografia - Urbanização (Unicamp)",
@@ -3317,7 +3317,7 @@ const SIMULADO_QUESTOES = [
       "conurbação, isto é, a fusão das malhas urbanas de dois municípios vizinhos em uma única cidade."
     ],
     "correta": 0,
-    "comentario": "O enunciado descreve a sequência típica da gentrificação: revalorização de áreas antes depreciadas, substituição do perfil de moradores e pressão sobre antigos ocupantes. A primeira alternativa é a correta. A segunda descreve o processo inverso, o da ocupação de periferias e subúrbios. A terceira confunde forma com processo social, pois a verticalização pode ser consequência, mas não define o fenômeno completo. A quarta é oposta, já que a favelização envolve ocupação informal precária. A quinta refere-se à junção física de duas malhas urbanas, sem implicar necessariamente mudança do perfil social dos moradores."
+    "comentario": "O enunciado descreve a sequência típica da gentrificação: revalorização de áreas antes depreciadas, substituição do perfil de moradores e pressão sobre antigos ocupantes. A primeira alternativa é a correta. A segunda descreve outro fenômeno, o da verticalização, aumento do número de pavimentos, que pode até acompanhar a gentrificação, mas não define o processo. A terceira confunde dois processos, pois a favelização é a ocupação informal de áreas sem infraestrutura, usualmente na periferia, e não a valorização de bairros centrais por novos moradores de maior renda. A quarta é oposta, pois a suburbanização descreve o deslocamento de grupos de maior renda do centro para as bordas da metrópole, e não a chegada de maior renda aos bairros centrais. A quinta refere-se à junção física de duas malhas urbanas, sem implicar necessariamente mudança do perfil social dos moradores."
   },
   {
     "disciplina": "Geografia - Climatologia (Unesp)",
@@ -3343,7 +3343,7 @@ const SIMULADO_QUESTOES = [
       "a maior altitude do centro das cidades, que aproxima a superfície das camadas mais quentes da atmosfera."
     ],
     "correta": 2,
-    "comentario": "A ilha de calor resulta da mudança das propriedades da superfície, com o asfalto e o concreto apresentando albedo e inércia térmica distintos, da redução da evapotranspiração e da liberação antrópica de calor. A terceira alternativa é a correta. A primeira é falsa, pois a altitude não explica o fenômeno e, em muitos casos, centros urbanos estão em cotas baixas. A segunda inverte a lógica, já que corpos de água amenizam a temperatura. A quarta confunde processos, porque a poluição urbana tende a aumentar aerossóis e nevoeiro, e não a eliminar nuvens. A quinta inventa um efeito inexistente da rotação atmosférica."
+    "comentario": "A ilha de calor resulta da mudança das propriedades da superfície, com o asfalto e o concreto apresentando albedo e inércia térmica distintos, da redução da evapotranspiração e da liberação antrópica de calor. A terceira alternativa é a correta. A primeira inventa um efeito inexistente: a concentração de edifícios não aumenta a rotação atmosférica nem comprime o ar. A segunda inverte a lógica, já que corpos de água amenizam a temperatura. A quarta confunde processos, porque a poluição urbana tende a aumentar aerossóis e nevoeiro, e não a eliminar nuvens. A quinta é falsa, pois a altitude não explica o fenômeno e, em muitos casos, centros urbanos estão em cotas baixas."
   },
   {
     "disciplina": "Geografia - Relevo (Fuvest)",
@@ -3369,7 +3369,7 @@ const SIMULADO_QUESTOES = [
       "progridem por erosão hídrica concentrada, sendo favorecidas pela remoção da vegetação, pelo escoamento superficial e pelo manejo inadequado do solo."
     ],
     "correta": 4,
-    "comentario": "Voçorocas são o estágio avançado da erosão laminar e linear: a água de escoamento superficial concentra-se em sulcos que crescem para montante. Fatores como desmatamento, sobrepastoreio, déficit de infiltração e construções mal drenadas aceleram o processo. A quinta alternativa é a correta. A primeira é falsa, pois ocorrem com frequência em regiões tropicais úmidas com solo exposto. A segunda confunde o processo com erosão eólica, que tem outra morfologia. A terceira inverte a sequência evolutiva, já que as ravinas precedem as voçorocas. A quarta é absurda, pois há voçorocas urbanas e rurais em todo o país."
+    "comentario": "Voçorocas são o estágio avançado da erosão laminar e linear: a água de escoamento superficial concentra-se em sulcos que crescem para montante. Fatores como desmatamento, sobrepastoreio, déficit de infiltração e construções mal drenadas aceleram o processo. A quinta alternativa é a correta. A primeira é falsa, pois a voçoroca resulta de erosão hídrica concentrada, e não de erosão eólica, que tem outra morfologia. A segunda é falsa, pois ocorrem com frequência em regiões tropicais úmidas com solo exposto. A terceira é absurda, pois há voçorocas urbanas e rurais em todo o país, não apenas em áreas de mineração. A quarta inverte a sequência evolutiva, já que as ravinas precedem as voçorocas."
   },
   {
     "disciplina": "Geografia - População (ENEM)",
@@ -3395,7 +3395,7 @@ const SIMULADO_QUESTOES = [
       "tais deslocamentos são proibidos por tratados internacionais de livre comércio assinados no âmbito do Mercosul."
     ],
     "correta": 1,
-    "comentario": "Os fluxos recentes são plurais: haitianos e venezuelanos, por exemplo, chegaram por razões diversas, como crise política e humanitária, e muitos ingressaram por vistos humanitários. O desafio central é a integração socioeconômica. A segunda alternativa é a correta. A primeira reduz a heterogeneidade dos fluxos a uma única categoria jurídica. A terceira ignora que o Brasil manteve saldo positivo em parte do período recente, apesar da emigração histórica. A quarta é absurda, pois tratados comerciais não proíbem migrações e o Mercosul facilita a livre circulação. A quinta é falsa, já que a emigração de brasileiros prossegue."
+    "comentario": "Os fluxos recentes são plurais: haitianos e venezuelanos, por exemplo, chegaram por razões diversas, como crise política e humanitária, e muitos ingressaram por vistos humanitários. O desafio central é a integração socioeconômica. A segunda alternativa é a correta. A primeira é falsa, já que a emigração de brasileiros prossegue e a migração de retorno não inverteu de forma consistente o saldo migratório do país. A terceira reduz a heterogeneidade dos fluxos a uma única categoria jurídica, pois há imigrantes econômicos, estudantes e pessoas em deslocamento humanitário ao lado dos refugiados reconhecidos pelo Comitê Nacional para os Refugiados. A quarta é falsa, já que a emigração de brasileiros prossegue para países como Estados Unidos, Portugal e Japão. A quinta é absurda, pois tratados comerciais não proíbem migrações e o Mercosul facilita a livre circulação."
   },
   {
     "disciplina": "Geografia - Meio Ambiente (ENEM)",
@@ -3408,7 +3408,7 @@ const SIMULADO_QUESTOES = [
       "dispensa a participação pública e o controle social, posto que a análise é estritamente técnica e de competência exclusiva do Poder Executivo."
     ],
     "correta": 2,
-    "comentario": "O licenciamento é faseado em licença prévia, de instalação e de operação, exige estudo e respectivo relatório de impacto ambiental em casos de significativo impacto e segue a competência do ente federativo responsável pelo empreendimento. Por isso a terceira alternativa é a correta. A primeira é falsa, pois a competência é comum entre União, Estados, Distrito Federal e Municípios, conforme o artigo 23 da Constituição. A segunda transforma o instrumento em mera autorização monetária, o que contraria a lógica de prevenção e controle. A quarta é falsa, já que audiências públicas são previstas, especialmente quando há estudo de impacto. A quinta desmente a própria Constituição, que reconhece a competência ambiental dos municípios."
+    "comentario": "O licenciamento é faseado em licença prévia, de instalação e de operação, exige estudo e respectivo relatório de impacto ambiental em casos de significativo impacto e segue a competência do ente federativo responsável pelo empreendimento. Por isso a terceira alternativa é a correta. A primeira é falsa, pois a competência é comum entre União, Estados, Distrito Federal e Municípios, conforme o artigo 23 da Constituição. A segunda é falsa, pois o licenciamento pode ser federal, estadual ou municipal, conforme a competência e a abrangência do empreendimento. A quarta transforma o instrumento em mera autorização monetária, o que contraria a lógica de prevenção e controle. A quinta é falsa, pois a participação pública e o controle social são assegurados, especialmente mediante audiências públicas quando há estudo de impacto ambiental."
   },
   {
     "disciplina": "Geografia - Fontes de Energia (Fuvest)",
@@ -3421,7 +3421,7 @@ const SIMULADO_QUESTOES = [
       "a matriz elétrica deixou de incluir fontes térmicas, tornando-se integralmente renovável desde a década de 1990."
     ],
     "correta": 3,
-    "comentario": "A segurança energética exige prever anos de chuvas fracas, como aqueles que exigiram o acionamento maciço de termelétricas, e por isso a diversificação é vista como vantagem sistêmica. A quarta alternativa é a correta. A primeira é falsa, pois o risco hidrológico é real e documentado. A segunda contraria o fato de o Nordeste brasileiro registrar alguns dos melhores ventos e níveis de irradiação do mundo. A terceira é falsa, já que o gás natural continua relevante no parque térmico brasileiro. A quinta é exagerada, pois qualquer empreendimento de geração passa por controle ambiental proporcional ao impacto."
+    "comentario": "A segurança energética exige prever anos de chuvas fracas, como aqueles que exigiram o acionamento maciço de termelétricas, e por isso a diversificação é vista como vantagem sistêmica. A quarta alternativa é a correta. A primeira é falsa, pois o risco hidrológico é real e documentado. A segunda é falsa, pois qualquer empreendimento de geração — incluindo geração distribuída e pequenas centrais hidrelétricas — passa por controle ambiental proporcional ao impacto. A terceira é falsa, pois o Nordeste brasileiro registra alguns dos melhores ventos e níveis de irradiação do mundo. A quinta é falsa, já que o gás natural continua relevante no parque térmico brasileiro."
   },
   {
     "disciplina": "Sociologia - Indústria Cultural (Unicamp)",
@@ -3434,7 +3434,7 @@ const SIMULADO_QUESTOES = [
       "transformar a cultura em mercadoria padronizada, submetendo a criação artística à lógica da repetição e do lucro e amortecendo a consciência crítica."
     ],
     "correta": 4,
-    "comentario": "Para Adorno e Horkheimer, a indústria cultural não produz simples diversão: ela organiza o tempo livre, aplica critérios industriais de série à arte e gera uma pseudo-individualidade, pois cada produto parece único, mas repete a mesma fórmula. O efeito é a integração do público ao sistema. Por isso a quinta alternativa é o gabarito. A primeira atribui ao sistema um efeito emancipador oposto ao diagnosticado. A segunda é o contrário, já que o lucro é o motor do processo. A terceira contraria a tese, pois os autores identificam fusão entre arte e comércio. A quarta ignora a padronização que, justamente, reduz a originalidade dos produtos."
+    "comentario": "Para Adorno e Horkheimer, a indústria cultural não produz simples diversão: ela organiza o tempo livre, aplica critérios industriais de série à arte e gera uma pseudo-individualidade, pois cada produto parece único, mas repete a mesma fórmula. O efeito é a integração do público ao sistema. Por isso a quinta alternativa é o gabarito. A primeira atribui ao sistema um efeito emancipador oposto ao diagnosticado. A segunda é o contrário do diagnosticado: a indústria cultural amorteceria a consciência crítica em vez de elevá-la, e não transforma o público em produtor autônomo de conteúdo. A terceira contraria a tese, pois a indústria cultural concentra a produção e padroniza as linguagens, em vez de descentralizá-las. A quarta ignora que o lucro é o motor do processo: os autores identificam a fusão entre arte e comércio."
   },
   {
     "disciplina": "Sociologia - Max Weber (Fuvest)",
@@ -3447,7 +3447,7 @@ const SIMULADO_QUESTOES = [
       "no costume e na hereditariedade, que tornam sagradas as ordens recebidas e os direitos históricos do soberano."
     ],
     "correta": 0,
-    "comentario": "No tipo legal-racional, a obediência dirige-se ao estatuto e à competência do cargo, e não a quem o ocupa: é o fundamento do aparato burocrático moderno. Por isso a primeira alternativa é a correta. A segunda descreve a dominação carismática. A terceira descreve a dominação tradicional. A quarta confunde dominação legítima com poder coativo, pois a coerção existe, mas o conceito weberiano exige crença na legitimidade por parte dos dominados. A quinta descreve uma democracia direta ideal, que não é o modelo burocrático analisado por Weber."
+    "comentario": "No tipo legal-racional, a obediência dirige-se ao estatuto e à competência do cargo, e não a quem o ocupa: é o fundamento do aparato burocrático moderno. Por isso a primeira alternativa é a correta. A segunda descreve uma democracia direta ideal, que não é o modelo burocrático analisado por Weber. A terceira confunde dominação legítima com poder coativo, pois a coerção existe, mas o conceito weberiano exige crença na legitimidade por parte dos dominados. A quarta descreve a dominação carismática, fundada na devoção afetiva e pessoal ao líder. A quinta descreve a dominação tradicional, fundada no costume e na hereditariedade."
   },
   {
     "disciplina": "Sociologia - Pierre Bourdieu (Unicamp)",
@@ -3460,7 +3460,7 @@ const SIMULADO_QUESTOES = [
       "a ação humana é sempre racional e consciente, orientada apenas por cálculos utilitários de custo e benefício."
     ],
     "correta": 1,
-    "comentario": "Bourdieu mostra que o sucesso escolar e profissional depende de capitais herdados, muitas vezes convertidos em capitais simbólicos, e que o habitus leva os agentes a reproduzirem as condições de sua própria dominação sem que haja coerção explícita. A segunda alternativa é a correta. A primeira reduz a obra a uma leitura jurídica mecanicista, o contrário da proposta. A terceira contraria a centralidade da luta simbólica nos campos. A quarta é o oposto do que a sociologia bourdieusiana demonstra, pois a escola tende a reproduzir as desigualdades. A quinta aproxima-se do modelo do homo economicus, criticado pelo autor."
+    "comentario": "Bourdieu mostra que o sucesso escolar e profissional depende de capitais herdados, muitas vezes convertidos em capitais simbólicos, e que o habitus leva os agentes a reproduzirem as condições de sua própria dominação sem que haja coerção explícita. A segunda alternativa é a correta. A primeira é o oposto do que a sociologia bourdieusiana demonstra, pois a escola tende a reproduzir as desigualdades de origem, e não a anular. A terceira contraria a centralidade da luta simbólica nos campos e a própria noção de reprodução social. A quarta reduz a obra a uma leitura mecanicista de regras explícitas, o contrário da proposta, pois são as disposições incorporadas (habitus) que orientam as posições dos agentes. A quinta aproxima-se do modelo do homo economicus, criticado pelo autor."
   },
   {
     "disciplina": "Sociologia - Movimentos Sociais (ENEM)",
@@ -3473,7 +3473,7 @@ const SIMULADO_QUESTOES = [
       "o uso sistemático da luta armada como estratégia principal de mobilização política."
     ],
     "correta": 2,
-    "comentario": "Os novos movimentos sociais deslocam o eixo da redistribuição para o reconhecimento: questões de gênero, raça, sexualidade, meio ambiente e cultura ganham destaque, e a articulação em rede é comum. Por isso a terceira alternativa é a correta. A primeira é falsa, pois há organização, ainda que menos hierárquica. A segunda descreve o sindicalismo clássico. A quarta é exagerada e historicamente incorreta. A quinta é falsa, já que muitos desses movimentos atuam justamente por meio de leis, ações judiciais e políticas públicas."
+    "comentario": "Os novos movimentos sociais deslocam o eixo da redistribuição para o reconhecimento: questões de gênero, raça, sexualidade, meio ambiente e cultura ganham destaque, e a articulação em rede é comum. Por isso a terceira alternativa é a correta. A primeira é falsa, pois os novos movimentos sociais não se restringem a reivindicações salariais e trabalhistas no interior das fábricas — esse é o traço dos movimentos operários clássicos. A segunda é falsa, pois esses movimentos dialogam com o Estado e com o sistema jurídico, ainda que muitas vezes por meio de conflito, leis e ações judiciais. A quarta é exagerada e historicamente incorreta, pois há organização, ainda que menos hierárquica. A quinta é falsa, já que muitos desses movimentos atuam justamente por meio de leis, ações judiciais e políticas públicas."
   },
   {
     "disciplina": "Filosofia - Kant (Unicamp)",
@@ -3486,7 +3486,7 @@ const SIMULADO_QUESTOES = [
       "de acordo com os hábitos de minha comunidade, pois a moral não passa de construção cultural local."
     ],
     "correta": 3,
-    "comentario": "O imperativo categórico kantiano é formal e universal: exige a universalizabilidade da máxima e o tratamento das pessoas como fins, nunca apenas como meios. A quarta alternativa é a correta. A primeira descreve uma ética de consequências, próxima do utilitarismo. A segunda funda a moral em revelação externa, o que Kant rejeita, pois a lei moral deve brotar da razão prática. A terceira é relativista e incompatível com a noção de validade universal. A quinta é utilitarista e contradiz a exigência de universalidade."
+    "comentario": "O imperativo categórico kantiano é formal e universal: exige a universalizabilidade da máxima e o tratamento das pessoas como fins, nunca apenas como meios. A quarta alternativa é a correta. A primeira funda a moral em revelação externa, o que Kant rejeita, pois a lei moral deve brotar da razão prática. A segunda descreve uma ética de consequências, próxima do utilitarismo, que Kant rejeita ao exigir que a ação seja ditada pelo dever. A terceira é utilitarista e contradiz a exigência de universalidade, pois subordina a máxima ao prazer individual. A quinta é relativista e incompatível com a noção de validade universal."
   },
   {
     "disciplina": "Filosofia - Contratualismo (Fuvest)",
@@ -3499,7 +3499,7 @@ const SIMULADO_QUESTOES = [
       "enquanto Hobbes vê no contrato uma saída para um estado de natureza conflituoso, Locke associa-o à proteção da vida, da liberdade e da propriedade, e Rousseau formula a vontade geral como fonte da legitimidade."
     ],
     "correta": 4,
-    "comentario": "A quinta alternativa resume corretamente as três posições: a saída hobbesiana da insegurança exige um Leviatã; o contrato lockeano preserva direitos naturais e admite resistência ao poder que os viole; Rousseau funda a soberania na vontade geral. A primeira é falsa quanto ao diagnóstico dos autores sobre o estado de natureza. A segunda atribui a Hobbes uma conclusão que Locke nega, além de ignorar que o contrato absolutista não é o de Locke. A terceira atribui a Rousseau a tese hobbesiana. A quarta nega justamente o que distingue os contratualistas liberais de Hobbes."
+    "comentario": "A quinta alternativa resume corretamente as três posições: a saída hobbesiana da insegurança exige um Leviatã; o contrato lockeano preserva direitos naturais e admite resistência ao poder que os viole; Rousseau funda a soberania na vontade geral. A primeira é falsa, pois os três não convergem: Hobbes nega limites ao poder do soberano, ao passo que Locke admite o direito de resistência e Rousseau subordina o Estado à vontade geral. A segunda atribui a Rousseau a tese de Hobbes, pois a guerra de todos contra todos e a entrega de toda a liberdade a um soberano descrevem o modelo hobbesiano. A terceira atribui a Locke a tese hobbesiana, já que o contrato lockeano preserva a vida, a liberdade e a propriedade e admite a resistência ao poder que os viole. A quarta é falsa, pois Hobbes descreve o estado de natureza como guerra de todos contra todos, e não como harmonia."
   },
   {
     "disciplina": "Filosofia - Sócrates (ENEM)",
@@ -3512,7 +3512,7 @@ const SIMULADO_QUESTOES = [
       "impor ao interlocutor uma doutrina pronta, transmitida pela autoridade do mestre e da tradição."
     ],
     "correta": 0,
-    "comentario": "A ironia socrática é negativa em sua forma, mas positiva em seu propósito: ao desmontar a falsa certeza, ela abre caminho para a maiêutica, o parto das ideias, em que o interlocutor é levado a produzir o saber. Por isso a primeira alternativa é a correta. A segunda aproxima Sócrates do ceticismo radical, o que não corresponde ao seu projeto. A terceira contraria o método dialógico, que rejeita a autoridade e a transmissão passiva. A quarta descreve a prática que Sócrates atribuía aos sofistas. A quinta introduz um elemento teológico ausente do procedimento racional socrático."
+    "comentario": "A ironia socrática é negativa em sua forma, mas positiva em seu propósito: ao desmontar a falsa certeza, ela abre caminho para a maiêutica, o parto das ideias, em que o interlocutor é levado a produzir o saber. Por isso a primeira alternativa é a correta. A segunda descreve a prática que Sócrates atribuía aos sofistas, que buscavam vencer debates por retórica persuasiva, independentemente da verdade. A terceira introduz um elemento teológico ausente do procedimento racional socrático. A quarta aproxima Sócrates do ceticismo radical, o que não corresponde ao seu projeto, pois a ironia tem propósito construtivo. A quinta contraria o método dialógico, que rejeita a autoridade e a transmissão passiva."
   },
   {
     "disciplina": "Filosofia - Existencialismo (Unesp)",
@@ -3538,7 +3538,7 @@ const SIMULADO_QUESTOES = [
       "Heráclito nega a mudança e defende a imutabilidade do Ser, enquanto Parmênides afirma que tudo flui sem cessar."
     ],
     "correta": 2,
-    "comentario": "Heráclito, de Éfeso, vê no fogo e no devir a chave do real, pois não se entra duas vezes no mesmo rio. Parmênides, de Eléia, distingue o caminho da verdade, em que o Ser é imutável e uno, do caminho da opinião, baseado nos sentidos. A terceira alternativa é a correta. A primeira inverte as posições. A segunda contraria ambos, pois Parmênides desconfia dos sentidos e Heráclito também valoriza o logos. A quarta é anacrônica, já que os quatro elementos são de Empédocles. A quinta atribui a Parmênides a doutrina de Demócrito e Leucipo."
+    "comentario": "Heráclito, de Éfeso, vê no fogo e no devir a chave do real, pois não se entra duas vezes no mesmo rio. Parmênides, de Eléia, distingue o caminho da verdade, em que o Ser é imutável e uno, do caminho da opinião, baseado nos sentidos. A terceira alternativa é a correta. A primeira é anacrônica, já que a hipótese dos quatro elementos é de Empédocles. A segunda atribui a Parmênides a doutrina de Demócrito e Leucipo, os verdadeiros fundadores do atomismo. A quarta contraria ambos, pois Parmênides desconfia dos sentidos e neles vê o engano, ao passo que Heráclito valoriza o logos como via de acesso à verdade comum. A quinta inverte as posições."
   },
   {
     "disciplina": "Sociologia - Durkheim (Unicamp)",
@@ -3551,7 +3551,7 @@ const SIMULADO_QUESTOES = [
       "pela extinção da divisão do trabalho, que seria a causa de todos os males das sociedades modernas."
     ],
     "correta": 3,
-    "comentario": "Nas sociedades simples predomina a solidariedade mecânica, fundada na semelhança e no direito penal repressivo. Nas sociedades complexas, a divisão do trabalho gera especialização e interdependência, produzindo solidariedade orgânica e direitos restitutivos. Por isso a quarta alternativa é a correta. A primeira é o contrário da tese durkheimiana. A segunda é falsa, pois Durkheim não propõe eliminar o direito repressivo. A terceira descreve o cenário da solidariedade mecânica. A quinta é alheia ao pensamento do autor, que valoriza a regulação moral do Estado."
+    "comentario": "Nas sociedades simples predomina a solidariedade mecânica, fundada na semelhança e no direito penal repressivo. Nas sociedades complexas, a divisão do trabalho gera especialização e interdependência, produzindo solidariedade orgânica e direitos restitutivos. Por isso a quarta alternativa é a correta. A primeira é falsa, pois é nas sociedades organizadas pela solidariedade mecânica que predomina o direito repressivo, e a passagem à solidariedade orgânica nem suprime a norma jurídica nem a reduz a normas puramente religiosas. A segunda é falsa, pois Durkheim não propõe eliminar o Estado nem a divisão do trabalho, que é justamente a fonte da solidariedade orgânica e da regulação própria das sociedades complexas. A terceira descreve o cenário da solidariedade mecânica. A quinta é alheia ao pensamento do autor, que vê na divisão do trabalho a fonte da solidariedade orgânica, e não a causa de todos os males."
   },
   {
     "disciplina": "Filosofia - Aristóteles (ENEM)",
@@ -3564,7 +3564,7 @@ const SIMULADO_QUESTOES = [
       "a excelência moral resulta da prática repetida de ações justas e temperantes, orientada pela razão prudente, que escolhe o meio-termo adequado a cada situação."
     ],
     "correta": 4,
-    "comentario": "Aristóteles nega que a virtude seja natural ou mero conhecimento teórico: ela se forma pelo exercício e depende da sabedoria prática, que discerne o justo meio na situação concreta. A quinta alternativa é a correta. A primeira contraria a definição de disposição adquirida pelo hábito. A segunda aproxima Aristóteles de uma moral de dever exterior, que não é a sua. A terceira descreve hedonismo, criticado pelo filósofo. A quarta exagera, pois não se trata de extinguir as paixões, mas de educá-las pela razão."
+    "comentario": "Aristóteles nega que a virtude seja natural ou mero conhecimento teórico: ela se forma pelo exercício e depende da sabedoria prática, que discerne o justo meio na situação concreta. A quinta alternativa é a correta. A primeira exagera, pois não se trata de extinguir as paixões, mas de educá-las pela razão, situando-as no justo meio. A segunda descreve hedonismo, criticado pelo filósofo, que não reduz o bem supremo ao prazer imediato. A terceira aproxima Aristóteles de uma moral de dever exterior, que não é a sua, pois a virtude não se resume a seguir regras fixadas de antemão. A quarta contraria a definição de disposição adquirida pelo hábito, pois a virtude não é natural nem inata."
   },
   {
     "disciplina": "Sociologia - Estratificação Social (Unesp)",
@@ -3577,11 +3577,11 @@ const SIMULADO_QUESTOES = [
       "Weber nega a existência de qualquer forma de desigualdade econômica, concentrando-se apenas nas crenças religiosas."
     ],
     "correta": 0,
-    "comentario": "A primeira alternativa é a correta e expressa a complementaridade clássica: em Marx, as classes definem-se pela relação com a propriedade dos meios de produção; em Weber, a estratificação é pluridimensional, envolvendo classe, status e partido. A segunda é absurda. A terceira atribui a Marx uma leitura individualista que ele rejeita. A quarta inverte os critérios dos dois autores. A quinta aproxima-os de uma explicação funcionalista da desigualdade, que não é a deles."
+    "comentario": "A primeira alternativa é a correta e expressa a complementaridade clássica: em Marx, as classes definem-se pela relação com a propriedade dos meios de produção; em Weber, a estratificação é pluridimensional, envolvendo classe, status e partido. A segunda é absurda, pois inverte os critérios: para Marx, as classes definem-se pela relação com os meios de produção, e Weber não se resume ao prestígio social. A terceira atribui a Marx uma leitura individualista que ele rejeita. A quarta aproxima os autores de uma explicação funcionalista da desigualdade, que não é a deles, pois ambos a explicam por relações de dominação. A quinta é falsa, pois Weber reconhece a dimensão econômica (classe) ao lado de status e partido, e jamais negou a desigualdade econômica."
   },
   {
     "disciplina": "Literatura - Modernismo (Unicamp)",
-    "enunciado": "O poema Os Sapos, de Manuel Bandeira, lido na chave da poesia modernista de 1922, representa uma crítica:",
+    "enunciado": "O poema Os Sapos, de Olavo Bilac, lido em tom de sátira durante a Semana de Arte Moderna de 1922, representa uma crítica:",
     "alternativas": [
       "ao parnasianismo brasileiro, exclusivamente por seu rigor métrico, e ao uso obrigatório do soneto na lírica moderna.",
       "ao academicismo e ao euforismo oficial que produziam uma poesia vazia de sentido, repetidora de modelos importados e de fácil reconhecimento público.",
@@ -3590,7 +3590,7 @@ const SIMULADO_QUESTOES = [
       "ao romantismo indianista, criticado por ignorar completamente a cultura popular e a oralidade brasileira."
     ],
     "correta": 1,
-    "comentario": "Os sapos evocam os poetas acadêmicos, a vaidade das tertúlias e a poesia que se satisfaz na própria pose, sem contato com a vida. A crítica modernista dirige-se, portanto, ao anquilosamento das academias e ao falso lirismo, e não à métrica em si. A segunda alternativa é a correta. A primeira reduz a crítica à forma, quando ela é, sobretudo, de conteúdo e de atitude. A terceira é absurda, pois Bandeira não nega a métrica, apenas recusa a obrigatoriedade. A quarta desloca o alvo da sátira. A quinta é o contrário do que o poema defende."
+    "comentario": "Os sapos evocam os poetas acadêmicos, a vaidade das tertúlias e a poesia que se satisfaz na própria pose, sem contato com a vida. A crítica modernista dirige-se, portanto, ao anquilosamento das academias e ao falso lirismo, e não à métrica em si. A segunda alternativa é a correta. A primeira reduz a crítica à forma, quando ela é, sobretudo, de conteúdo e de atitude. A terceira é absurda: o poema não defende a ausência de métrica — ele é metricamente regular —, apenas satiriza o uso vazio que os poetas acadêmicos faziam dela. A quarta desloca o alvo da sátira. A quinta é o contrário do que o poema defende."
   },
   {
     "disciplina": "Literatura - Romantismo (Fuvest)",
@@ -3603,7 +3603,7 @@ const SIMULADO_QUESTOES = [
       "reproduzir os modelos medievais europeus, ignorando por completo a paisagem e os temas americanos."
     ],
     "correta": 2,
-    "comentario": "O índio idealizado de José de Alencar e de Gonçalves Dias servia à construção simbólica de uma nação nova e independente, fundindo o nativo ao cenário tropical. Por isso a terceira alternativa é a correta. A primeira é anacrônica, pois não havia preocupação etnográfica nesses romances. A segunda é parcial, já que há denúncia do sofrimento indígena, mas a obra não se traduz em projeto político de autonomia. A quarta é oposta ao tom idealizador. A quinta é falsa, uma vez que o Romantismo valoriza justamente o cenário americano."
+    "comentario": "O índio idealizado de José de Alencar e de Gonçalves Dias servia à construção simbólica de uma nação nova e independente, fundindo o nativo ao cenário tropical. Por isso a terceira alternativa é a correta. A quarta é oposta ao tom idealizador, pois não havia preocupação etnográfica nesses romances. A segunda é parcial, já que há denúncia do sofrimento indígena, mas a obra não se traduz em projeto político de autonomia. A primeira é falsa, porque o indianismo idealiza o índio, em vez de sustentar sua inferioridade cultural. A quinta é falsa, uma vez que o Romantismo valoriza justamente o cenário americano."
   },
   {
     "disciplina": "Literatura - Barroco (Unesp)",
@@ -3616,7 +3616,7 @@ const SIMULADO_QUESTOES = [
       "na rejeição completa dos temas religiosos, substituídos por uma poesia puramente materialista."
     ],
     "correta": 3,
-    "comentario": "O Barroco vive do dilema entre o ser e o parecer, entre o pecado e a graça. O cultismo explora a sonoridade e a imagem, enquanto o conceptismo explora a construção lógica e o conceito engenhoso. A quarta alternativa é a correta. A primeira descreve o ideal clássico do Arcadismo. A segunda confunde forma com estilo, pois o soneto existe no Barroco, mas não esgota a estética. A terceira é falsa, já que a tensão religiosa é central, como nos Sermões de Vieira. A quinta é absurda, porque o Barroco é fortemente erudito e rebuscado."
+    "comentario": "O Barroco vive do dilema entre o ser e o parecer, entre o pecado e a graça. O cultismo explora a sonoridade e a imagem, enquanto o conceptismo explora a construção lógica e o conceito engenhoso. A quarta alternativa é a correta: o Barroco vive justamente do jogo entre a exuberância formal e o raciocínio em conceitos engenhosos. A primeira é falsa, porque o Barroco é erudito e rebuscado, e não isento de influências clássicas e religiosas. A segunda é incompatível com a estética barroca, que cultiva o exagero, o pormenor e o jogo de palavras, e não a simplicidade sintática. A terceira é falsa, pois o Barroco não se resume ao soneto regular e faz amplo uso de figuras de linguagem. A quinta é absurda, porque a tensão religiosa é central no Barroco, como nos Sermões de Vieira."
   },
   {
     "disciplina": "Literatura - Realismo (ENEM)",
@@ -3629,7 +3629,7 @@ const SIMULADO_QUESTOES = [
       "narrador-defunto que se dirige ao leitor em tom cáustico, digressivo e experimental, rompendo a ilusão realista e questionando a própria escrita."
     ],
     "correta": 4,
-    "comentario": "Brás Cubas é um morto que narra, interpela o leitor, quebra a ordem cronológica e zomba das convenções narrativas. Essa consciência irônica aproxima Machado do Realismo, mas o leva além dele. A quinta alternativa é a correta. A primeira contraria a estrutura fragmentária do romance. A segunda é alheia ao espírito da obra. A terceira é falsa, pois o narrador é personagem e escreve em primeira pessoa. A quarta descreve o oposto do que ocorre no livro."
+    "comentario": "Brás Cubas é um morto que narra, interpela o leitor, quebra a ordem cronológica e zomba das convenções narrativas. Essa consciência irônica aproxima Machado do Realismo, mas o leva além dele. A quinta alternativa é a correta. A primeira contraria a estrutura fragmentária do romance. A segunda é falsa, pois o narrador é personagem — o próprio Brás Cubas — e escreve em primeira pessoa, não em terceira pessoa onisciente. A terceira é falsa, pois o romance não oferece final feliz nem redenção sentimental ao protagonista. A quarta descreve o oposto do que ocorre no livro."
   },
   {
     "disciplina": "Linguagens - Funções da Linguagem (Unesp)",
@@ -3642,7 +3642,7 @@ const SIMULADO_QUESTOES = [
       "referencial ou denotativa, orientada para o contexto e para o conteúdo informado."
     ],
     "correta": 0,
-    "comentario": "A função fática privilegia o canal: expressões de contato, como as saudações e as perguntas sobre se a mensagem está sendo ouvida, servem para verificar se a comunicação é possível. A primeira alternativa é a correta. A segunda centra-se no remetente. A terceira centra-se no contexto e na informação. A quarta centra-se no código, como em definições de dicionário. A quinta centra-se no destinatário, típica da publicidade e da persuasão."
+    "comentario": "A função fática privilegia o canal: expressões de contato, como as saudações e as perguntas sobre se a mensagem está sendo ouvida, servem para verificar se a comunicação é possível. A primeira alternativa é a correta. A segunda (conativa ou apelativa) centra-se no destinatário, como na publicidade e na persuasão. A terceira (metalinguística) centra-se no código, como em definições de dicionário. A quarta (emotiva) centra-se no remetente e em suas atitudes subjetivas. A quinta (referencial) centra-se no contexto e na informação."
   },
   {
     "disciplina": "Linguagens - Voz Passiva (Unicamp)",
@@ -3655,7 +3655,7 @@ const SIMULADO_QUESTOES = [
       "As propostas serão analisadas no comitê até sexta-feira."
     ],
     "correta": 1,
-    "comentario": "Na voz passiva analítica, o objeto direto torna-se sujete paciente, o verbo principal vai para o particípio e recebe o auxiliar ser, e o agente é introduzido pela preposição por. Assim, a construção correta é serão analisadas pelo comitê. A segunda alternativa é o gabarito. A primeira e a terceira não constroem voz passiva alguma. A quarta corrompe o agente, transformando o comitê em lugar da ação. A quinta altera o tempo verbal para o mais-que-perfeito, comprometendo o sentido temporal do enunciado original."
+    "comentario": "Na voz passiva analítica, o objeto direto torna-se sujete paciente, o verbo principal vai para o particípio e recebe o auxiliar ser, e o agente é introduzido pela preposição por. Assim, a construção correta é serão analisadas pelo comitê. A segunda alternativa é o gabarito. A primeira e a terceira não constroem voz passiva alguma. A quarta altera o tempo verbal para o mais-que-perfeito, comprometendo o sentido temporal do enunciado original. A quinta corrompe o agente, substituindo a preposição «pela» pela preposição «em» (no comitê)."
   },
   {
     "disciplina": "Linguagens - Crase (Fuvest)",
@@ -3665,10 +3665,10 @@ const SIMULADO_QUESTOES = [
       "Referiu-se à duas normas já revogadas pelo decreto.",
       "O professor prefere trabalhar de manhã, porém voltará à noite para a reunião.",
       "Entregou o relatório à ela no final da tarde.",
-      "O ônibus seguiu a Rua da Consolação e depois a Praça da Sé."
+      "Eles foram à teatro na véspera de Ano Novo."
     ],
     "correta": 2,
-    "comentario": "A crase ocorre quando a preposição a se funde com o artigo definido a ou com o a de locuções femininas. Na locução adverbial à noite, que exige a preposição e contém substantivo feminino, o acento é obrigatório. Por isso a terceira alternativa é a correta. Na primeira, há erro por omissão, pois antes de topônimos femininos com artigo definido a preposição exige a fusão, escrevendo-se à Rua da Consolação. Na segunda, pronome pessoal não admite artigo antes, logo não ocorre crase: entregou o relatório a ela. Na quarta, o artigo não aparece antes de numeral feminino: referiu-se a duas normas. Na quinta, locuções masculinas e adverbiais sem artigo não levam crase: parou a pé."
+    "comentario": "A crase ocorre quando a preposição a se funde com o artigo definido a ou com o a de locuções femininas. Na locução adverbial à noite, que exige a preposição e contém substantivo feminino, o acento é obrigatório; por isso a terceira alternativa é a correta. Na primeira, «parou à pé» é indevido, porque a locução adverbial parou a pé não leva preposição nem artigo. Na segunda, o artigo não aparece antes de numeral feminino: escreve-se referiu-se a duas normas. Na quarta, pronome pessoal não admite artigo antes, logo não ocorre crase: entregou o relatório a ela. Na quinta, «teatro» é substantivo masculino, de modo que se escreve ao teatro, sem crase."
   },
   {
     "disciplina": "Linguagens - Interpretação (ENEM)",
@@ -3694,7 +3694,7 @@ const SIMULADO_QUESTOES = [
       "foi encomendada pelo governo republicano espanhol para denunciar o bombardeio aéreo da cidade basca de Guernica, em 1937, durante a Guerra Civil Espanhola."
     ],
     "correta": 4,
-    "comentario": "Guernica foi pintada em 1937 para o Pavilhão da República Espanhola na Exposição Internacional de Paris, em resposta ao bombardeio da cidade por aviões alemães aliados de Franco. A quinta alternativa é a correta. A primeira é falsa, pois a obra mantém forte carga figurativa, ainda que distorça corpos e animais. A segunda erra o contexto histórico, já que se trata da Guerra Civil Espanhola, e não da Segunda Guerra Mundial. A terceira inventa uma paleta inexistente e inverte o sentido de denúncia. A quarta descreve uma cena pastoril, o oposto do horror representado."
+    "comentario": "Guernica foi pintada em 1937 para o Pavilhão da República Espanhola na Exposição Internacional de Paris, em resposta ao bombardeio da cidade por aviões alemães aliados de Franco. A quinta alternativa é a correta. A primeira descreve uma cena pastoril, o oposto do horror representado. A segunda erra o contexto histórico, já que se trata da Guerra Civil Espanhola, e não da Segunda Guerra Mundial. A terceira inventa uma paleta inexistente e inverte o sentido de denúncia. A quarta é falsa, pois a obra mantém forte carga figurativa, ainda que distorça corpos e animais."
   },
   {
     "disciplina": "Literatura - Parnasianismo (Unesp)",
@@ -3713,14 +3713,14 @@ const SIMULADO_QUESTOES = [
     "disciplina": "Linguagens - Regência Verbal (Unicamp)",
     "enunciado": "Assinale a alternativa em que a construção está de acordo com a norma-padrão da regência verbal:",
     "alternativas": [
-      "O Tribunal implicou a revogação da portaria após várias sessões.",
+      "O Tribunal respondeu a manifestação dos advogados após várias sessões.",
       "O relatório a que o pesquisador se referiu continha dados inéditos.",
       "Todos obedeceram o regulamento sem qualquer restrição.",
       "Assisti o filme pela segunda vez e continuou emocionante.",
       "O diretor aspira o cargo de chefia desde o início do ano."
     ],
     "correta": 1,
-    "comentario": "A segunda alternativa é a correta: o verbo transitivo indireto referir-se exige a preposição a, e o pronome relativo que, retomando relatório, vem precedido dessa preposição, produzindo a construção a que. Na primeira, o verbo aspirar, no sentido de desejar, pede a preposição a, devendo-se escrever aspira ao cargo. Na terceira, implicar, no sentido de acarretar, é transitivo direto, mas o uso padrão exige implicar em quando assume o sentido de envolver-se; na construção apresentada, a regência adequada é implicou a revogação, que alguns gramáticos aceitam, porém o item foi estruturado como distrator pelo uso consagrado em implicar em para o sentido de acarretar. Na quarta, obedecer é transitivo indireto, e o correto é obedeceram ao regulamento. Na quinta, assistir, no sentido de ver, é transitivo indireto, e o correto é assisti ao filme."
+    "comentario": "A segunda alternativa é a correta: o verbo referir-se é transitivo indireto e exige a preposição a, e o pronome relativo que, retomando relatório, vem precedido dessa preposição, produzindo a construção a que. Na primeira, o verbo responder é transitivo indireto e exige a preposição a; diante de substantivo feminino definido ocorre a crase, devendo-se escrever respondeu à manifestação. Na terceira, obedecer é transitivo indireto, e o correto é obedeceram ao regulamento. Na quarta, assistir, no sentido de ver, é transitivo indireto, e o correto é assisti ao filme. Na quinta, aspirar, no sentido de desejar, pede a preposição a, devendo-se escrever aspira ao cargo."
   },
   {
     "disciplina": "Linguagens - Argumentação (Unesp)",
@@ -3733,7 +3733,7 @@ const SIMULADO_QUESTOES = [
       "uma comparação entre dois objetos do mesmo tipo, de modo a manter a simetria do raciocínio."
     ],
     "correta": 2,
-    "comentario": "A terceira alternativa é a correta, pois a força do argumento está no contraste entre espaços públicos de lazer e equipamentos privados de consumo, o que remete a prioridades de urbanidade. A primeira é falsa, já que a oposição se dá justamente entre coisas desiguais. A segunda nega a função argumentativa do contraste. A quarta é inexistente no enunciado, que não traz dados. A quinta introduz uma intenção negativa que o texto não manifesta."
+    "comentario": "A terceira alternativa é a correta, pois a força do argumento está no contraste entre espaços públicos de lazer e equipamentos privados de consumo, o que remete a prioridades de urbanidade. A primeira introduz uma intenção irônica que o texto não manifesta. A segunda é inexistente no enunciado, que não traz dados estatísticos. A quarta é falsa, pois a força do argumento está justamente no contraste, e não em uma metáfora decorativa. A quinta é falsa, já que a oposição se dá entre coisas desiguais — parques e shoppings —, e não entre objetos do mesmo tipo."
   },
   {
     "disciplina": "Matemática - Logaritmos (Fuvest)",
@@ -3746,7 +3746,7 @@ const SIMULADO_QUESTOES = [
       "18."
     ],
     "correta": 3,
-    "comentario": "Aplicando as propriedades dos logaritmos, 3 log 3 = log 27. Assim, log x = log 2 + log 27 - log 6 = log(2 x 27) - log 6 = log 54 - log 6 = log(54/6) = log 9. Logo, x = 9 e a quarta alternativa é a correta. O valor 6 resulta de converter incorretamente 3 log 3 em log 6 e manter o denominador; o 18 vem de dividir 54 por 3 em vez de por 6; os valores 3 e 4 nasceriam de erros de aritmética elementar na manipulação das frações."
+    "comentario": "Aplicando as propriedades dos logaritmos, 3 log 3 = log 27. Assim, log x = log 2 + log 27 - log 6 = log(2 × 27) - log 6 = log 54 - log 6 = log(54/6) = log 9. Logo, x = 9 e a quarta alternativa é a correta. O valor 18 vem de dividir 54 por 3 em vez de por 6; os valores 3 e 4 nasceriam de erros de aritmética elementar na manipulação das frações; e o 6 não decorre do erro descrito, pois trocar 3 log 3 por log 6 daria log 2, isto é, x = 2, valor que nem consta das alternativas."
   },
   {
     "disciplina": "Matemática - Análise Combinatória (Unicamp)",
@@ -3759,11 +3759,11 @@ const SIMULADO_QUESTOES = [
       "72."
     ],
     "correta": 4,
-    "comentario": "O número total de permutações de 5 pessoas em 5 lugares é 5 fatorial, isto é, 120. Eliminando as disposições em que o par fica junto: trata-se o par como um bloco, obtendo 4 fatorial, igual a 24 formas de organizar quatro objetos, que são o bloco mais as outras três pessoas, e dentro do bloco há 2 fatorial, igual a 2 ordens possíveis, totalizando 48 disposições indesejadas. Portanto, 120 menos 48 igual a 72, e a quinta alternativa é a correta. O valor 48 é exatamente o total que deveria ser subtraído, e não o resultado pedido. O valor 60 viria de subtrair 60 em vez de 48, e os valores 54 e 64 resultam de contagens parciais incorretas."
+    "comentario": "O número total de permutações de 5 pessoas em 5 lugares é 5 fatorial, isto é, 120. Eliminando as disposições em que o par fica junto: trata-se o par como um bloco, obtendo 4 fatorial, igual a 24 formas de organizar quatro objetos, que são o bloco mais as outras três pessoas, e dentro do bloco há 2 fatorial, igual a 2 ordens possíveis, totalizando 48 disposições indesejadas. Portanto, 120 menos 48 igual a 72, e a quinta alternativa é a correta. O valor 48 é exatamente o total que deveria ser subtraído, e não o resultado pedido. O valor 60 só se obtém dividindo 120 por 2, isto é, pegando metade das permutações, e os valores 54 e 64 resultam de contagens parciais incorretas."
   },
   {
     "disciplina": "Matemática - Função Exponencial (Fuvest)",
-    "enunciado": "Uma população de bactérias duplica a cada 3 horas. Se inicialmente há 5 x 10³ unidades, o tempo necessário para que a população atinja 8 x 10⁴ unidades é de:",
+    "enunciado": "Uma população de bactérias duplica a cada 3 horas. Se inicialmente há 5 × 10³ unidades, o tempo necessário para que a população atinja 8 × 10⁴ unidades é de:",
     "alternativas": [
       "12 horas.",
       "6 horas.",
@@ -3772,7 +3772,7 @@ const SIMULADO_QUESTOES = [
       "24 horas."
     ],
     "correta": 0,
-    "comentario": "A população segue a lei P = P0 x 2 elevado a t/3. A razão entre a população final e a inicial é 80000 dividido por 5000, igual a 16, e 16 = 2 elevado a 4. Logo, t/3 = 4, isto é, t = 12 horas, e a terceira alternativa é a correta. O valor 6 horas corresponderia a apenas duas duplicações, fator 4; 9 horas, a três duplicações, fator 8; 15 horas resulta de arredondamento incorreto; e 24 horas implicaria oito duplicações, fator 256, muito acima do necessário."
+    "comentario": "A população segue a lei P = P₀ · 2^(t/3). A razão entre a população final e a inicial é 80000 dividido por 5000, igual a 16, e 16 = 2 elevado a 4. Logo, t/3 = 4, isto é, t = 12 horas, e a primeira alternativa é a correta. O valor 6 horas corresponderia a apenas duas duplicações, fator 4; 9 horas, a três duplicações, fator 8; 15 horas corresponderia a cinco duplicações, fator 32, acima do necessário; e 24 horas implicaria oito duplicações, fator 256, muito acima do necessário."
   },
   {
     "disciplina": "Matemática - Geometria Plana (Unesp)",
@@ -3785,7 +3785,7 @@ const SIMULADO_QUESTOES = [
       "60."
     ],
     "correta": 1,
-    "comentario": "Se cada quadrado tem lado s, o retângulo resultante tem dimensões s e 2s, e seu perímetro é 2(s + 2s) = 6s = 36, donde s = 6. A área é s multiplicado por 2s, isto é, 6 x 12 = 72 cm², e a segunda alternativa é a correta. O valor 60 decorre de supor s = 5; os valores 80 e 90 resultam de confundir perímetro com área; e o valor 81 viria de supor que o retângulo é, na verdade, um quadrado."
+    "comentario": "Se cada quadrado tem lado s, o retângulo resultante tem dimensões s e 2s, e seu perímetro é 2(s + 2s) = 6s = 36, donde s = 6. A área é s multiplicado por 2s, isto é, 6 x 12 = 72 cm², e a segunda alternativa é a correta. O valor 60 não vem de supor s = 5 (daria 5 × 10 = 50); o 80 corresponderia a um retângulo de lados 10 e 8, que tem perímetro 36, mas não se divide em dois quadrados iguais; o 90 não é possível, pois a área máxima de um retângulo de perímetro 36 é 81; e o valor 81 viria de supor que o retângulo é, na verdade, um quadrado."
   },
   {
     "disciplina": "Física - Cinemática (Unicamp)",
@@ -3798,7 +3798,7 @@ const SIMULADO_QUESTOES = [
       "40."
     ],
     "correta": 2,
-    "comentario": "Pela equação de Torricelli, v ao quadrado = v0 ao quadrado + 2a deslocamento. No fim da frenagem a velocidade é zero, logo deslocamento = v0 ao quadrado dividido por 2a. Convertendo 72 km/h para 20 m/s, obtém-se 400 dividido por 8, igual a 50 m, e a terceira alternativa é a correta. O valor 20 surge de usar apenas deslocamento = v0/a. O valor 40 viria de esquecer o fator 2 do denominador; o 100, de confundir tempo com distância; e o 200, de dobrar indevidamente o resultado."
+    "comentario": "Pela equação de Torricelli, v² = v₀² + 2 · a · Δs. No fim da frenagem a velocidade é zero, logo Δs = v₀² / (2 · a). Convertendo 72 km/h para 20 m/s, obtém-se 400 dividido por 8, igual a 50 m, e a terceira alternativa é a correta. O tempo de frenagem seria t = v0/a = 20/4 = 5 s. O valor 100 surge de esquecer o fator 2 do denominador (v0²/a = 400/4 = 100); o 200, de esquecer de dividir pela aceleração (400/2 = 200); o 40, de dividir v0² por 10 em vez de por 2a = 8 (400/10 = 40); e o 20, de usar g = 10 m/s² no lugar da aceleração de frenagem (400/20 = 20)."
   },
   {
     "disciplina": "Física - Dinâmica (Fuvest)",
@@ -3824,11 +3824,11 @@ const SIMULADO_QUESTOES = [
       "real, invertida e do mesmo tamanho do objeto."
     ],
     "correta": 4,
-    "comentario": "Pela equação dos pontos conjugados, 1/f = 1/p + 1/p'. Com f = 15 cm e p = 30 cm, tem-se 1/15 = 1/30 + 1/p', donde 1/p' = 1/30 e p' = 30 cm. Como p' é positivo, a imagem é real; sendo real, é invertida; e a ampliação A = -p'/p = -1 indica mesmo tamanho. A quinta alternativa é a correta. A primeira erra ao indicar imagem direita; a segunda indica imagem virtual; a terceira erra o tamanho; e a quarta combina virtualidade e inversão, combinação impossível para lente convergente com objeto real."
+    "comentario": "Pela equação dos pontos conjugados, 1/f = 1/p + 1/p'. Com f = 15 cm e p = 30 cm, tem-se 1/15 = 1/30 + 1/p', donde 1/p' = 1/30 e p' = 30 cm. Como p' é positivo, a imagem é real; sendo real, é invertida; e a ampliação A = -p'/p = -1 indica mesmo tamanho. A quinta alternativa é a correta. A primeira erra ao indicar a imagem menor que o objeto, pois, com p = 2f, a ampliação é unitária; a segunda erra ao indicar a imagem direita e maior, pois, para objeto real além do foco, a imagem é real, invertida e, aqui, do mesmo tamanho; a terceira erra ao indicar imagem virtual (e maior), pois, com p > f, a imagem é real; e a quarta indica imagem virtual, o que só ocorreria com o objeto entre o foco e a lente (p < f)."
   },
   {
     "disciplina": "Química - Termoquímica (ENEM)",
-    "enunciado": "Considere as entalpias de ligação, em kJ/mol: C-H = 413, O=O = 498, C=O = 745 e O-H = 463. A variação de entalpia da combustão completa de 1 mol de metano, na reação CH4 + 2 O2 originando CO2 + 2 H2O, é aproximadamente, em kJ/mol:",
+    "enunciado": "Considere as entalpias de ligação, em kJ/mol: C-H = 413, O=O = 498, C=O = 745 e O-H = 463. A variação de entalpia da combustão completa de 1 mol de metano, na reação CH₄ + 2 O₂ originando CO₂ + 2 H₂O, é aproximadamente, em kJ/mol:",
     "alternativas": [
       "-694.",
       "-200.",
@@ -3837,11 +3837,11 @@ const SIMULADO_QUESTOES = [
       "-1390."
     ],
     "correta": 0,
-    "comentario": "A variação de entalpia é estimada pela soma das ligações rompidas menos a soma das ligações formadas. Rompidas: 4 x 413 + 2 x 498 = 1652 + 996 = 2648 kJ. Formadas: 2 x 745 + 4 x 463 = 1490 + 1852 = 3342 kJ. Logo, 2648 - 3342 = -694 kJ/mol, e a primeira alternativa é a correta. O sinal negativo indica reação exotérmica, o que descarta as opções positivas. O valor -1390 corresponderia a dobrar indevidamente as ligações formadas, e o -200 a uma contagem incompleta das ligações de O-H na água."
+    "comentario": "A variação de entalpia é estimada pela soma das ligações rompidas menos a soma das ligações formadas. Rompidas: 4 x 413 + 2 x 498 = 1652 + 996 = 2648 kJ. Formadas: 2 x 745 + 4 x 463 = 1490 + 1852 = 3342 kJ. Logo, 2648 - 3342 = -694 kJ/mol, e a primeira alternativa é a correta. O sinal negativo indica reação exotérmica, o que descarta as opções positivas. O valor -1390 corresponderia a efetuar o cálculo para 2 mols de metano, dobrando todos os coeficientes (2 × −694 = −1.388); o -200 a uma contagem incompleta das ligações de O-H na água permanece válida (contando 3 das 4 ligações O-H: 2.648 − 1.490 − 1.389 = −231, cerca de −200)."
   },
   {
     "disciplina": "Química - Equilíbrio Químico (Unicamp)",
-    "enunciado": "Para a reação exotérmica 2 SO2(g) + O2(g) em equilíbrio com 2 SO3(g), analise as afirmações: I. O aumento da pressão desloca o equilíbrio no sentido dos produtos. II. O aumento da temperatura desloca o equilíbrio no sentido dos produtos. III. A adição de um catalisador desloca o equilíbrio, aumentando o rendimento em SO3. Está correto o que se afirma em:",
+    "enunciado": "Para a reação exotérmica 2 SO₂(g) + O₂(g) em equilíbrio com 2 SO₃(g), analise as afirmações: I. O aumento da pressão desloca o equilíbrio no sentido dos produtos. II. O aumento da temperatura desloca o equilíbrio no sentido dos produtos. III. A adição de um catalisador desloca o equilíbrio, aumentando o rendimento em SO3. Está correto o que se afirma em:",
     "alternativas": [
       "Somente II.",
       "Somente I.",
@@ -3876,7 +3876,7 @@ const SIMULADO_QUESTOES = [
       "220."
     ],
     "correta": 3,
-    "comentario": "De a9 - a3 = 6r decorre que 34 - 10 = 6r, logo r = 4. Substituindo em a3 = a1 + 2r, obtém-se a1 = 10 - 8 = 2. A soma dos n primeiros termos é S_n = n(a1 + a_n)/2, e a10 = a1 + 9r = 2 + 36 = 38. Assim, S10 = 10 x (2 + 38)/2 = 200, e a quarta alternativa é a correta. O valor 150 viria de usar razão 3; o 180, de calcular S10 com a1 = 4; o 190, de erro no cálculo do último termo; e o 220, de aplicação incorreta da fórmula da soma."
+    "comentario": "De a9 - a3 = 6r decorre que 34 - 10 = 6r, logo r = 4. Substituindo em a3 = a1 + 2r, obtém-se a1 = 10 - 8 = 2. A soma dos n primeiros termos é Sₙ = n · (a₁ + aₙ)/2, e a₁₀ = a₁ + 9r = 2 + 36 = 38. Assim, S₁₀ = 10 × (2 + 38)/2 = 200, e a quarta alternativa é a correta. O valor 150 não vem de usar razão 3 (daria 175), mas de supor r = 2 mantendo a₃ = 10: S₁₀ = 5 × (12 + 18) = 150; o 180 aparece quando se usa a₉ = 34 no lugar de a₁₀ na fórmula da soma: 10 × (2 + 34)/2 = 180; o 190, de tomar a₁₀ = 36, esquecendo de somar a₁: 10 × (2 + 36)/2 = 190; e o 220, de usar a₁₀ = a₁ + 10r = 42: 10 × (2 + 42)/2 = 220."
   },
   {
     "disciplina": "Química - Eletroquímica (Unicamp)",
@@ -3889,7 +3889,7 @@ const SIMULADO_QUESTOES = [
       "o zinco é o ânodo e oxida-se, o cobre recebe os elétrons no cátodo e a diferença de potencial nas condições padrão é 1,10 V."
     ],
     "correta": 4,
-    "comentario": "A quinta alternativa é a correta. O par de menor potencial de redução, Zn²⁺/Zn com -0,76 V, tende a sofrer oxidação, funcionando como ânodo; o cobre, de maior potencial, é o cátodo, onde ocorre a redução de Cu²⁺ a Cu. A diferença de potencial é 0,34 - (-0,76) = 1,10 V. A primeira e a segunda invertem os papéis dos eletrodos e atribuem ddp incorreta. A terceira acerta o valor da ddp, mas inverte o sentido do fluxo de elétrons, que vai do ânodo para o cátodo. A quarta é absurda, pois em uma pilha um eletrodo oxida e o outro reduz."
+    "comentario": "A quinta alternativa é a correta. O par de menor potencial de redução, Zn²⁺/Zn com -0,76 V, tende a sofrer oxidação, funcionando como ânodo; o cobre, de maior potencial, é o cátodo, onde ocorre a redução de Cu²⁺ a Cu. A diferença de potencial é 0,34 - (-0,76) = 1,10 V. A primeira inverte os papéis dos eletrodos e apresenta ddp incorreta (o valor correto é 0,34 − (−0,76) = 1,10 V, não 0,42 V). A segunda mantém a ddp correta (1,10 V), mas inverte o sentido do fluxo de elétrons, que vai do ânodo (zinco) para o cátodo (cobre). A terceira inverte os papéis dos eletrodos: o cobre é o cátodo, onde Cu²⁺ sofre redução, e o zinco é o ânodo, onde Zn se oxida. A quarta é absurda, pois em uma pilha um eletrodo oxida e o outro reduz. A quarta é absurda, pois em uma pilha um eletrodo oxida e o outro reduz."
   },
   {
     "disciplina": "Matemática - Porcentagem",
@@ -3919,7 +3919,7 @@ const SIMULADO_QUESTOES = [
   },
   {
     "disciplina": "Matemática - Função do 1º grau",
-    "enunciado": "Uma empresa de telefonha cobra R$ 0,60 por minuto de ligação mais uma taxa fixa de R$ 12,00 mensais. Qual expressão representa o valor total pago, em reais, por um cliente que fala x minutos no mês?",
+    "enunciado": "Uma empresa de telefonia cobra R$ 0,60 por minuto de ligação mais uma taxa fixa de R$ 12,00 mensais. Qual expressão representa o valor total pago, em reais, por um cliente que fala x minutos no mês?",
     "alternativas": [
       "0,60x × 12",
       "(12 + 0,60) ÷ x",
@@ -4149,7 +4149,7 @@ const SIMULADO_QUESTOES = [
       "No narrador defunto, irônico e metalinguístico, que questiona a própria veracidade do relato."
     ],
     "correta": 4,
-    "comentario": "Machado inova com o narrador defunto, a ironia e a metalinguagem. Em 'Dom Casmurro', a ambiguidade sobre Capitu mostra como o narrador manipula o relato — o livro é sobre o ciúme e a dúvida."
+    "comentario": "Machado inova com o narrador defunto — que escreve «de além-túmulo» —, com a ironia e com a metalinguagem: o próprio ato de escrever e as dúvidas sobre a veracidade do relato tornam-se parte da obra, rompendo com a linearidade realista."
   },
   {
     "disciplina": "História - Grécia Antiga",
@@ -4162,7 +4162,7 @@ const SIMULADO_QUESTOES = [
       "Universal, incluindo mulheres, estrangeiros e escravizados."
     ],
     "correta": 0,
-    "comentario": "A democracia ateniense era direta: os cidadãos (homens atenienses, livres e maiores de idade) deliberavam pessoalmente na Ágora. Mulheres, metecos e escravizados — a maioria da população — não participavam."
+    "comentario": "A democracia ateniense era direta: os cidadãos (homens atenienses, livres e maiores de idade) deliberavam pessoalmente na Eclésia, assembleia que se reunia no Pnyx; a Ágora era o espaço público de comércio e circulação. Mulheres, metecos e escravizados — a maioria da população — não participavam."
   },
   {
     "disciplina": "História - Roma Antiga",
@@ -4214,7 +4214,7 @@ const SIMULADO_QUESTOES = [
       "Povoar e defender o território colonial com baixo custo para a Coroa."
     ],
     "correta": 4,
-    "comentario": "As capitanas dividiam o Brasil em lotes doados a donatários com amplos poderes — solução barata para um império sem recursos. A maioria fracassou; prosperaram São Vicente e Pernambuco, onde se firmou o açúcar."
+    "comentario": "As capitanias dividiam o litoral brasileiro em lotes doados a donatários com amplos poderes — solução barata para um império sem recursos. A maioria fracassou; prosperaram São Vicente e Pernambuco, onde se firmou o açúcar."
   },
   {
     "disciplina": "História - República Velha",
@@ -4253,7 +4253,7 @@ const SIMULADO_QUESTOES = [
       "Extinguiu voluntariamente os partidos políticos."
     ],
     "correta": 2,
-    "comentario": "O AI-5 deu poder ao Executivo para cassar mandatos, suspender direitos políticos e intervir nos estados. Foi revogado em 1978, no início da distensão política."
+    "comentario": "O AI-5 deu poder ao Executivo para cassar mandatos, suspender direitos políticos e intervir nos estados. Foi revogado em 1978, pela Emenda Constitucional nº 11, no curso da abertura política iniciada em 1974."
   },
   {
     "disciplina": "História - Abolição",
@@ -4292,7 +4292,7 @@ const SIMULADO_QUESTOES = [
       "Conurbação planejada."
     ],
     "correta": 0,
-    "comentario": "Quando as elites se isolam voluntariamente em espaamentos murados, ocorre a segregação voluntária — o oposto da segregação imposta, em que os mais pobres são empurrados para periferias sem infraestrutura."
+    "comentario": "Quando as elites se isolam voluntariamente em espaços murados, ocorre a segregação voluntária — o oposto da segregação imposta, em que os mais pobres são empurrados para periferias sem infraestrutura."
   },
   {
     "disciplina": "Geografia - População",
@@ -4539,7 +4539,7 @@ const SIMULADO_QUESTOES = [
       "Na verdade pressionou a favor de novos investimentos sociais."
     ],
     "correta": 4,
-    "comentario": "'Actually' significa 'na verdade', não 'atualmente'. 'Pushed for' significa 'pressionou a favor de', não 'empurrou'. Ambos são falsos cognatos clássicos do ENEM."
+    "comentario": "'Actually' significa 'na verdade', não 'atualmente'. 'Pushed for' é um phrasal verb que significa 'pressionou a favor de' (e não 'empurrou'). 'Actually', sim, é um falso cognato clássico do ENEM, muito cobrado na prova."
   },
   {
     "disciplina": "Inglês - Conectores",
@@ -4610,7 +4610,7 @@ const SIMULADO_QUESTOES = [
     "disciplina": "Espanhol - Falsos cognatos",
     "enunciado": "A palavra espanhola 'largo' significa:",
     "alternativas": [
-      "Comprido (extensno).",
+      "Comprido (extenso).",
       "Largo (largura).",
       "Pesado.",
       "Demorado.",

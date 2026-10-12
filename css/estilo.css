@@ -9,20 +9,23 @@
      O --neon fica VIVO para botões, barras e gradientes. O --neon-texto é a
      versão escura, porque verde claro sobre branco fica ilegível. */
   --neon: #b8ff4d;
-  --neon-texto: #275005;
+  --neon-texto: #153502;
   --neon-forte: #9be12e;
   --neon-escuro: #6fae1a;
 
   /* Neon secundário (magenta) */
   --magenta: #ff2e97;
-  --magenta-texto: #831843;
+  --magenta-texto: #761440;
   --magenta-forte: #d61f7a;
   --magenta-suave: rgba(255, 46, 151, 0.14);
+  /* Fundo de botao/badge com TEXTO BRANCO: L<=0.10 = 7:1. */
+  --magenta-fundo: #9d174d;
 
   /* Neon terciário (violeta) */
   --violeta: #a78bfa;
-  --violeta-texto: #4c1d95;
+  --violeta-texto: #3b0764;
   --violeta-forte: #7c3aed;
+  --violeta-fundo: #5b21b6;
 
   /* Âmbar (atenção) */
   --ambar: #ffb300;
@@ -30,14 +33,14 @@
   --ambar-suave: rgba(255, 179, 0, 0.16);
 
   /* Semânticas (ajustadas para contraste no BRANCO) */
-  --ok: #084a20;
-  --ok-suave: rgba(8, 74, 32, 0.1);
-  --erro: #881337;
-  --erro-suave: rgba(136, 19, 55, 0.1);
-  --info: #064e75;
-  --info-suave: rgba(6, 78, 117, 0.1);
-  --alerta: #b45309;
-  --alerta-suave: rgba(180, 83, 9, 0.1);
+  --ok: #05391a;
+  --ok-suave: rgba(5, 57, 26, 0.1);
+  --erro: #6b0f2c;
+  --erro-suave: rgba(107, 15, 44, 0.1);
+  --info: #043c5e;
+  --info-suave: rgba(4, 60, 94, 0.1);
+  --alerta: #5c2a06;
+  --alerta-suave: rgba(92, 42, 6, 0.1);
 
   /* Fundos — tema CLARO (fundo branco) */
   --bg-0: #ffffff;
@@ -52,9 +55,9 @@
 
   /* Texto — escuro sobre branco */
   --texto: #101828;
-  --texto-2: #364152;
+  --texto-2: #242e3d;
   /* Contraste no branco: #667085 dá 4.6 (mínimo confortável de leitura). */
-  --texto-3: #3f4a5e;
+  --texto-3: #2a3444;
 
   /* Tipografia futurista */
   --fonte-display: "Orbitron", "Segoe UI", sans-serif;
@@ -317,7 +320,7 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--violeta), var(--magenta));
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
   color: #fff;
   display: grid;
   place-items: center;
@@ -619,7 +622,7 @@ p {
 }
 
 .btn-accent {
-  background: linear-gradient(135deg, var(--violeta), var(--magenta));
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
   color: #fff;
   box-shadow: var(--glow-violeta);
   border-color: rgba(167, 139, 250, 0.5);
@@ -630,12 +633,12 @@ p {
 }
 
 .btn-sucesso {
-  background: linear-gradient(135deg, var(--ok), #22c55e);
-  color: #04150a;
+  background: linear-gradient(135deg, var(--ok), #14532d);
+  color: #fff;
   box-shadow: 0 0 16px rgba(74, 222, 128, 0.35);
 }
 .btn-perigo {
-  background: linear-gradient(135deg, var(--erro), #ef4444);
+  background: linear-gradient(135deg, var(--erro), #991b1b);
   color: #fff;
   box-shadow: 0 0 16px rgba(251, 113, 133, 0.35);
 }
@@ -881,7 +884,7 @@ th .forte {
   font-weight: 700;
   font-size: 0.9rem;
   color: #fff;
-  background: linear-gradient(135deg, var(--violeta), var(--magenta));
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
   flex-shrink: 0;
   letter-spacing: 0.02em;
   border: 1px solid rgba(15, 23, 42, 0.35);
@@ -1031,7 +1034,7 @@ h1.arte-titulo {
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--violeta), var(--magenta));
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
   color: #fff;
   display: grid;
   place-items: center;
@@ -2257,7 +2260,7 @@ h1.arte-titulo {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--violeta), var(--magenta));
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
   display: grid;
   place-items: center;
   color: #fff;
@@ -2270,7 +2273,7 @@ h1.arte-titulo {
   margin-left: auto;
   flex-wrap: wrap;
 }
-.site-topbar nav a {
+.site-topbar nav a:not(.btn) {
   color: var(--texto-2);
   font-weight: 500;
   font-size: 0.88rem;
@@ -2278,7 +2281,7 @@ h1.arte-titulo {
   letter-spacing: 0.1em;
   font-family: var(--fonte-mono);
 }
-.site-topbar nav a:hover {
+.site-topbar nav a:not(.btn):hover {
   color: var(--neon-texto);
   text-decoration: none;
   text-shadow: var(--glow-neon);
@@ -2842,7 +2845,7 @@ footer.site-footer a:hover {
   height: 58px;
   border-radius: var(--r-full);
   border: 1px solid var(--borda-neon);
-  background: linear-gradient(135deg, var(--violeta), var(--magenta));
+  background: linear-gradient(135deg, var(--violeta-fundo), var(--magenta-fundo));
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;

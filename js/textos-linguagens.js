@@ -77,7 +77,7 @@ const TEXTOS_LING = [
       },
       {
         enunciado:
-          "O comenário do texto afirma que a escolha do conectivo «não é um ornamento». Com base nessa afirmação, assinale a alternativa que descreve corretamente o efeito da substituição proposta.",
+          "O comentário do texto afirma que a escolha do conectivo «não é um ornamento». Com base nessa afirmação, assinale a alternativa que descreve corretamente o efeito da substituição proposta.",
         alternativas: [
           "O efeito seria o mesmo, porque as duas expressões indicam que os especialistas apoiam incondicionalmente o plano.",
           "O efeito seria diferente, porque a relação de concessão daria lugar a uma relação de conclusão: o leitor passaria a entender que o alerta dos especialistas decorre do apoio à medida, e não que ele impõe um limite a ela.",
@@ -260,7 +260,7 @@ const TEXTOS_LING = [
       },
       {
         enunciado:
-          "Comparando o rascunho da Semana 1 com a versão final da Semana 3, o texto defende que a qualidade do texto aumentou principalmente porque:",
+          "Comparando o rascunho da Semana 1 com a versão final da Semana 3, o texto defende que a qualidade da redação aumentou principalmente porque:",
         alternativas: [
           "o aluno passou a escrever mais, pois a extensão é o principal indicador de profundidade na redação.",
           "houve corte de conteúdo supérfluo e substituição de frases genéricas por exemplos concretos, o que aumentou a densidade argumentativa.",

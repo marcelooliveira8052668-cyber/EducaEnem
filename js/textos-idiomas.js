@@ -21,7 +21,7 @@ const TEXTOS_IDIOMAS = [
           "certeza absoluta (sem dúvida)",
         ],
         correta: 2,
-        comentario: "O anúncio abre com a pergunta “Do people still read?” e, em seguida, responde “Actually, most of our members say they read more now...”, corrigindo a dúvida inicial. Nesse contexto, actually equivale a “na verdade/de fato”, e não a “atualmente”: a evidência do contraste é a própria pergunta que introduce a resposta.",
+        comentario: "O anúncio abre com a pergunta “Do people still read?” e, em seguida, responde “Actually, most of our members say they read more now...”, corrigindo a dúvida inicial. Nesse contexto, actually equivale a “na verdade/de fato”, e não a “atualmente”: a evidência do contraste é a própria pergunta que introduz a resposta.",
       },
       {
         enunciado: "Em “Eventually, everyone finds the book that changes the way they see the world”, a palavra eventually expressa a ideia de:",

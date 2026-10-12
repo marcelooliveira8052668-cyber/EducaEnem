@@ -44,7 +44,7 @@ const ATIVIDADES_NATUREZA = [
         ],
         correta: 0,
         comentario:
-          "A respiração aeróbica degrada a glicose na mitocondria, gerando ATP. A fotossíntese é o processo inverso: consome CO₂ e luz para produzir glicose.",
+          "A respiração aeróbica degrada a glicose, iniciando-se no citosol (glicólise) e continuando na mitocôndria (ciclo de Krebs e cadeia de transporte de elétrons), gerando ATP. A fotossíntese é o processo inverso: consome CO₂ e luz para produzir glicose.",
       },
     ],
   },
@@ -64,19 +64,23 @@ const ATIVIDADES_NATUREZA = [
     questoes: [
       {
         enunciado:
-          "Um homem de fenótipo normal (X^D Y) casa-se com uma mulher portadora do daltonismo (X^D X^d). Qual a probabilidade de o casal ter uma filha daltônica?",
+          "Um homem de fenótipo normal (Xᴰ Y) casa-se com uma mulher portadora do daltonismo (Xᴰ Xᵈ). Qual a probabilidade de o casal ter uma filha daltônica?",
         alternativas: ["25%", "50%", "75%", "100%", "0%"],
         correta: 4,
         comentario:
-          "Do cruzamento X^D Y × X^D X^d, todas as filhas recebem o X^D do pai, portanto nenhuma filha será daltônica. A probabilidade é 0%. Já os filhos têm 50% de chance de ser daltônicos (X^d Y).",
+          "Do cruzamento Xᴰ Y × Xᴰ Xᵈ, todas as filhas recebem o Xᴰ do pai, portanto nenhuma filha será daltônica. A probabilidade é 0%. Já os filhos têm 50% de chance de ser daltônicos (Xᵈ Y).",
       },
       {
         enunciado:
-          "Segundo a segunda lei de Mendel, no cruzamento de dois heterozigotos Aa × Aa, a proporção esperada de descendentes com fenótipo recessivo é:",
-        alternativas: ["1 : 3", "1 : 2 : 1", "3 : 1", "1 : 4", "9 : 3 : 3 : 1"],
+          "Segundo a primeira lei de Mendel, no cruzamento de dois heterozigotos Aa × Aa, a proporção esperada de genótipos (AA : Aa : aa) é:",
+        alternativas: ["1 : 3", "1 : 2 : 1", "3 : 1", "1 : 1", "9 : 3 : 3 : 1"],
         correta: 1,
         comentario:
-          "Em Aa × Aa obtém-se 1 AA : 2 Aa : 1 aa. Os indivíduos aa (1/4) apresentam fenótipo recessivo. A proporção fenotípica entre dominante e recessivo é 3 : 1.",
+          "Em Aa × Aa obtém-se 1 AA : 2 Aa : 1 aa — proporção genotípica 1 : 2 : 1. " +
+          "Como A é dominante, AA e Aa têm fenótipo dominante e apenas aa (1/4) " +
+          "apresenta fenótipo recessivo; a proporção fenotípica é, portanto, 3 : 1. " +
+          "A proporção 9 : 3 : 3 : 1 decorreria de um cruzamento com dois caracteres " +
+          "(segunda lei de Mendel).",
       },
     ],
   },
@@ -110,17 +114,17 @@ const ATIVIDADES_NATUREZA = [
       },
       {
         enunciado:
-          "A descoberta de que os cromossomos se separam durante a formação dos gametas foi fundamental para a teoria cromossômica da herança. Essa separação ocorre em qual processo?",
+          "Por que a vacina contra a gripe precisa ser aplicada todos os anos, enquanto a vacina contra o sarampo exige apenas poucas doses para proteger por toda a vida?",
         alternativas: [
-          "Mitose.",
-          "Meiose.",
-          "Fecundação.",
-          "Clivagem.",
-          "Transcrição.",
+          "O vírus da influenza sofre mutações antigênicas que alteram seus epitopos, exigindo a atualização anual da fórmula.",
+          "O vírus da gripe permanece latente no organismo por décadas e reativaria a doença.",
+          "As células de memória formadas pela vacina da gripe sobrevivem apenas alguns dias.",
+          "A vacina do sarampo é feita com vírus vivo, e a da gripe não consegue estimular o sistema imune.",
+          "A gripe se transmite por via aérea, e o sarampo apenas por contato direto com lesões de pele.",
         ],
-        correta: 1,
+        correta: 0,
         comentario:
-          "A meiose reduz à metade o número de cromossomos e separa os homólogos, o que sustenta as leis de Mendel. Sutton e Boveri associaram esse comportamento dos cromossomos à transmissão dos fatores hereditários.",
+          "O vírus da influenza tem genoma de RNA e taxa de mutação alta. Alterações graduais nas proteínas de superfície (drift antigênico) modificam os epitopos reconhecidos pelas células de memória, de modo que a resposta preparada nas doses anteriores não alcança o novo variante — por isso a fórmula é reformulada todos os anos. O vírus do sarampo é antigeneamente estável: as duas doses induzem memória duradoura. Em ambos os casos a vacina estimula imunidade ativa.",
       },
     ],
   },

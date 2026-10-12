@@ -37,7 +37,7 @@ const QUESTOES_EXTRA_2 = [
       "4 mols"
     ],
     correta: 4,
-    comentario: "A fosforilação em nível de substrato ocorre na glicólise, com saldo de 2 ATP (4 produzidos e 2 consumidos na fase de investimento), e no ciclo de Krebs, com 1 ATP por acetil-CoA, totalizando 2 ATP. Logo, 2 + 2 = 4 mols de ATP. O restante, cerca de 28 mols, provém da cadeia de transporte de elétrons nas cristas mitocondriais, por fosforilação oxidativa."
+    comentario: "A fosforilação em nível de substrato ocorre na glicólise, com saldo de 2 ATP (4 produzidos e 2 consumidos na fase de investimento), e no ciclo de Krebs, com 1 ATP por acetil-CoA, totalizando 2 ATP. Logo, 2 + 2 = 4 mols de ATP. O restante, cerca de 26 a 28 mols, provém da cadeia de transporte de elétrons nas cristas mitocondriais, por fosforilação oxidativa."
   },
   {
     disciplina: "Biologia - Genética",
@@ -98,7 +98,7 @@ const QUESTOES_EXTRA_2 = [
       "Introduzem anticorpos prontos, produzidos em laboratório, conferindo imunidade passiva permanente.",
       "Atuam como antibióticos, destruindo bactérias e vírus já presentes no organismo do doente.",
       "Apresentam antígenos (micro-organismos atenuados, inativados ou fragmentos) que estimulam a produção de anticorpos e células de memória pelo próprio organismo.",
-      "Substituem os glóbulos vermelhos, aumentando o oxigênio disponível transporte pelas células.",
+      "Substituem os glóbulos vermelhos, aumentando o oxigênio disponível para o transporte pelas células.",
       "Agem apenas sobre os leucócitos, elevando a temperatura corporal de forma permanente."
     ],
     correta: 2,
@@ -180,7 +180,7 @@ const QUESTOES_EXTRA_2 = [
       "a digestão das proteínas termina no estômago, não havendo ação de enzimas intestinais"
     ],
     correta: 1,
-    comentario: "A pepsina é secretada pelas células principais do estômago na forma inativa (pepsinogênio) e é ativada pelo HCl, que também reduz o pH a cerca de 2, condição ideal para sua ação. Ela inicia a digestão das proteínas, transformando-as em peptídeos; a complementação ocorre no intestino delgado, pela tripsina, quimiotripsina e peptidases. A ptialina age sobre o amido, e o tripsinogênio é produzido pelo pâncreas, não pelo fígado."
+    comentario: "A pepsina é secretada pelas células principais do estômago na forma inativa (pepsinogênio) e é ativada pelo HCl, que também reduz o pH a cerca de 2, condição ideal para sua ação. Ela inicia a digestão das proteínas, transformando-as em peptídeos; a digestão é complementada no intestino delgado, pela tripsina, quimiotripsina e peptidases. A ptialina age sobre o amido, e o tripsinogênio é produzido pelo pâncreas, não pelo fígado."
   },
   {
     disciplina: "Biologia - Evolução (equilíbrio de Hardy-Weinberg)",
@@ -245,7 +245,7 @@ const QUESTOES_EXTRA_2 = [
       "22 °C"
     ],
     correta: 2,
-    comentario: "Usando Q = m · c · Δθ: 8 400 = 200 × 1 × Δθ, logo Δθ = 8 400 / 200 = 42 °C. Como a água parte de 20 °C, a temperatura final é 20 + 42 = 62 °C. O valor 42 °C é a variação de temperatura, não a temperatura final."
+    comentario: "Usando Q = m · c · ΔT: 8 400 = 200 × 1 × ΔT, logo ΔT = 8 400 / 200 = 42 °C. Como a água parte de 20 °C, a temperatura final é 20 + 42 = 62 °C. O valor 42 °C é a variação de temperatura, não a temperatura final."
   },
   {
     disciplina: "Física - Ondulatória",
@@ -284,7 +284,7 @@ const QUESTOES_EXTRA_2 = [
       "24,2 A"
     ],
     correta: 2,
-    comentario: "Pela 1ª lei de Ohm, U = R · i, logo i = U / R = 110 / 220 = 0,5 A. A opção 2 A decorre da divisão invertida (R/U); 5 A resultaria de dividir por 22 Ω; 24,2 A seria obtido multiplicando U por R, o que não tem sentido dimensional."
+    comentario: "Pela 1ª lei de Ohm, U = R · i, logo i = U / R = 110 / 220 = 0,5 A. A opção 2 A decorre da divisão invertida (R/U); 5 A resultaria de dividir por 22 Ω; o valor 24,2 só se obtém multiplicando U por R e dividindo por mil (110 × 220 / 1 000 = 24,2), operação que não tem sentido dimensional."
   },
   {
     disciplina: "Física - Hidrostática",
@@ -375,7 +375,7 @@ const QUESTOES_EXTRA_2 = [
       "50 W"
     ],
     correta: 1,
-    comentario: "Como o movimento é uniforme, a força aplicada equilibra o peso: F = m · g = 100 × 10 = 1 000 N. O trabalho é τ = F · d = 1 000 × 3 = 3 000 J. A potência média é P = τ / Δt = 3 000 / 6 = 500 W. A opção 3 000 W confunde trabalho com potência; 300 W esqueceria a altura."
+    comentario: "Como o movimento é uniforme, a força aplicada equilibra o peso: F = m · g = 100 × 10 = 1 000 N. O trabalho é W = F · d = 1 000 × 3 = 3 000 J. A potência média é P = W / Δt = 3 000 / 6 = 500 W. A opção 3 000 W confunde trabalho com potência; 300 W esqueceria a altura."
   },
   {
     disciplina: "Física - Eletricidade (potência elétrica)",
@@ -427,7 +427,7 @@ const QUESTOES_EXTRA_2 = [
       "80 g/L"
     ],
     correta: 3,
-    comentario: "Concentração comum: C = m₁ / V. O volume é 500 mL = 0,5 L, logo C = 20 g / 0,5 L = 40 g/L. A opção 4 g/L resultaria de usar 5 L no denominador; 20 g/L decorre de não converter mililitros para litros antes de dividir."
+    comentario: "Concentração comum: C = m₁ / V. O volume é 500 mL = 0,5 L, logo C = 20 g / 0,5 L = 40 g/L. A opção 4 g/L resultaria de usar 5 L no denominador (20 g / 5 L); a opção 20 g/L não decorre de deixar de converter o volume, pois 20 g / 500 mL daria 0,04 g/mL, equivalente a 40 g/L."
   },
   {
     disciplina: "Química - Estequiometria",
@@ -440,7 +440,7 @@ const QUESTOES_EXTRA_2 = [
       "68 g"
     ],
     correta: 0,
-    comentario: "Pela equação balanceada, 1 mol de N₂ produz 2 mols de NH₃. Como 28 g correspondem a 1 mol de N₂, obtêm-se 2 mols de NH₃, o que dá 2 × 17 = 34 g. A opção 17 g corresponderia a apenas 1 mol de NH₃, e 68 g ignoraria a proporção 1:2 da equação."
+    comentario: "Pela equação balanceada, 1 mol de N₂ produz 2 mols de NH₃. Como 28 g correspondem a 1 mol de N₂, obtêm-se 2 mols de NH₃, o que dá 2 × 17 = 34 g. A opção 17 g corresponderia a apenas 1 mol de NH₃, como se a relação fosse 1:1, e a opção 68 g resultaria de considerar 2 mols de N₂ nos 28 g (usando 14 g/mol como massa molar do N₂), em vez de 1 mol."
   },
   {
     disciplina: "Química - Balanceamento de equações",
@@ -570,11 +570,11 @@ const QUESTOES_EXTRA_2 = [
       "56 g"
     ],
     correta: 3,
-    comentario: "Massa de CaCO₃ puro: 250 × 0,80 = 200 g, o que corresponde a 2 mols. Pela equação, 1 mol de CaCO₃ gera 1 mol de CaO, logo obtêm-se 2 mols de CaO = 2 × 56 = 112 g. A opção 280 g ignoraria a pureza, tratando os 250 g como se fossem 100% de CaCO₃."
+    comentario: "Massa de CaCO₃ puro: 250 × 0,80 = 200 g, o que corresponde a 2 mols. Pela equação, 1 mol de CaCO₃ gera 1 mol de CaO, logo obtêm-se 2 mols de CaO = 2 × 56 = 112 g. A opção 140 g ignoraria a pureza, tratando os 250 g como se fossem 100% de CaCO₃ (2,5 mols → 2,5 × 56 = 140 g de CaO); a opção 280 g não resulta de nenhum cálculo coerente com os dados."
   },
   {
     disciplina: "Química - Termoquímica (processos endotérmicos)",
-    enunciado: "Analisando o gráfico da energia ao longo do caminho de uma reação endotérmica, verifica-se que:",
+    enunciado: "Em uma reação endotérmica, verifica-se que:",
     alternativas: [
       "os produtos têm energia menor que a dos reagentes e ΔH é negativo, com liberação de calor",
       "reagentes e produtos estão no mesmo patamar energético, com ΔH = 0",
@@ -648,7 +648,7 @@ const QUESTOES_EXTRA_2 = [
       "primeira linha (1, 5) e segunda linha (2, 3)"
     ],
     correta: 0,
-    comentario: "Na soma de matrizes, somam-se os elementos de mesma posição: 2 + 1 = 3 e 1 + 4 = 5 na primeira linha; 0 + 2 = 2 e 3 + 0 = 3 na segunda linha. A matriz (3, 4; 2, 0) erra o segundo elemento da primeira linha, e (2, 4; 0, 0) corresponde à diferença A - B, não à soma."
+    comentario: "Na soma de matrizes, somam-se os elementos de mesma posição: 2 + 1 = 3 e 1 + 4 = 5 na primeira linha; 0 + 2 = 2 e 3 + 0 = 3 na segunda linha. A matriz (3, 4; 2, 0) erra o segundo elemento da primeira linha, (2, 4; 0, 0) corresponde ao produto elemento a elemento de A por B, e a diferença A - B daria (1, -3; -2, 3)."
   },
   {
     disciplina: "Matemática - Trigonometria",
@@ -674,7 +674,7 @@ const QUESTOES_EXTRA_2 = [
       "24 m³"
     ],
     correta: 2,
-    comentario: "O volume do cilindro é V = π · r² · h = 3 × (2)² × 1,5 = 3 × 4 × 1,5 = 18 m³. A opção 6 m³ resultaria de usar r em vez de r² no cálculo, e 9 m³ decorreria de usar 2r no lugar da altura."
+    comentario: "O volume do cilindro é V = π · r² · h = 3 × (2)² × 1,5 = 3 × 4 × 1,5 = 18 m³. A opção 6 m³ resultaria de esquecer o π, usando apenas r² · h = 4 × 1,5, e 9 m³ de usar r em vez de r²: 3 × 2 × 1,5 = 9."
   },
   {
     disciplina: "Matemática - Função do 2º grau",
@@ -691,7 +691,7 @@ const QUESTOES_EXTRA_2 = [
   },
   {
     disciplina: "Matemática - Juros simples",
-    enunciado: "Um capital de R$ 2 000,00 é aplicado a juros simples, à taxa de 3% ao mês, durante 5 meses. Qual o montante ao final do período?",
+    enunciado: "Um capital de R$ 2.000,00 é aplicado a juros simples, à taxa de 3% ao mês, durante 5 meses. Qual o montante ao final do período?",
     alternativas: [
       "R$ 2 060,00",
       "R$ 2 150,00",
@@ -726,7 +726,7 @@ const QUESTOES_EXTRA_2 = [
       "35,0"
     ],
     correta: 0,
-    comentario: "A média é a soma dos valores dividida pela quantidade de valores: (4 + 6 + 7 + 8 + 10) / 5 = 35 / 5 = 7,0. O valor 35,0 é a soma das notas, e não a média. Como são 5 valores ímpares, a mediana (valor central, 7,0) coincide com a média nesse conjunto."
+    comentario: "A média é a soma dos valores dividida pela quantidade de valores: (4 + 6 + 7 + 8 + 10) / 5 = 35 / 5 = 7,0. O valor 35,0 é a soma das notas, e não a média. Como a quantidade de dados (5) é ímpar, a mediana (valor central, 7,0) coincide com a média nesse conjunto."
   },
   {
     disciplina: "Matemática - Análise combinatória (combinação)",
