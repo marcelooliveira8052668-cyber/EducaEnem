@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Gerador de ícones — Escaneador</title>
+<style>
+  body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:20px;background:#0b1120;color:#eef2fb}
+  h1{font-size:1.8rem;margin-bottom:.5rem}
+  .card{background:#131b2e;border:1px solid #1e2a44;border-radius:16px;padding:24px;margin:16px 0}
+  button{background:#2ee6a8;color:#04140f;border:none;padding:12px 24px;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer}
+  button:hover{background:#0e9f75}
+  button:disabled{opacity:.5;cursor:not-allowed}
+  .sizes{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .size{background:#0c1220;border:1px solid #1e2a44;padding:8px 12px;border-radius:8px;font-size:.9rem}
+  .preview{width:80px;height:80px;border-radius:16px;background:#04140f;display:inline-block;margin-right:12px;vertical-align:middle}
+  .log{font-family:monospace;font-size:.85rem;color:#9aa8c7;white-space:pre-wrap;max-height:200px;overflow:auto;background:#070b14;padding:12px;border-radius:8px}
+</style>
+</head>
+<body>
+<h1>🎨 Gerador de ícones PWA</h1>
+<p>Abra esta página no navegador, clique em <b>Gerar todos</b> e salve os PNGs na pasta <code>icones/</code>.</p>
+
+<div class="card">
+  <h3>SVG mestre (512×512)</h3>
+  <div id="svgContainer"></div>
+</div>
+
+<div class="card">
+  <h3>Tamanhos necessários</h3>
+  <div class="sizes" id="listaTamanhos"></div>
+  <button id="btnGerar" onclick="gerarTodos()">Gerar todos os PNGs</button>
+  <button id="btnBaixarZip" onclick="baixarZip()" disabled>Baixar ZIP</button>
+</div>
+
+<div class="card">
+  <h3>Log</h3>
+  <div class="log" id="log">Pronto. Clique em "Gerar todos".</div>
+</div>
+
+<script>
+const TAMANHOS = [72,96,128,144,152,192,384,512];
+const SVG_BASE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#2ee6a8"/><stop offset="50%" stop-color="#0e9f75"/><stop offset="100%" stop-color="#066d50"/></linearGradient></defs>
+<rect width="512" height="512" rx="96" fill="url(#g)"/>
+<path d="M110 120h292v272H110z" fill="#04140f" opacity="0.15"/>
+<path d="M140 160h232v32H140z" fill="#fff" opacity="0.9"/>
+<path d="M140 210h180v24H140z" fill="#fff" opacity="0.6"/>
+<path d="M140 260h120v24H140z" fill="#fff" opacity="0.4"/>
+<path d="M390 180h-40v40h40z" fill="#2ee6a8" opacity="0.9"/>
+<circle cx="370" cy="200" r="12" fill="#2ee6a8"/>
+<path d="M365 200l3 3 6-6" stroke="#04140f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+const ICONES = {};
+const logEl = document.getElementById('log');
+function log(msg) { logEl.textContent += '\n' + msg; logEl.scrollTop = logEl.scrollHeight; }
+
+function mostrarSVG() {
+  document.getElementById('svgContainer').innerHTML = SVG_BASE;
+  const container = document.getElementById('listaTamanhos');
+  container.innerHTML = TAMANHOS.map(t => `<span class="size">${t}×${t}</span>`).join('');
+}
+
+async function renderizarSVG(svg, size) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = size; canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, size, size);
+      resolve(canvas.toDataURL('image/png'));
+    };
+    img.onerror = reject;
+    img.src = 'data:image/svg+xml;base64,' + btoa(svg);
+  });
+}
+
+async function gerarTodos() {
+  const btn = document.getElementById('btnGerar');
+  btn.disabled = true;
+  btn.textContent = 'Gerando...';
+  log('Iniciando geração...');
+
+  for (const size of TAMANHOS) {
+    try {
+      const dataUrl = await renderizarSVG(SVG_BASE, size);
+      ICONES[`icon-${size}.png`] = dataUrl;
+      log(`✓ icon-${size}.png gerado`);
+    } catch (e) {
+      log(`✗ icon-${size}.png falhou: ${e.message}`);
+    }
+  }
+
+  /* favicon e apple-touch-icon */
+  try {
+    ICONES['favicon.png'] = await renderizarSVG(SVG_BASE, 192);
+    ICONES['apple-touch-icon.png'] = await renderizarSVG(SVG_BASE, 180);
+    log('✓ favicon.png e apple-touch-icon.png gerados');
+  } catch (e) {
+    log(`✗ ícones extras falharam: ${e.message}`);
+  }
+
+  btn.textContent = 'Gerados!';
+  btn.disabled = true;
+  document.getElementById('btnBaixarZip').disabled = false;
+  log('\nTodos prontos. Clique em "Baixar ZIP".');
+}
+
+function baixarZip() {
+  /* cria um ZIP simples usando JSZip se disponível, senão baixa individualmente */
+  if (typeof JSZip !== 'undefined') {
+    const zip = new JSZip();
+    Object.entries(ICONES).forEach(([name, dataUrl]) => {
+      const base64 = dataUrl.split(',')[1];
+      zip.file(name, base64, { base64: true });
+    });
+    zip.generateAsync({ type: 'blob' }).then(blob => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'icones-escaneador.zip';
+      a.click(); URL.revokeObjectURL(url);
+      log('ZIP baixado.');
+    });
+  } else {
+    /* fallback: baixa um por um */
+    Object.entries(ICONES).forEach(([name, dataUrl]) => {
+      const a = document.createElement('a');
+      a.href = dataUrl; a.download = name;
+      a.click();
+    });
+    log('Arquivos baixados individualmente (JSZip não carregado).');
+  }
+}
+
+/* carrega JSZip via CDN para ZIP */
+const s = document.createElement('script');
+s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+s.onload = () => log('JSZip carregado — ZIP disponível.');
+document.head.appendChild(s);
+
+mostrarSVG();
+</script>
+</body>
+</html>

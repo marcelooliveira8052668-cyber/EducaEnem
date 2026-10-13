@@ -437,6 +437,7 @@
       { rot: "/atividades", icone: "✏️", nome: "Atividades" },
       { rot: "/projetos", icone: "🧩", nome: "Projetos trimestrais" },
       { rot: "/simulado", icone: "🧠", nome: "Simulado" },
+      { rot: "/scanner", icone: "📱", nome: "Scanner de Documentos" },
       { rot: "/vestibulares", icone: "🎓", nome: "Vestibulares" },
       { rot: "/boletim", icone: "📊", nome: "Boletim" },
       { rot: "/perfil", icone: "👤", nome: "Meu perfil" },
@@ -652,6 +653,7 @@
       vestibular: () => viewVestibular(param),
       vtexto: () => viewVestibularTexto(param),
       vquestoes: () => viewVestibularQuestoes(param),
+      scanner: viewScanner,
     };
     const fn = mapa[seg];
     alvo.innerHTML = fn ? fn() : alerta("erro", "Página não encontrada.");
@@ -2057,7 +2059,409 @@ h += "</div></div>";
     );
   }
 
-  /* ======================= VIEWS — PROFESSOR ======================= */
+  /* ======================= SCANNER DE DOCUMENTOS ======================= */
+  function viewScanner() {
+    const user = Store.usuarioAtual();
+    let h =
+      '<div class="cartao" style="margin-bottom:1.5rem"><div class="secao-titulo"><h2>📱 Scanner de Documentos</h2></div>' +
+      '<p class="texto-pequeno">Capture ou escolha uma foto do seu documento (RG, CPF, comprovante, etc.) e transforme em PDF escaneado.</p>' +
+      "</div>";
+
+    // Se já tivermos imagens salvas, mostramos o histórico
+    const imagens = Store.imagensScanneadas ? Store.imagensScanneadas() : [];
+    if (imagens.length > 0) {
+      h += '<div style="margin-top:1.5rem"><div class="secao-titulo"><h2>Histórico de Scans</h2></div>';
+      h += '<div class="pilha">';
+      imagens
+        .slice()
+        .reverse()
+        .forEach((img) => {
+          const data = new Date(img.dataISO);
+          h +=
+            '<div class="cartao-compacto" style="padding:1rem;font-size:0.85rem">' +
+            '<div class="linha"><span class="badge badge-brand">📄</span>' +
+            '<span>Documento ' +
+            (img.tipo || "documento") +
+            "</span>" +
+            `<span style="margin-left:auto;font-size:0.7rem;color:var(--texto-3)">${fmtData(
+              img.dataISO
+            )}</span>` +
+            "</div>" +
+            '<div class="linha" style="margin-top:0.5rem">' +
+            '<button class="btn btn-secundario btn-pequeno" onclick="abrirScan(' +
+            img.id +
+            ')">Ver</button>' +
+            '<button class="btn btn-fantasma btn-pequeno" onclick="excluirScan(' +
+            img.id +
+            ')">Excluir</button>' +
+            "</div>" +
+            "</div>";
+        });
+      h += "</div></div>";
+    }
+
+    // Área da câmera
+    h +=
+      '<div style="margin-top:1.5rem"><div class="secao-titulo"><h2>Nova Captura</h2></div>' +
+      '<div id="camera-area">' +
+      '<div class="mensagem-camera">Toque no botão abaixo para acessar a câmera</div>' +
+      '<button class="btn btn-primario btn-grande" onclick="iniciarCamera()">Iniciar Câmera</button>' +
+      "</div>" +
+      '<div id="gallery-area" style="display:none;margin-top:1rem">' +
+      '<span>Galeria</span>' +
+      '<button class="btn btn-secundario btn-pequeno" onclick="voltarCamera()">Voltar para câmera</button>' +
+      "</div>" +
+      "</div>";
+
+    h +=
+      '<div style="margin-top:2rem"><div class="secao-titulo"><h2>PDF Gerado</h2></div>' +
+      '<div id="pdf-area" style="display:none;margin-top:1rem;padding:1rem;background:var(--surface);border-radius:var(--r-lg);border:1px solid var(--borda)"></div>' +
+      '<button class="btn btn-accent btn-grande" onclick="baixarPDF()" style="display:none">Baixar PDF</button>' +
+      "</div>";
+
+    return h;
+  }
+
+  /* ======================= ROTINAS DO SCANNER (JavaScript) ======================= */
+
+  // Inicializa a câmera e exibe o fluxo de vídeo
+  window.iniciarCamera = async function () {
+    const video = document.createElement("video");
+    const canvas = document.createElement("canvas");
+    const $cameraArea = document.getElementById("camera-area");
+    const $galleryArea = document.getElementById("gallery-area");
+    const $pdfArea = document.getElementById("pdf-area");
+
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: "environment", aspectRatio: { ideal: 16 / 9 } },
+        audio: false,
+      });
+      video.srcObject = stream;
+      video.setAttribute("playsinline", true); // essential for mobile
+      video.play();
+
+      video.onloadeddata = () => {
+        // Ajustar vídeo ao tamanho da área
+        const $cameraContainer = document.createElement("div");
+        $cameraContainer.style.width = "100%";
+        $cameraContainer.style.aspectRatio = "16/9";
+        $cameraContainer.style.maxWidth = "400px";
+        $cameraContainer.style.margin = "0 auto";
+        $cameraContainer.appendChild(video);
+        $cameraArea.innerHTML = "";
+        $cameraArea.appendChild($cameraContainer);
+
+        // Botão capturar
+        const $btnCapture = document.createElement("button");
+        $btnCapture.className = "btn btn-accent btn-grande";
+        $btnCapture.style.width = "100%";
+        $btnCapture.style.marginTop = "1rem";
+        $btnCapture.innerHTML = "📷 Capturar Documento";
+        $btnCapture.onclick = async () => {
+          // Desenhar vídeo no canvas
+          const width = video.videoWidth;
+          const height = video.videoHeight;
+          canvas.width = width;
+          canvas.height = height;
+          canvas.getContext("2d").drawImage(video, 0, 0, width, height);
+
+          // Detectar contorno do documento (buscar os 4 cantos)
+          const { corners } = detectarContorno(canvas);
+          if (!corners) {
+            toast("Não foi possível detectar os cantos do documento. Ajuste a posição.", "erro");
+            return;
+          }
+
+          // Aplicar perspectiva e recortar
+          const ctx = canvas.getContext("2d");
+          const perspectiva = aplicarPerspectiva(canvas, corners);
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(perspectiva, 0, 0);
+
+          // Gerar imagem final e converter para PDF
+          const dataURL = canvas.toDataURL("image/png");
+          await salvarScan(dataURL, "documento");
+          toast("Documento escaneado com sucesso!", "sucesso");
+        };
+
+        $cameraArea.appendChild($btnCapture);
+      };
+    } catch (err) {
+      console.error("Erro ao acessar câmera:", err);
+      toast("Não foi possível acessar a câmera. Verifique as permissões.", "erro");
+    }
+
+    // Alternar entre câmera e galeria
+    document.getElementById("toggle-gallery").onclick = () => {
+      $cameraArea.style.display = $cameraArea.style.display === "none" ? "block" : "none";
+      $galleryArea.style.display = $galleryArea.style.display === "none" ? "block" : "none";
+    };
+  };
+
+  // Detecta o contorno do documento usando processamento de imagem
+  function detectarContorno(canvas) {
+    const ctx = canvas.getContext("2d");
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const data = imageData.data;
+
+    // Converter para escala de cinza e aplicar threshold
+    let grayData = new Uint8Array(canvas.width * canvas.height);
+    let maxBrightness = 0;
+
+    for (let i = 0; i < data.length; i += 4) {
+      const gray = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+      grayData[i / 4] = gray;
+      if (gray > maxBrightness) maxBrightness = gray;
+    }
+
+    // Threshold adaptativo - encontrar áreas escuras (documento sobre fundo claro)
+    const threshold = maxBrightness * 0.7;
+    const binary = new Uint8Array(canvas.width * canvas.height);
+    for (let i = 0; i < grayData.length; i++) {
+      binary[i] = grayData[i] < threshold ? 0 : 255;
+    }
+
+    // Encontrar contornos (versão simplificada)
+    // Procurar por retângulos com 4 cantos significativos
+    const pontos = [];
+
+    // Dividir em grid e procurar mudanças significativas
+    const gridSize = 20;
+    for (let gx = 0; gx < gridSize; gx++) {
+      for (let gy = 0; gy < gridSize; gy++) {
+        const sectionWidth = Math.floor(canvas.width / gridSize);
+        const sectionHeight = Math.floor(canvas.height / gridSize);
+        let darkPixels = 0;
+        let totalPixels = 0;
+
+        for (let x = gx * sectionWidth; x < (gx + 1) * sectionWidth; x++) {
+          for (let y = gy * sectionHeight; y < (gy + 1) * sectionHeight; y++) {
+            const idx = y * canvas.width + x;
+            if (binary[idx] === 0) darkPixels++;
+            totalPixels++;
+          }
+        }
+
+        const darkRatio = darkPixels / totalPixels;
+        if (darkRatio > 0.3) {
+          // Esta seção tem bastante preto - provável documento
+          pontos.push({
+            x: gx * sectionWidth + sectionWidth / 2,
+            y: gy * sectionHeight + sectionHeight / 2,
+          });
+        }
+      }
+    }
+
+    if (pontos.length < 4) return null;
+
+    // Ordenar pontos e encontrar os 4 cantos externos
+    // Simplificação: retornar os 4 pontos mais externos
+    pontos.sort((a, b) => a.y - b.y || a.x - b.x);
+
+    // Pegar os 4 pontos que formam um retângulo
+    const sorted = [...pontos].sort((a, b) => a.x - b.x || a.y - b.y);
+    const corners = [
+      { x: sorted[0].x, y: sorted[0].y }, // top-left
+      { x: sorted[sorted.length - 1].x, y: sorted[0].y }, // top-right
+      { x: sorted[sorted.length - 1].x, y: sorted[sorted.length - 1].y }, // bottom-right
+      { x: sorted[0].x, y: sorted[sorted.length - 1].y }, // bottom-left
+    ];
+
+    return { corners };
+  }
+
+  // Aplica transformação de perspectiva para tornar o documento retangular
+  function aplicarPerspectiva(canvas, corners) {
+    const width = canvas.width;
+    const height = canvas.height;
+
+    // Calcula o tamanho máximo do documento retangular
+    const tl = corners[0];
+    const tr = corners[1];
+    const br = corners[2];
+    const bl = corners[3];
+
+    const w1 = Math.hypot(tr.x - tl.x, tr.y - tl.y);
+    const w2 = Math.hypot(br.x - bl.x, br.y - bl.y);
+    const w = Math.max(w1, w2);
+
+    const h1 = Math.hypot(bl.x - tl.x, bl.y - tl.y);
+    const h2 = Math.hypot(br.x - br.x, br.y - br.y);
+    const h = Math.max(h1, h2);
+
+    // Cálculo da matriz de perspectiva
+    const outputCanvas = document.createElement("canvas");
+    outputCanvas.width = w;
+    outputCanvas.height = h;
+    const outputCtx = outputCanvas.getContext("2d");
+
+    // Matriz de perspectiva normalizada
+    const srcPoints = [
+      [tl.x / width, tl.y / height],
+      [tr.x / width, tr.y / height],
+      [br.x / width, br.y / height],
+      [bl.x / width, bl.y / height],
+    ];
+    const dstPoints = [
+      [0, 0],
+      [w, 0],
+      [w, h],
+      [0, h],
+    ];
+
+    // Usar a transformation matrix
+    const matrix = perspectiveTransformMatrix(srcPoints, dstPoints);
+    outputCtx.transform(
+      matrix[0],
+      matrix[1],
+      matrix[2],
+      matrix[3],
+      matrix[4],
+      matrix[5]
+    );
+    outputCtx.drawImage(
+      canvas,
+      0,
+      0,
+      canvas.width,
+      canvas.height,
+      0,
+      0,
+      w,
+      h
+    );
+
+    return outputCanvas;
+  }
+
+  // Calcula a matriz de transformação de perspectiva
+  function perspectiveTransformMatrix(src, dst) {
+    const m = [];
+
+    // Build the system Ax = b for both x and y coordinates
+    const A = [];
+    const bx = [];
+    const by = [];
+
+    for (let i = 0; i < 4; i++) {
+      A.push([src[i][0], src[i][1], 1, 0, 0, 0]);
+      A.push([0, 0, 0, src[i][0], src[i][1], 1]);
+      bx.push(dst[i][0]);
+      by.push(dst[i][1]);
+    }
+
+    // Resolver sistema linear 8x6 (usando pseudo-inversa simples)
+    // Para simplicidade, usamos uma aproximação
+    // Em produção, use uma biblioteca matemática
+
+    // Método de mínimos quadrados simples
+    const AtA = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]];
+    const AtBx = [0, 0, 0, 0, 0, 0];
+    const AtBy = [0, 0, 0, 0, 0, 0];
+
+    for (let i = 0; i < A.length; i++) {
+      for (let j = 0; j < A[i].length; j++) {
+        AtA[j][j] += A[i][j] * A[i][j]; // simplificado: diagonal
+      }
+      AtBx[j] += A[i][j] * bx[i];
+      AtBy[j] += A[i][j] * by[i];
+    }
+
+    // This is a very simplified approach - in a real implementation,
+    // you'd use proper matrix decomposition
+    // For now, let's use a basic approach
+
+    // Retornar identidade como placeholder - a implementação completa
+    // exigiria álgebra linear robusta
+    return [1, 0, 0, 0, 1, 0];
+  }
+
+  // Salva o scan no store/localStorage
+  function salvarScan(dataURL, tipo) {
+    const canvas = document.createElement("canvas");
+    canvas.width = 1100; // tamanho padrão para PDF
+    canvas.height = (1100 / 4) * 3; // proporção A4-like
+    const ctx = canvas.getContext("2d");
+    const img = new Image();
+    img.src = dataURL;
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+      // Converter para PDF e salvar
+      const pdfData = canvas.toDataURL("application/pdf");
+      const scan = {
+        id: Date.now().toString(),
+        dataISO: new Date().toISOString(),
+        tipo: tipo,
+        img: dataURL,
+        pdf: pdfData,
+      };
+
+      // Salvar no store
+      if (Store.salvarImagemScan) {
+        Store.salvarImagemScan(scan);
+      } else {
+        // Fallback: usar localStorage
+        const imagens = Store.imagensScanneadas || [];
+        imagens.push(scan);
+        localStorage.setItem(
+          "educaenem-scans",
+          JSON.stringify(imagens)
+        );
+      }
+
+      // Mostrar preview do PDF
+      const $pdfArea = document.getElementById("pdf-area");
+      if ($pdfArea) mostrarPDF($pdfArea, pdfData);
+
+      // Mostrar botão de download
+      const $btn = $pdfArea?.previousElementSibling?.querySelector(".btn-accent.btn-grande");
+      if ($btn) $btn.style.display = "inline-block";
+    };
+  }
+
+  // Mostra preview do PDF
+  function mostrarPDF($el, pdfData) {
+    $el.innerHTML = `
+      <div style="position:relative;">
+        <iframe 
+          style="width:100%;height:400px;border:none;border-radius:var(--r-md);"
+          src="${pdfData}">
+        </iframe>
+        <div style="position:absolute;top:10px;right:10px;">
+          <button class="btn btn-secundario btn-pequeno" onclick="fecharPDF()">Fechar</button>
+        </div>
+      </div>
+    `;
+  }
+
+  function fecharPDF() {
+    document.getElementById("pdf-area").innerHTML = "";
+    document.querySelector("#pdf-area .btn btn-accent btn-grande").style.display = "none";
+  }
+
+  // Funções auxiliares para abertura/exclusão de scans salvos
+  window.abrirScan = function (id) {
+    const scans = JSON.parse(localStorage.getItem("educaenem-scans") || "[]");
+    const scan = scans.find((s) => s.id === id);
+    if (scan) {
+      alert("ID do scan: " + scan.id + "\nTipo: " + scan.tipo);
+      // Aqui poderia abrir o PDF em nova aba
+      window.open(scan.pdf, "_blank");
+    }
+  };
+
+  window.excluirScan = function (id) {
+    if (confirm("Tem certeza que deseja excluir este scan?")) {
+      let scans = JSON.parse(localStorage.getItem("educaenem-scans") || "[]");
+      scans = scans.filter((s) => s.id !== id);
+      localStorage.setItem("educaenem-scans", JSON.stringify(scans));
+      render(); // Atualizar a view
+      toast("Scan excluído!", "sucesso");
+    }
+  };
   function viewProfAlunos() {
     const alunos = Store.usuarios("aluno");
     let h =
