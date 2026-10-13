@@ -20,6 +20,7 @@
 
   var estado = {
     ligado: false,
+    pronto: false,
     cameraTraseira: true,
     flashLigado: false,
     capturaAuto: true,
@@ -84,6 +85,19 @@
       .then(function (str) {
         stream = str;
         video.srcObject = stream;
+        
+        // Escuta eventos de prontidão do vídeo (importante no mobile)
+        var aoCarregar = function () {
+          if (video.videoWidth > 0 && video.videoHeight > 0) {
+            estado.pronto = true;
+            Cam._ajustarCanvas();
+            if (callbacks.aoStatus) callbacks.aoStatus('pronto');
+          }
+        };
+        video.addEventListener('loadedmetadata', aoCarregar);
+        video.addEventListener('canplay', aoCarregar);
+        video.addEventListener('playing', aoCarregar);
+        
         return video.play();
       })
       .then(function () {
@@ -96,6 +110,7 @@
       })
       .catch(function (err) {
         estado.ligado = false;
+        estado.pronto = false;
         if (callbacks.aoErro) callbacks.aoErro(err);
         throw err;
       });
@@ -112,6 +127,11 @@
     if (maskOverlay) {
       maskOverlay.style.width = w + 'px';
       maskOverlay.style.height = h + 'px';
+    }
+    // Marca como pronto quando tem dimensões reais de vídeo
+    if (video.videoWidth > 0 && video.videoHeight > 0 && !estado.pronto) {
+      estado.pronto = true;
+      if (callbacks.aoStatus) callbacks.aoStatus('pronto');
     }
   };
 
@@ -312,17 +332,22 @@
   Cam.capturar = function () {
     return new Promise(function (resolve, reject) {
       var tentativas = 0;
-      var maxTentativas = 10;
+      var maxTentativas = 15; // mais tempo no celular
 
       function tentar() {
         if (!video) return reject(new Error('Vídeo não inicializado'));
-        if (video.readyState >= 2 && video.videoWidth > 0 && video.videoHeight > 0) {
-          var w = video.videoWidth, h = video.videoHeight;
+        // Verifica flag pronto (setada quando videoWidth/videoHeight > 0) OU fallback direto
+        var w = video.videoWidth, h = video.videoHeight;
+        if (estado.pronto || (w > 0 && h > 0)) {
+          if (w === 0 || h === 0) {
+            // fallback: usa clientWidth/Height se videoWidth ainda 0
+            w = video.clientWidth || 640;
+            h = video.clientHeight || 480;
+          }
           var canvas = U.novoCanvas(w, h);
           var ctx = canvas.getContext('2d');
           ctx.drawImage(video, 0, 0, w, h);
           var imgData = ctx.getImageData(0, 0, w, h);
-          /* ... resto do código */
           var det = estado.ultimaDeteccao;
           if (!det || !det.cantos || det.confianca < 0.5) {
             var imgDet = U.redimensionarPara(video, 640);
@@ -342,7 +367,7 @@
           return resolve({ imagem: imgData, deteccao: det });
         }
         if (tentativas >= maxTentativas) {
-          return reject(new Error('Vídeo não ficou pronto a tempo'));
+          return reject(new Error('Vídeo não ficou pronto a tempo (tente tocar na tela para ativar)'));
         }
         tentativas++;
         setTimeout(tentar, 100);
@@ -373,6 +398,7 @@
     }
     if (video) { video.srcObject = null; }
     estado.ligado = false;
+    estado.pronto = false;
     estado.flashLigado = false;
     if (ctxOverlay) ctxOverlay.clearRect(0, 0, canvasOverlay.width, canvasOverlay.height);
     if (maskOverlay) {
