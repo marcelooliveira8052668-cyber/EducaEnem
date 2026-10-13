@@ -293,13 +293,46 @@
 
   /* --------------------------------------------- captura em alta res */
   Cam.capturar = function () {
-    if (!video || video.readyState < 2) return Promise.reject(new Error('Vídeo não pronto'));
+    return new Promise(function (resolve, reject) {
+      var tentativas = 0;
+      var maxTentativas = 10;
 
-    var w = video.videoWidth, h = video.videoHeight;
-    var canvas = U.novoCanvas(w, h);
-    var ctx = canvas.getContext('2d');
-    ctx.drawImage(video, 0, 0, w, h);
-    var imgData = ctx.getImageData(0, 0, w, h);
+      function tentar() {
+        if (!video) return reject(new Error('Vídeo não inicializado'));
+        if (video.readyState >= 2 && video.videoWidth > 0 && video.videoHeight > 0) {
+          var w = video.videoWidth, h = video.videoHeight;
+          var canvas = U.novoCanvas(w, h);
+          var ctx = canvas.getContext('2d');
+          ctx.drawImage(video, 0, 0, w, h);
+          var imgData = ctx.getImageData(0, 0, w, h);
+          /* ... resto do código */
+          var det = estado.ultimaDeteccao;
+          if (!det || !det.cantos || det.confianca < 0.5) {
+            var imgDet = U.redimensionarPara(video, 640);
+            if (imgDet) {
+              var detFull = Detectar.detectar(U.canvasParaImagem(imgDet), { minConfianca: 0.15 });
+              if (detFull && detFull.cantos) {
+                var ex = w / imgDet.width, ey = h / imgDet.height;
+                detFull.cantos = detFull.cantos.map(function (pt) {
+                  return { x: pt.x * ex, y: pt.y * ey };
+                });
+                det = detFull;
+              }
+            }
+          }
+          if (callbacks.aoCaptura) callbacks.aoCaptura(imgData, det);
+          U.vibrar([12, 8, 12]);
+          return resolve({ imagem: imgData, deteccao: det });
+        }
+        if (tentativas >= maxTentativas) {
+          return reject(new Error('Vídeo não ficou pronto a tempo'));
+        }
+        tentativas++;
+        setTimeout(tentar, 100);
+      }
+      tentar();
+    });
+  };
 
     /* detecta no frame full-res se não detectou no preview */
     var det = estado.ultimaDeteccao;

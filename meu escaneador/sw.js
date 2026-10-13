@@ -27,16 +27,8 @@ const ASSETS = [
 ];
 
 const ICONES = [
-  './icones/icon-72.png',
-  './icones/icon-96.png',
-  './icones/icon-128.png',
-  './icones/icon-144.png',
-  './icones/icon-152.png',
-  './icones/icon-192.png',
-  './icones/icon-384.png',
-  './icones/icon-512.png',
-  './icones/favicon.png',
-  './icones/apple-touch-icon.png'
+  './icones/icon-192.svg',
+  './icones/icon-512.svg'
 ];
 
 /* ------------ install ------------ */
