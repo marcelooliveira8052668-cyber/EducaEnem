@@ -89,7 +89,7 @@
       .then(function () {
         estado.ligado = true;
         Cam._ajustarCanvas();
-        Cam._trocarParaTraseira();
+        // Não força troca de câmera no início - usa a padrão do navegador
         Cam._loopDeteccao();
         if (callbacks.aoStatus) callbacks.aoStatus('iniciado');
         return true;
@@ -118,21 +118,38 @@
   Cam._trocarParaTraseira = function () {
     return Cam.listar().then(function (disps) {
       var id = estado.cameraTraseira ? escolherTraseira(disps) : escolherFrontal(disps);
-      if (!id) return;
+      
+      // Se não achou a câmera específica, usa a primeira disponível
       var constraints = {
         video: {
-          deviceId: { exact: id },
           width: { ideal: estado.resolucaoAlvo.largura },
           height: { ideal: estado.resolucaoAlvo.altura },
-          facingMode: estado.cameraTraseira ? 'environment' : 'user'
+          facingMode: estado.cameraTraseira ? { ideal: 'environment' } : { ideal: 'user' }
         }
       };
+      
+      // Só adiciona deviceId exato se encontrou um válido
+      if (id && disps.some(function(d) { return d.deviceId === id; })) {
+        constraints.video.deviceId = { exact: id };
+      }
+      
       return navigator.mediaDevices.getUserMedia(constraints)
         .then(function (novo) {
           if (stream) stream.getTracks().forEach(function (t) { t.stop(); });
           stream = novo;
           video.srcObject = stream;
           return video.play();
+        })
+        .catch(function (err) {
+          // Fallback: tenta sem facingMode específico
+          console.warn('Falha ao trocar câmera, tentando fallback:', err.message);
+          return navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            .then(function (fallback) {
+              if (stream) stream.getTracks().forEach(function (t) { t.stop(); });
+              stream = fallback;
+              video.srcObject = stream;
+              return video.play();
+            });
         })
         .then(function () { Cam._ajustarCanvas(); });
     });
