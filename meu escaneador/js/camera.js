@@ -334,27 +334,6 @@
     });
   };
 
-    /* detecta no frame full-res se não detectou no preview */
-    var det = estado.ultimaDeteccao;
-    if (!det || !det.cantos || det.confianca < 0.5) {
-      var imgDet = U.redimensionarPara(video, 640);
-      if (imgDet) {
-        var detFull = Detectar.detectar(U.canvasParaImagem(imgDet), { minConfianca: 0.15 });
-        if (detFull && detFull.cantos) {
-          var ex = w / imgDet.width, ey = h / imgDet.height;
-          detFull.cantos = detFull.cantos.map(function (pt) {
-            return { x: pt.x * ex, y: pt.y * ey };
-          });
-          det = detFull;
-        }
-      }
-    }
-
-    if (callbacks.aoCaptura) callbacks.aoCaptura(imgData, det);
-    U.vibrar([12, 8, 12]);
-    return Promise.resolve({ imagem: imgData, deteccao: det });
-  };
-
   /* --------------------------------------------- captura manual (galeria) */
   Cam.importarArquivo = function (arquivo) {
     return U.arquivoParaImagem(arquivo).then(function (img) {
